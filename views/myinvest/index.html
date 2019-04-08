@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
     <link href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/common.css">
-    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/myinvest/myinvest.css">
+    <!-- <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/myinvest/myinvest.css"> -->
 	
 
-    <!-- <link rel="stylesheet" href="../../static/css/common.css">
- 	<link rel="stylesheet" href="../../static/css/myinvest/myinvest.css"> -->
+    <!-- <link rel="stylesheet" href="../../static/css/common.css"> -->
+ 	<link rel="stylesheet" href="../../static/css/myinvest/myinvest.css">
 
 
     <script type="text/javascript" src="http://static.nurifunding.co.kr/js/jquery-1.10.2.min.js"></script>
@@ -24,13 +24,15 @@
     <!--<script type="text/javascript" src="../../static/js/myinvest/myinvest.js"></script>-->
 
     <!--[if lt IE 9]>
-    <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/grid_ie9lt.min.css">
-    <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/common_ie9lt.css">
-    <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/myinvest/myinvest_ie9lt.css">
+        <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/grid_ie9lt.min.css">
+        <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/common_ie9lt.css">
+        <link rel="stylesheet" href="http://static.nurifunding.co.kr/css/myinvest/myinvest_ie9lt.css">
 
-    <script type="text/javascript" src="http://static.nurifunding.co.kr/js/ie9_lt.js"></script>
-    <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-  <![endif]-->
+        <script type="text/javascript" src="http://static.nurifunding.co.kr/js/ie9_lt.js"></script>
+        <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
 </head>
 
 <body>
@@ -173,32 +175,45 @@
                         </div>
                     </div>-->
 
-                        <!--180601, 등록 했을 경우-->
+                    <!--180601, 등록 했을 경우-->
                     <!-- 180703 등록 했을 경우 내용 수정 : myi-dep-on 멀티클래스 추가 -->
-                    <div class="myi-dep com-box row br3 myi-dep-on">
+                    <div class="myi-dep com-box row br3">
                         <h2 class="clr"><span class="fc-blue">임준수</span><a href="" class="user-btn"><img src="http://img.nurifunding.co.kr/myp_icon.png" alt="회원정보"></a></h2>
                         
+						<div class="md-code">
+							<p class="p-1">
+								나의 추천인 코드
+							</p>
+							<p class="p-1">
+								1000782 <a href="javascript: copy();" class="fc-blue btn btn-copy">복사하기</a>
+							</p>
+						</div>
+                    	<hr class="sun">
                         <div class="md-bank">
-                            <h3>나의출금계좌<a href="/mydeposit/#pay_log" class="histry-btn">거래내역 &gt;</a></h3>  
-                            <div class="md-bank2">
-                                <p class="mdb-p2">신한은행</p>
-                                <p class="mdb-p2">4567894561238</p>
-                                <p class="mdb-p2">누리펀딩임준수</p>
-                            </div>       
-                        </div>
-                        <div class="md-with">
-                            <h3>나의 예치금<a href="" class="histry-btn">거래내역 &gt;</a></h3>
-                            <div class="md-bank2">
-                                <p class="mdb-p2">신한은행</p>
-                                <p class="mdb-p2">4567894561238</p>
-                                <p class="mdb-p2">누리펀딩임준수</p>
-                            </div>
-                            <p class="p-1 clr"><span class="pull-left s-gray">일반 예치금</span><span class="pull-right s-1">20,001원</span></p>
-                            <p class="p-1 clr"><span class="pull-left s-purple">이벤트 적립금</span><span class="pull-right s-1"><span class="s-purple">10,000</span>원</span></p>
+							<h3>나의 출금계좌<a href="https://www.nurifunding.co.kr/mydeposit" class="histry-btn">거래내역 &gt;</a></h3>
+							<!-- 실계좌 등록 -->
+							<!--p class="mdb-p1">toxnsldxn@nate.com</p-->
+							<!-- <p class="mdb-p1">&nbsp;</p> -->
+							<p class="mdb-p2">은행명 : 기업은행</p>
+							<p class="mdb-p2">계좌번호 : 33710244901011</p>
+							<p class="mdb-p2">예금주 : 강혜준</p>
+						</div>
+						<div class="md-with">
+							<h3>나의 예치금<a href="https://www.nurifunding.co.kr/mydeposit" class="histry-btn">거래내역 &gt;</a></h3>
+							<div class="md-bank2">
+								<p class="mdb-p2">은행명 : SC제일은행</p>
+								<p class="mdb-p2">계좌번호 : 69416001457383</p>
+								<p class="mdb-p2">예금주 : 강혜준</p>
+							</div>
+							<p class="p-1 clr"><span class="pull-left s-gray">예치금</span><span class="pull-right s-1">10,075원</span></p>
+							<p class="p-1 clr"><span class="pull-left s-purple">이벤트</span><span class="pull-right s-1"><span class="s-purple">0</span>원</span></p>
+							<p class="p-1 clr"><span class="pull-left s-gray">투자액</span><span class="pull-right s-1">0원</span></p>
 							<hr class="sun clr">
-                            <p class="p-1 total clr"><span class="pull-left s-gray">총 예치금</span><span class="pull-right s-1"><span class="s-blue">30,001</span>원</span></p>
-                            <p class="mdw-p2"><a href="../mydeposit/index.html" class="btn fc-white bg-blue br4">출금 하기</a></p>
-                        </div>
+							<p class="p-1 total clr"><span class="pull-left s-gray">합계</span><span class="pull-right s-1"><span class="s-blue">10,075</span>원</span></p>
+							<p class="mdw-p2"><a href="/mydeposit/" class="btn fc-white bg-blue br4">출금 하기</a></p>
+							<!-- <input type="button" value="90일 선인증 테스트" onclick="javascript: window.open('./auto/autopay.php', 'autopay', 'width=500, height=500');">
+							<input type="button" value="선인증 취소 테스트" onclick="javascript: window.open('./auto/auth_cancel.php', 'autopay');"> -->
+						</div>
                         <!--<div class="md-bank">
                             <p class="mdb-p1">mykasya@naver.com</p>
                             <p class="mdb-p2">국민은행 55284 16238510</p>
@@ -220,7 +235,19 @@
 						
                     </div>
 
-                   <!-- 180703 텍스트 수정 -->
+                    <!-- 180703 텍스트 수정 -->
+                    <div class="md-wrapper com-box row br3 miri-autoinv">
+                        <div class="row-txt top">
+                            <h3><span class="c-blue">선정산(미리페이) 자동 투자하기</span> <span class="ic-new">NEW</span></h3>
+                        </div>
+                        <div class="row-txt middle">
+                            누리펀딩에서 선정산(미리페이)에 <span class="c-blue">신규 미리페이 상품이 나올때 마다 '상품별 투자금액'으로 정하신 금액이 자동으로 투자되는 기능</span>입니다.  (투자 회원님의 보호를 위해 최초 동의 이후 90일까지 가능하며, 연장 희망 시에는 다시 인증을 진행해 주셔야 합니다.)
+                        </div>
+                        <div class="row row-txt bottom">
+                            남은 설정기간 [<span class="c-red">20일</span>] <div class="btn exten">연장하기</div>
+                            상품별 투자금액 <span class="prc"><input type="text" class="nr-text" value="100"> 만원</span> <div class="btn termi">해지하기</div>
+                        </div>
+                    </div>
                     <div class="row md-wrapper">
                         <div class="revenue com-box row br3">
                             <h3>예상평균 수익률<span class="fc-blue">0 %</span></h3>
@@ -242,7 +269,7 @@
                         </div>
                     </div>
 
-                    <div class="portfolio com-box row br3">
+                    <div class="md-wrapper com-box row br3 portfolio">
                         <h3>나의 포트폴리오</h3>
                         <div class="pf-tab-box" id="pf-tab-box">
                             <a href="" class="btn br4 on">상품</a>

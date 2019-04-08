@@ -35,36 +35,41 @@
 	.mod-p2 .save-btn {margin-left: 6px; border: 1px solid #398fe1;}
 
 	.myi-dep {width: 270px; height: 630px; float: left;}
-	.myi-dep h2 {}
-	.myi-dep h2 .user-btn {position: relative; float: right;}
-	.myi-dep h2 .user-btn img {width: 18px;}
-	.myi-dep h3 {margin-top:20px; font-size: 20px;}
-	.myi-dep h3 a {font-size: 15px; float: right; font-weight: 300;}
-	.md-bank {margin-top: 25px;}
-	.mdb-p1, .mdb-p2 {letter-spacing: 0;}
-	.mdb-p1 {font-size: 14px; font-weight: 300; color: #666; word-break: keep-all; line-height: 1.1;}
-	.mdb-p2 {font-size: 14px; font-weight: 300;margin-top: 10px;}
-	/*.md-with {margin-top: 35px; padding-top: 25px; padding-bottom: 10px; position: relative; border-top: 1px solid #ddd;}*/
-	    .md-with {margin-top: 12px; padding-top: 12px; padding-bottom: 10px; position: relative; border-top: 1px solid #ddd;}
-	.md-with h3 {margin-top:0}
-	.md-with .s-gray {color: #676767;}
-	.md-with .s-purple {color: #a544ff;}
-	.md-with .s-blue {color: #0e77d8;}
-	.md-with hr.sun {margin: 10px auto;}
-	.md-with h3 + .p-1 {margin-top: 18px;}
-	.md-with .p-1 {font-size: 16px; margin-top: 10px;}
-	.md-with .p-1 .pull-left {margin-top: 2px;}
-	.md-with .p-1 .s-1 {font-size: 20px;}
-	.md-with .p-1.total {margin-top: 0;}
-	.md-with .p-1.total .pull-left {margin-top: 4px;}
-	.md-with .p-1.total .s-1 {font-size: 26px;}
-	.md-with .p-1.total + .mdw-p2 {}
-	.mdw-p0 {text-align: center; font-size: 14px; font-weight: 300; margin-top: 45px; line-height: 1.5em; }
-	.mdw-p1 {text-align: right; margin-top: 90px; font-size: 26px; }
-	.mdw-p2 {margin-top: 15px; text-align: center;}
-	.mdw-p2 .btn {display: block; width: 100%; padding: 20px 0; font-size: 15px; letter-spacing: 0;}
-	.md-bank2 {}
-	.md-bank2 .mdb-p1 {margin-top: 30px;}
+    .myi-dep h2 {}
+    .myi-dep h2 .user-btn {position: relative; float: right;}
+    .myi-dep h2 .user-btn img {width: 18px;}
+    .myi-dep h3 {font-size: 20px;}
+    .myi-dep h3 a {font-size: 15px; float: right; font-weight: 300;}
+	.md-code {margin-top: 15px; font-size: 14px;}
+	.md-code .p-1 {line-height: 1.5;}
+	.md-code .btn-copy {margin-left: 10px;}
+	.md-code + hr.sun {margin: 15px 0;}
+    .md-bank {}
+    .mdb-p1, .mdb-p2 {letter-spacing: 0;}
+    .mdb-p1 {font-size: 14px; font-weight: 300; color: #666; word-break: keep-all; line-height: 1.1;}
+    .mdb-p2 {font-size: 14px; font-weight: 300;margin-top: 10px; line-height: 1.2;}
+    /*.md-with {margin-top: 35px; padding-top: 25px; padding-bottom: 10px; position: relative; border-top: 1px solid #ddd;}*/
+    .md-with {margin-top: 15px; padding-top: 15px; padding-bottom: 10px; position: relative; border-top: 1px solid #ddd;}
+    .md-with h3 {margin-top:0}
+    .md-with .s-gray {color: #676767;}
+    .md-with .s-purple {color: #a544ff;}
+    .md-with .s-blue {color: #0e77d8;}
+    .md-with hr.sun {margin: 10px auto;}
+    .md-with h3 + .p-1 {margin-top: 18px;}
+    .md-with .p-1 {font-size: 15px; margin-top: 10px;}
+    .md-with .p-1 .pull-left {margin-top: 2px;}
+    .md-with .p-1 .s-1 {font-size: 16px;}
+    .md-with .p-1.total {margin-top: 0;}
+    .md-with .p-1.total .pull-left {margin-top: 4px;}
+    .md-with .p-1.total .s-1 {font-size: 18px;}
+    .md-with .p-1.total + .mdw-p2 {}
+    .mdw-p0 {text-align: center; font-size: 14px; font-weight: 300; margin-top: 20px; line-height: 1.5em; }
+    .mdw-p1 {text-align: right; margin-top: 90px; font-size: 26px; }
+    .mdw-p2 {margin-top: 15px; text-align: center;}
+    .mdw-p2 .btn {display: block; width: 100%; padding: 15px 0; font-size: 15px; letter-spacing: 0;}
+    .md-bank2 {}
+    .md-bank2 .mdb-p1 {margin-top: 30px;}
+    .md-bank2 .mdb-p2 {font-size:15px}
 
 	.md-wrapper {width: 740px; /* height: 241px; */ float: left; margin-left: 14px;}
 
@@ -119,9 +124,15 @@
     .recState .rec-list .th {}
     .recState .rec-list .thead .th {border-top:1px solid #ccc; background:#f4f4f4}
     .recState .rec-list .td {}
-    .recState .rec-list .tbody .td {background:#fff}
-    .recState .rec-list .tbody .td {padding-left:10px; padding-right:10px; text-align:center; background:#fff}
+    .recState .rec-list .tbody .td {padding-left:10px; padding-right:10px; text-align:center; background:#fff; min-height: 37px;}
     .recState .add-exp {margin-top: 20px;}
+	.recState .btn-more {display: block; width: 100%; text-align: center; padding: 15px 0; font-size: 15px; letter-spacing: 0; margin-top: 20px;}
+
+	.recState.evtSavState {min-height: 500px;}
+	.recState.evtSavState h3 {}
+	.recState.evtSavState h3 .code {font-size: 18px; vertical-align: middle;}
+	.recState.evtSavState h3 .btn-copy {margin-left: 5px;}
+	.recState.evtSavState h3 .nowReward {font-size: 18px;}
 	
 	.bond-pdt {}
 	.bond-pdt h3 {}

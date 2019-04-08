@@ -564,7 +564,7 @@ border-left: 1px solid #fff;}
 .estate .cont-comments .post .d-1 .date {margin-left: 20px;}
 .estate .cont-comments .post .d-1 .dot-l {position: relative; margin: 0 8px; display: inline-block; font-size: 14px; width: 1px; height: 10px; background: #d0d0d0; vertical-align: middle; top: -2px;}
 .estate .cont-comments .post .d-1 .btn-del {position: relative; cursor: pointer;}
-.estate .cont-comments .post .d-1 .btn-del .a-i-x {top: -3px; right: -22px;}
+.estate .cont-comments .post .d-1 .btn-del .a-i-x {top: -1px; right: -22px;}
 .estate .cont-comments .post .d-1 .btn-del .a-i-x:before,
 .estate .cont-comments .post .d-1 .btn-del .a-i-x:after {left: 2px; width: 14px; background: #af2f23;}
 .estate .cont-comments .post .d-2 {margin-top: 10px;}
