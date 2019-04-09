@@ -63,6 +63,9 @@ input[type="password"] {font-family: sans-serif;}
 .fc-red2 {color: #e22424;}
 .fg-blue3 {color: #0066ff !important;}
 .bg-red2 {color: #ff3600 !important;}
+.c-green {color: #008b03 !important;}
+
+.ic-new {position: relative; top: -2px;	display: inline-block; vertical-align: middle; font-size: 12px; height: 21px; line-height: 20px; padding: 0 7px; font-weight: 700; background: #ff7600; color: #fff;}
 
 /*폰트 굵기*/
 .f-bd {font-weight: 600;}
@@ -137,6 +140,15 @@ hr {border: none; border-top: 1px solid #ddd;}
 @media (max-width: 767px){
     
     .hidden-xs, .show-md {display:none;}
+
+    .form-base {
+    	appearance: none; -webkit-appearance: none;  -moz-appearance: none;  -ms-appearance: none; 
+    	position: relative; display: inline-block; vertical-align: middle; background: #fff; height: 26px; padding: 0 5px; padding-bottom: 2px; width: 50px; box-sizing: border-box; font-size: 13px; border: 1px solid #ddd;
+    }
+    .form-input {}
+    .form-select {}
+    .btn-base {position: relative; display: inline-block; vertical-align: middle; color: #fff; background: #398fe1; height: 26px; padding: 0 5px; border-radius: 3px; line-height: 26px; font-size: 13px;}
+    .btn-base.btn-blue {background: #398fe1;}
     
     .wrap {padding-top: 46px;}
     .header, .mlnb-wrap {z-index: 11;}
@@ -276,6 +288,15 @@ hr {border: none; border-top: 1px solid #ddd;}
 
     .hidden-md {display: none !important;}
     .show-md {display: block !important;}
+
+    .form-base {
+    	appearance: none; -webkit-appearance: none;  -moz-appearance: none;  -ms-appearance: none; 
+    	position: relative; display: inline-block; vertical-align: middle; background: #fff; height: 32px; padding: 0 5px; padding-bottom: 2px; width: 170px; box-sizing: border-box; font-size: 16px; border: 1px solid #ddd;
+    }
+    .form-input {}
+    .form-select {}
+    .btn-base {position: relative; display: inline-block; vertical-align: middle; color: #fff; background: #398fe1; height: 32px; padding: 0 5px; border-radius: 3px; line-height: 32px; font-size: 14px;}
+    .btn-base.btn-blue {background: #398fe1;}
 
     .wrap {padding-top: 90px;}
     .header, .sub-nav {z-index: 11;}
