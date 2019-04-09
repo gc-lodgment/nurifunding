@@ -707,7 +707,7 @@
 
 /*테블릿 영역, col-sm */
 @media (min-width: 768px) and (max-width: 991px) {
-	.show-sm {display:block !important};
+	.show-sm {display:block !important}
 
 	.com-pd {padding: 68px 10px 95px;}
 	.com-ft {text-align: center; font-size: 36px; font-family: "Nanum Gothic", sans-serif;}
