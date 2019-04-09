@@ -90,11 +90,18 @@ hr.sun {margin: 10px auto;}
 	.miri-autoinv .row-txt .form-base.prc {width: 60px; text-align: right; margin-left: 5px;}
 	.miri-autoinv .row-txt .btn-base.exten {}
 	.miri-autoinv .row-txt .btn-base.termi {}
+	.miri-autoinv .row-txt .form-check {}
+	.miri-autoinv .row-txt .dropdown.prc {width: 90px; margin-left: 5px;}
+	.miri-autoinv .row-txt .dropdown.prc .btn,
+	.miri-autoinv .row-txt .dropdown.prc .dropdown-menu li a {}
+	.miri-autoinv .row-txt .dropdown.prc .btn {}
+	.miri-autoinv .row-txt.bot .form-box {top: 4px;}
+	.miri-autoinv .row-txt .dropdown.prc {}
 	.miri-autoinv .row-txt.top h3 {font-size: 16px; font-weight: 700;}
 	.miri-autoinv .row-txt.mid {margin-top: 5px; font-size: 13px; letter-spacing: 0;}
 	.miri-autoinv .row-txt.bot {margin-top: 5px; font-size: 13px;}
 	.miri-autoinv .row-txt.bot .btn-base {margin-left: 10px; padding: 0px 10px;}
-	.miri-autoinv .row-txt.bot .pull-right {float: none !important; display: block; margin-top: 5px;	}
+	.miri-autoinv .row-txt.bot .by-prc {float: none !important; display: block; margin-top: 5px;}
 
 	.revenue {padding: 15px;}
 	.revenue h3 {}
@@ -341,6 +348,12 @@ hr.sun {margin: 10px auto;}
 	.miri-autoinv .row-txt .form-base.prc {width: 100px; text-align: right; margin-left: 10px;}
 	.miri-autoinv .row-txt .btn-base.exten {}
 	.miri-autoinv .row-txt .btn-base.termi {}
+	.miri-autoinv .row-txt .form-check {}
+	.miri-autoinv .row-txt .dropdown.prc {width: 150px; margin-left: 10px;}
+	.miri-autoinv .row-txt .dropdown.prc .btn,
+	.miri-autoinv .row-txt .dropdown.prc .dropdown-menu li a {font-size: 16px;}
+	.miri-autoinv .row-txt .dropdown.prc .btn {}
+	.miri-autoinv .row-txt.bot .form-box {top: 4px;}
 	.miri-autoinv .row-txt.top h3 {font-size: 20px;}
 	.miri-autoinv .row-txt.mid {margin-top: 10px; font-size: 14px; letter-spacing: 0;}
 	.miri-autoinv .row-txt.bot {margin-top: 10px; font-size: 16px;}
@@ -590,6 +603,12 @@ hr.sun {margin: 10px auto;}
 	.miri-autoinv .row-txt .form-base.prc {width: 100px; text-align: right; margin-left: 10px;}
 	.miri-autoinv .row-txt .btn-base.exten {}
 	.miri-autoinv .row-txt .btn-base.termi {}
+	.miri-autoinv .row-txt .form-check {}
+	.miri-autoinv .row-txt .dropdown.prc {width: 150px; margin-left: 10px;}
+	.miri-autoinv .row-txt .dropdown.prc .btn,
+	.miri-autoinv .row-txt .dropdown.prc .dropdown-menu li a {font-size: 16px;}
+	.miri-autoinv .row-txt .dropdown.prc .btn {}
+	.miri-autoinv .row-txt.bot .form-box {top: 4px;}
 	.miri-autoinv .row-txt.top h3 {font-size: 20px;}
 	.miri-autoinv .row-txt.mid {margin-top: 10px; font-size: 14px; letter-spacing: 0;}
 	.miri-autoinv .row-txt.bot {margin-top: 10px; font-size: 16px;}

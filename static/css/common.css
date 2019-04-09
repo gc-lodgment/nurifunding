@@ -6,6 +6,8 @@
 /* css 초기화 */
 @import url(https://nurifunding.co.kr/static/css/reset.css);
 @import url(https://nurifunding.co.kr/static/css/grid_1024.css);
+@import url(https://nurifunding.co.kr/static/css/include/pop.css);
+/*@import url(../../static/css/include/pop.css);*/
 /*@import url(../../src/css/grid_1024.css);*/
 /*@import url(https://nurifunding.co.kr/static/fonts/nanumgothic/nanumgothic.css);
 @import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
@@ -115,13 +117,6 @@ select.base-1 {
 }
 
 /* 공통속성 css */
-.dropdown {position: relative;}
-.dropdown .btn {position: relative; border: 1px solid #ddd; background: #fff; padding: 8px 20px; border-radius: 6px; text-align: left; outline: none;}
-.dropdown .btn span {position: relative; font-size: 10px; color: #398FE2;}
-.dropdown .dropdown-menu {display: none; position: absolute; border: 1px solid #ddd; background: #fff; border-radius: 6px; margin-top: -1px; z-index: 1;}
-.dropdown .dropdown-menu li a {display: block; padding: 5px 20px; line-height: 1.2em; font-size: 1em;}
-.dropdown .dropdown-menu li a:hover {color: #398fe2;}
-
 hr {border: none; border-top: 1px solid #ddd;}
 /*jquery컴포넌트 공통 속성*/
 
@@ -135,19 +130,36 @@ hr {border: none; border-top: 1px solid #ddd;}
 .row {position: relative;}
 .row:after {content: ""; display: block; clear: both;}
 
-
 /*모바일 영역*/
 @media (max-width: 767px){
     
     .hidden-xs, .show-md {display:none;}
 
+    .dropdown {position: relative; display: inline-block; vertical-align: middle; color: #333;}
+    .dropdown .btn {position: relative; border: 1px solid #ddd; background: #fff; color: #333; box-sizing: border-box; padding: 0px 10px; border-radius: 6px; text-align: left; outline: none; width: 100%; font-size: 13px; height: 29px; line-height: 26px;}
+	.dropdown .btn span {position: relative; font-size:10px; color: #398FE2;}
+	.dropdown .dropdown-menu {display: none; position: absolute; border: 1px solid #ddd; background: #fff; border-radius: 6px; margin-top: -1px; z-index: 1; width: 100%;}
+	.dropdown .dropdown-menu li a {display: block; padding: 5px 10px; line-height: 1.2em; font-size: 1em;}
+	.dropdown .dropdown-menu li a:hover {color: #398fe2;}
+
+	.form-box {position: relative;}
+	.form-box * {vertical-align: middle;}
+	.form-check,
+	.form-radio {
+		position: relative; appearance: none; -webkit-appearance: none;  -moz-appearance: none;  -ms-appearance: none; 
+		background: #fff; border: 1px solid #ddd; outline: none; cursor: pointer;
+	}
+	.form-check {width: 17px; height: 17px;}
+	.form-check:checked {background: #fff url(http://img.nurifunding.co.kr/check-icon.png) no-repeat 3px 2px; background-size: 10px;}
+	.form-radio {width: 17px; height: 17px; border-radius: 50%;}
+	.form-radio:checked {background: #fff url(https://nurifunding.co.kr/img/radio_icon.png) no-repeat -1px; background-size: 17px;}
     .form-base {
     	appearance: none; -webkit-appearance: none;  -moz-appearance: none;  -ms-appearance: none; 
-    	position: relative; display: inline-block; vertical-align: middle; background: #fff; height: 26px; padding: 0 5px; padding-bottom: 2px; width: 50px; box-sizing: border-box; font-size: 13px; border: 1px solid #ddd;
+    	position: relative; display: inline-block; vertical-align: middle; background: #fff; height: 29px; padding: 0 5px; padding-bottom: 2px; width: 50px; box-sizing: border-box; font-size: 13px; border: 1px solid #ddd;
     }
     .form-input {}
     .form-select {}
-    .btn-base {position: relative; display: inline-block; vertical-align: middle; color: #fff; background: #398fe1; height: 26px; padding: 0 5px; border-radius: 3px; line-height: 26px; font-size: 13px;}
+    .btn-base {position: relative; display: inline-block; vertical-align: middle; box-sizing: border-box; color: #fff; background: #398fe1; height: 26px; padding: 0 5px; border-radius: 3px; line-height: 26px; font-size: 13px;}
     .btn-base.btn-blue {background: #398fe1;}
     
     .wrap {padding-top: 46px;}
@@ -289,13 +301,31 @@ hr {border: none; border-top: 1px solid #ddd;}
     .hidden-md {display: none !important;}
     .show-md {display: block !important;}
 
+	.dropdown {position: relative; display: inline-block; vertical-align: middle; color: #333;}
+	.dropdown .btn {position: relative; border: 1px solid #ddd; background: #fff; color: #333; box-sizing: border-box; padding: 0px 10px; border-radius: 6px; text-align: left; outline: none; width: 100%; font-size: 16px; height: 36px; line-height: 29px;}
+	.dropdown .btn span {position: relative; font-size: 10px; color: #398FE2;}
+	.dropdown .dropdown-menu {display: none; position: absolute; border: 1px solid #ddd; background: #fff; border-radius: 6px; margin-top: -1px; z-index: 1; width: 100%;}
+	.dropdown .dropdown-menu li a {display: block; padding: 5px 10px; line-height: 1.2em; font-size: 1em;}
+	.dropdown .dropdown-menu li a:hover {color: #398fe2;}
     .form-base {
     	appearance: none; -webkit-appearance: none;  -moz-appearance: none;  -ms-appearance: none; 
-    	position: relative; display: inline-block; vertical-align: middle; background: #fff; height: 32px; padding: 0 5px; padding-bottom: 2px; width: 170px; box-sizing: border-box; font-size: 16px; border: 1px solid #ddd;
+    	position: relative; display: inline-block; vertical-align: middle; background: #fff; height: 36px; padding: 0 5px; padding-bottom: 2px; width: 170px; box-sizing: border-box; font-size: 16px; border: 1px solid #ddd;
     }
+
+    .form-box {position: relative;}
+	.form-box * {vertical-align: middle;}
+	.form-check,
+	.form-radio {
+		position: relative; appearance: none; -webkit-appearance: none;  -moz-appearance: none;  -ms-appearance: none; 
+		background: #fff; border: 1px solid #ddd; outline: none; cursor: pointer;
+	}
+	.form-check {width: 20px; height: 20px;}
+	.form-check:checked {background: #fff url(http://img.nurifunding.co.kr/check-icon.png) no-repeat 3px 3px; background-size: 12px;}
+	.form-radio {width: 20px; height: 20px; border-radius: 50%;}
+	.form-radio:checked {background: #fff url(https://nurifunding.co.kr/img/radio_icon.png) no-repeat -1px; background-size: 20px;}
     .form-input {}
     .form-select {}
-    .btn-base {position: relative; display: inline-block; vertical-align: middle; color: #fff; background: #398fe1; height: 32px; padding: 0 5px; border-radius: 3px; line-height: 32px; font-size: 14px;}
+    .btn-base {position: relative; display: inline-block; vertical-align: middle; box-sizing: border-box; color: #fff; background: #398fe1; height: 36px; padding: 0 5px; border-radius: 3px; line-height: 36px; font-size: 14px;}
     .btn-base.btn-blue {background: #398fe1;}
 
     .wrap {padding-top: 90px;}

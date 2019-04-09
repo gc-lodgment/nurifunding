@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/common.css"> -->
-    <!-- <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/myinvest/myinvest.css"> -->
+    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/common.css">
+    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/myinvest/myinvest.css">
 	
 
-    <link rel="stylesheet" href="../../static/css/common.css">
- 	<link rel="stylesheet" href="../../static/css/myinvest/myinvest.css">
+    <!-- <link rel="stylesheet" href="../../static/css/common.css"> -->
+ 	<!-- <link rel="stylesheet" href="../../static/css/myinvest/myinvest.css"> -->
 
 
     <script type="text/javascript" src="http://static.nurifunding.co.kr/js/jquery-1.10.2.min.js"></script>
@@ -38,6 +38,17 @@
 <body>
     <h1 class="skip">누리펀딩</h1>
     <div class="wrap">
+        <!-- 190409 -->
+        <div class="pop-container fixed autoinv" style="display: block;" onmousewheel="return false">
+            <div class="bg-back"></div>
+
+            <div class="pop-wrapper">
+                <a href="javascript:;" onclick="$(this).closest('.pop-container').hide()">
+                    <img src="http://nurifunding.co.kr/img/invest/autoinv_m_certi.jpg" alt="자동투자관련휴대폰인증안내" class="img-pop">
+                </a>
+            </div>
+        </div>
+
         <!-- 일반 해더 -->
         <header class="header" id="header">
             <div class="container header-box">
@@ -243,11 +254,29 @@
                         <div class="row-txt mid">
                             누리펀딩에서 선정산(미리페이)에 <span class="c-blue">신규 미리페이 상품이 나올때 마다 '상품별 투자금액'으로 정하신 금액이 자동으로 투자되는 기능</span>입니다.  (투자 회원님의 보호를 위해 최초 동의 이후 90일까지 가능하며, 연장 희망 시에는 다시 인증을 진행해 주셔야 합니다.)
                         </div>
-                        <!-- 남은 설정기간 30~90일: c-green, 1~29일: c-red -->
+                        <!-- 인증 전 화면 -->
                         <div class="row-txt bot">
-                            남은 설정기간 [<span class="c-red">90일</span>] <div class="btn-base exten">연장하기</div>
-                            <span class="pull-right">상품별 투자금액 <span class="prc"><input type="text" class="form-base br4 prc" value="100"> 만원</span> <div class="btn-base termi">해지하기</div></span>
+                            <label class="form-box"><input type="checkbox" id=""name="" class="form-check"> <span class="lbl">자동투자에 동의함</span></label>
+                            <div class="pull-right by-prc">
+                                <span class="txt">상품별 투자금액</span>
+                                <div class="dropdown prc">
+                                    <button type="button" class="btn">금액선택<span class="pull-right">▼</span></button>
+                                    <ul class="dropdown-menu" style="display: none;">
+                                        <li><a href="#">5만원</a></li>
+                                        <li><a href="#">10만원</a></li>
+                                        <li><a href="#">15만원</a></li>
+                                        <li><a href="#">20만원</a></li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="btn-base termi">설정하기</button>
+                            </div>
                         </div>
+                        <!-- 인증 후 화면 -->
+                        <!-- 남은 설정기간 30~90일: c-green, 1~29일: c-red -->
+                        <!-- <div class="row-txt bot">
+                            남은 설정기간 [<span class="c-red">90일</span>] <button type="button" class="btn-base exten">연장하기</button>
+                            <span class="pull-right by-prc">상품별 투자금액 <span class="prc"><input type="text" class="form-base br4 prc" value="100"> 만원</span> <button type="button" class="btn-base termi">해지하기</button></span>
+                        </div> -->
                     </div>
                     
                     <div class="row md-wrapper">

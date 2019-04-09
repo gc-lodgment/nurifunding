@@ -10,19 +10,19 @@
 	<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	
-<!--
+
 	<link rel="stylesheet" href="https://nurifunding.co.kr/static/css/common.css">
 	<link rel="stylesheet" href="https://nurifunding.co.kr/static/css/invest/invest2.css">
--->
 
-	<link rel="stylesheet" href="../../static/css/common.css">
-	<link rel="stylesheet" href="../../static/css/invest/invest2.css">
+
+	<!-- <link rel="stylesheet" href="../../static/css/common.css"> -->
+	<!-- <link rel="stylesheet" href="../../static/css/invest/invest2.css"> -->
 
 	<script type="text/javascript" src="https://nurifunding.co.kr/static/js/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript" src="https://nurifunding.co.kr/static/js/Chart.bundle.min.js"></script>
 	<script type="text/javascript" src="https://nurifunding.co.kr/static/js/common.js"></script>
-<!--		<script type="text/javascript" src="https://nurifunding.co.kr/static/js/invest/invest.js"></script>-->
-	<script type="text/javascript" src="../../static/js/invest/invest.js"></script>
+	<script type="text/javascript" src="https://nurifunding.co.kr/static/js/invest/invest.js"></script>
+	<!-- <script type="text/javascript" src="../../static/js/invest/invest.js"></script> -->
 
 	<!--[if lt IE 9]>
 	<link rel="stylesheet" href="https://nurifunding.co.kr/static/css/grid_ie9lt.min.css">
@@ -161,16 +161,55 @@
 
 					<div class="prps-d-2 br4">
 						<ul class="prps-d2-ul">
-							<li class="prps-d2-li2 clearfix">
+							<li class="prps-d2-li1 clearfix">
+								<p class="pull-left">나의 예치금 계좌</p>
+								<p class="pull-right">10,075원</p>
+							</li>
+							<li class="prps-d2-li1 clearfix">
 								<p class="pull-left">투자금</p>
 								<p class="pull-right">
 									<span class="fc-blue">
-						<input type="text" name="use_cash" value="" style="text-align:right; padding:5px; padding-right:10px; width:80px; font-size:15px;" onkeyup="javascript: checktype('number', 'use_cash')">
-					</span> 만원
+										<input type="text" name="use_cash" value="" class="input-type" onkeyup="javascript: checktype('number', 'use_cash')">
+									</span> 만원
 								</p>
 								<input type="hidden" name="price_0" value="">
 							</li>
+							<!-- 190409 -->
+							<li class="prps-d2-li2 clearfix">
+								<div class="miri-autoinv">
+			                        <div class="row-txt top">
+			                            <h3><span class="c-blue">선정산(미리페이) 자동 투자하기</span> <span class="ic-new">NEW</span></h3>
+			                        </div>
+			                        <div class="row-txt mid">
+			                            누리펀딩에서 선정산(미리페이)에 <span class="c-blue">신규 미리페이 상품이 나올때 마다 '상품별 투자금액'으로 정하신 금액이 자동으로 투자되는 기능</span>입니다.  (투자 회원님의 보호를 위해 최초 동의 이후 90일까지 가능하며, 연장 희망 시에는 다시 인증을 진행해 주셔야 합니다.)
+			                        </div>
+			                        <!-- 인증 전 화면 -->
+			                        <div class="row-txt bot">
+			                            <label class="form-box"><input type="checkbox" id=""name="" class="form-check"> <span class="lbl">자동투자에 동의함</span></label>
+			                            <div class="pull-right by-prc">
+			                            	<span class="txt">상품별 투자금액</span>
+				                            <div class="dropdown prc">
+						                        <button type="button" class="btn">금액선택<span class="pull-right">▼</span></button>
+						                        <ul class="dropdown-menu" style="display: none;">
+						                            <li><a href="#">5만원</a></li>
+						                            <li><a href="#">10만원</a></li>
+						                            <li><a href="#">15만원</a></li>
+						                            <li><a href="#">20만원</a></li>
+						                        </ul>
+						                    </div>
+						                    <button type="button" class="btn-base termi">설정하기</button>
+			                            </div>
+			                        </div>
+			                        <!-- 인증 후 화면 -->
+			                        <!-- 남은 설정기간 30~90일: c-green, 1~29일: c-red -->
+			                        <!-- <div class="row-txt bot">
+			                            남은 설정기간 [<span class="c-red">90일</span>] <button type="button" class="btn-base exten">연장하기</button>
+			                            <span class="pull-right by-prc">상품별 투자금액 <span class="prc"><input type="text" class="form-base br4 prc" value="100"> 만원</span> <button type="button" class="btn-base termi">해지하기</button></span>
+			                        </div> -->
+			                    </div>	
+							</li>
 						</ul>
+	                    
 						<!--p class="prps-d2-p1">
 			              예치금 계좌를 발급 받아야 투자에 참여할 수 있습니다.<a href="/member/member_info.php" class="btn fc-white">발급받기 <span>&gt;</span></a>
 			            </p-->
