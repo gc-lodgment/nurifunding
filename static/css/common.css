@@ -67,7 +67,8 @@ input[type="password"] {font-family: sans-serif;}
 .bg-red2 {color: #ff3600 !important;}
 .c-green {color: #008b03 !important;}
 
-.ic-new {position: relative; top: -2px;	display: inline-block; vertical-align: middle; font-size: 12px; height: 21px; line-height: 20px; padding: 0 7px; font-weight: 700; background: #ff7600; color: #fff;}
+.ic-new {position: relative; top: -2px;	display: inline-block; vertical-align: middle; font-size: 10px; height: 16px; line-height: 16px; padding: 0 3px; font-weight: 700; background: #ff7600; color: #fff; letter-spacing: 0;}
+.ic-new.big {top: -1px; font-size: 12px; height: 21px; line-height: 20px; padding: 0 7px;}
 
 /*폰트 굵기*/
 .f-bd {font-weight: 600;}
@@ -187,7 +188,7 @@ hr {border: none; border-top: 1px solid #ddd;}
     .mlnb-header .cls-btn {position: relative; top: 0px; right: 15px; float: right;}
     .mlnb-header .cls-btn img {width: 26px;}
 
-    .t-box {margin-top: 30px; color: #fff; font-size: 14px; line-height: 1.5em;}
+    .t-box {margin-top: 10px; color: #fff; font-size: 14px; line-height: 1.5em;}
     .t-box p, .t-box a {letter-spacing: 0;}
     .t-box p.nth-3 {margin-top: 5px;}
     .t-box a {display: inline-block;color: #fff;/* width: 80px; */padding: 2px 4px;text-align: center;border: 1px solid #fff;font-size: 13px;}
@@ -199,8 +200,9 @@ hr {border: none; border-top: 1px solid #ddd;}
     .mlnb > li > a > img {position: absolute; width: 9px;  right: 20px; top: 16px;}
     .mlnb > li:hover .m-sub-nav {display: block;}
 
-    .m-sub-nav {display: none; position: relative; width: 100%; border-top: 1px solid #ddd; background: #fff; padding: 15px 0;}
-    .m-sub-nav a {width: 242px; display: block; margin: 0 auto; font-size: 15px; padding: 10px 0; border-bottom: 1px dotted #e0e0e0;}
+    .m-sub-nav {display: none; position: relative; width: 100%; border-top: 1px solid #ddd;}
+    .m-sub-nav a {display: block;margin: 0 auto;font-size: 15px; padding: 10px 0 10px 30px; background: #e7e7e7; border-top: 1px solid #fff;}
+    .m-sub-nav li:first-child a {border-top: none;}
     .m-sub-nav a:hover, .sub-nav a:active {color: #398fe1;}
 
     .footer {padding: 40px 0; background: #282828; margin-top: 0;}
@@ -328,7 +330,7 @@ hr {border: none; border-top: 1px solid #ddd;}
     .btn-base {position: relative; display: inline-block; vertical-align: middle; box-sizing: border-box; color: #fff; background: #398fe1; height: 36px; padding: 0 5px; border-radius: 3px; line-height: 36px; font-size: 14px;}
     .btn-base.btn-blue {background: #398fe1;}
 
-    .wrap {padding-top: 90px;}
+    .wrap {padding-top: 85px;}
     .header, .sub-nav {z-index: 11;}
     .header {position: fixed; width: 100%; left: 0; top: 0; background: #fff; border-bottom: 1px solid #ddd; height: 85px;}
     .header-box {position: relative; top: 35px;}
