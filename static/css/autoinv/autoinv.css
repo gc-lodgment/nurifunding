@@ -9,7 +9,7 @@
 	.sec .sec-top .sec-tit {font-size: 17px; line-height: 1.2; letter-spacing: -1px;}
 	.sec .sec-mid {font-size: 12px;}
 	.sec .sec-mid .row-txt {line-height: 1.5; margin-top: 10px; letter-spacing: -0.5px;}
-	.sec .sec-mid .row-btn .cmt {}
+	.sec .sec-mid .row-btn .cmt {line-height: 1.5;}
 	.sec.intro .sec-mid .row-box.type-01 {border: 1px solid #dbdbdb; background: #f9f9f9; padding: 10px 30px; margin-top: 15px; line-height: 1.5; font-size: 13px;}
 	.sec.intro .sec-mid .row-box.type-01 .dropdown.prc {top: -2px; width: 85px; margin-left: 5px;}
 	.sec.intro .sec-mid .row-box.type-01 span.sun {display: block; width: 100%; height: 1px; margin: 5px 0; background: #dbdbdb;}
@@ -39,7 +39,7 @@
     .sec .sec-mid {font-size: 18px;}
     .sec .sec-mid .row-txt {line-height: 1.5; margin-top: 20px; letter-spacing: -0.5px;}
     .sec .sec-mid .row-txt.small {font-size: 16px;}
-    .sec .sec-mid .row-btn .cmt {font-size: 16px;}
+    .sec .sec-mid .row-btn .cmt {font-size: 16px; line-height: 1.5;}
 	.sec.intro .sec-mid .row-box.type-01 {border: 1px solid #dbdbdb; background: #f9f9f9; padding: 30px 50px; margin-top: 30px;}
 	.sec.intro .sec-mid .row-box.type-01 .dropdown.prc {width: 120px; margin-left: 10px;}
 	.sec.intro .sec-mid .row-box.type-01 .form-box {margin-left: 30px;}
