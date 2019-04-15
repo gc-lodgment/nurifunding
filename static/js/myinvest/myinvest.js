@@ -24,9 +24,23 @@ $(function() {
   //나의 포트폴리오
   $("#pf-tab-box a").on("click", function() {
     var thIdx = $(this).index();
+	
+    $("#pf-tab-box").find("a").removeClass("on");
+    $("#pf-tab-box").find("a").eq(thIdx).addClass("on");
+
     $("#pf-tab-box").next().find("li").removeClass("on");
     $("#pf-tab-box").next().find("li").eq(thIdx).addClass("on");
     return false;
   });
 
+  //거래내용보기
+  $('.btn-mp.btn-view').on('click', function(){
+    if( $(this).siblings('.tab-cont-box').css('display') == 'none' ){
+        $('.btn-mp.btn-view span').text('닫기');
+    }else{
+        $('.btn-mp.btn-view span').text('보기');
+    }
+    
+    $(this).siblings('.tab-cont-box').slideToggle();
+  });
 });

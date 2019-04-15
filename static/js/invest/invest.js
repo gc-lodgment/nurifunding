@@ -1,24 +1,42 @@
 $(function() {
 	// 투자하기 버튼
 	fixedInvest("#rBn-box-m");
-	
+
+	// 동의하기 레이어팝업
+	popCenter();		
+
 	//상품구분
 	//예상 이자
 	//투자신청서 금액 일괄 적용
 	//투자신청서 금액 적용
 
 	$(".dropdown").each(function(idx, item) {
-	$(item).find(".dropdown-menu li a").on("click", function() {
-	  var thTxt = $(this).text();
-	  var thHtml = thTxt + "<span class='pull-right'>▼</span>";
-	  $(this).closest(".dropdown").find(".btn").html(thHtml);
-	  $(this).closest(".dropdown").find(".dropdown-menu").slideToggle("fast");
-	  event.preventDefault();
-	});
+		$(item).find(".dropdown-menu li a").on("click", function() {
+			var thTxt = $(this).text();
+			var thHtml = thTxt + "<span class='pull-right'>▼</span>";
+			$(this).closest(".dropdown").find(".btn").html(thHtml);
+			$(this).closest(".dropdown").find(".dropdown-menu").slideToggle("fast");
+			event.preventDefault();
+		});
 	});
 
-	// 동의하기 레이어팝업
-	popCenter();		
+	//180718 월별 수익금 지급 예정표
+	$('.exp-calc-area .btn-table').on('click', function(){
+		//alert('aa');
+		var pdBot = Number(($('.exp-calc-area .calc-list-box').css('padding-bottom')).slice(0, -2));
+		var headerHeight = ($('.header').height())+pdBot; 
+		var offset = ($(this).offset().top)-headerHeight;
+
+		if( $(this).hasClass('on') ){
+			$(this).removeClass('on').find('.exp-txt').text('열기').end().parents().find('.exp-list-box').slideUp();
+		}else{
+			//없을경우
+			$(this).addClass('on').find('.exp-txt').text('닫기').end().parents().find('.exp-list-box').slideDown();
+
+			$('html, body').animate({scrollTop : offset}, 500);
+		}
+	});
+    
 });
 
 function popCenter () {
