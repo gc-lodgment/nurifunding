@@ -7,7 +7,7 @@
 @import url(https://nurifunding.co.kr/static/css/reset.css);
 @import url(https://nurifunding.co.kr/static/css/grid_1024.css);
 @import url(https://nurifunding.co.kr/static/css/include/pop.css);
-/*@import url(../../static/css/include/pop.css);*/
+/* @import url(../../static/css/include/pop.css); */
 /*@import url(../../src/css/grid_1024.css);*/
 /*@import url(https://nurifunding.co.kr/static/fonts/nanumgothic/nanumgothic.css);
 @import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
@@ -54,6 +54,9 @@ input[type="password"] {font-family: sans-serif;}
 .bg-gray {background: #aeaeae;}
 .bg-gray2 {background: #b4b4b4;}
 .bg-red {background: #f45454;}
+.bg-red2 {color: #ff3600 !important;}
+.bg-org {background: #ff5400 !important;}
+
 .c-gray, .fc-gray {color: #ccc;}
 .c-blue, .fc-blue {color: #398fe1; /* color: #126cc3; */}
 .fc-lightblue {color:#1072d1}
@@ -61,10 +64,10 @@ input[type="password"] {font-family: sans-serif;}
 .fc-blue3 {color:#0468c8}
 .c-white, .fc-white {color: #fff;}
 .c-orange, .fc-orange {color: #ff9a16;}
+.c-org {color: #ff5400;}
 .c-red, .fc-red {color: #ee1c1c;}
 .fc-red2 {color: #e22424;}
 .fg-blue3 {color: #0066ff !important;}
-.bg-red2 {color: #ff3600 !important;}
 .c-green {color: #008b03 !important;}
 
 .ic-new {position: relative; top: -2px;	display: inline-block; vertical-align: middle; font-size: 10px; height: 16px; line-height: 16px; padding: 0 3px; font-weight: 700; background: #ff7600; color: #fff; letter-spacing: 0; font-family: "Nanum Gothic", sans-serif;}
