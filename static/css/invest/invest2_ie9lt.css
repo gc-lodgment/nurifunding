@@ -294,6 +294,15 @@ li[class*="prps-d2-li"] .input-type {text-align:right;padding:5px;padding-right:
 .prps-d2-p1 .btn {display: inline-block; padding: 5px 10px; border: 1px solid #6c6c6c; background: #aaa; margin-left: 13px; font-family: "Nanum Gothic", sans-serif; font-size: 12px; position: relative; top: -2px;}
 .prps-d2-p1 .btn span {margin-left: 5px; position: relative; font-size: 10px; top: -1px;}
 
+/*미리페이 자동 투자*/
+.miri-autoinv {border: 1px solid #398fe1; background: #f3faff; padding: 20px; margin-top: 25px; border-radius: 4px;}
+.miri-autoinv .row-txt.top h3 {font-size: 20px;}
+.miri-autoinv .row-txt {position: relative; line-height: 1.5; word-break: keep-all; font-size: 17px;}
+.miri-autoinv .row-txt.mid {margin-top: 5px;}
+.miri-autoinv .row-txt .setup {position: absolute; bottom: 0; right: 0; text-align: right;}
+.miri-autoinv .row-txt .setup .btn-base.termi {margin-top: 5px; font-size: 17px; padding: 0px 15px;}
+.miri-autoinv .row-txt.mid.after {margin-top: 10px;}
+
 .prps-ps {font-size: 15px; margin-top: 5px;}
 .prps-h3 {margin-top: 20px; font-size: 17px;}
 

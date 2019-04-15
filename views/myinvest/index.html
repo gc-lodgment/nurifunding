@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/common.css">
-    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/myinvest/myinvest.css"> -->
+    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/myinvest/myinvest_190412.css"> -->
 	
     <link rel="stylesheet" href="../../static/css/common.css">
- 	<link rel="stylesheet" href="../../static/css/myinvest/myinvest2.css">
+ 	<link rel="stylesheet" href="../../static/css/myinvest/myinvest_190412.css">
 
     <script type="text/javascript" src="http://static.nurifunding.co.kr/js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="http://static.nurifunding.co.kr/js/Chart.bundle.min.js"></script>
@@ -36,13 +36,13 @@
 <body>
     <h1 class="skip">누리펀딩</h1>
     <div class="wrap">
-        <!-- 190409 -->
-        <div class="pop-container fixed autoinv" style="" onmousewheel="return false">
+        <!-- 190412 -->
+        <div class="pop-container fixed autoinv" style="display: block" onmousewheel="return false">
             <div class="bg-back"></div>
 
             <div class="pop-wrapper">
                 <a href="javascript:;" onclick="$(this).closest('.pop-container').hide()">
-                    <img src="http://nurifunding.co.kr/img/invest/autoinv_m_certi.jpg" alt="자동투자관련휴대폰인증안내" class="img-pop">
+                    <img src="http://nurifunding.co.kr/img/invest/autoinv_certi.png" alt="자동투자관련휴대폰인증안내" class="img-pop">
                 </a>
             </div>
         </div>
@@ -247,21 +247,24 @@
                     <!-- 190412 -->
                     <div class="md-wrapper com-box row br3 miri-autoinv">
                         <div class="row-txt top">
-                            <h3><span class="c-blue">선정산(미리페이) 자동 투자하기</span> <span class="ic-new">NEW</span></h3>
+                            <h3><span class="c-blue">선정산(미리페이)<span class="hidden-xs">상품</span> 자동 투자기능!</span> <span class="ic-new">NEW</span></h3>
                         </div>
                         <!-- 인증 전 화면 -->
-                        <div class="row-txt bot">
+                        <div class="row-txt mid before">
                             시간에 구애받지 않는 너무 편리한 자동투자!<br/>
-                            기능 설명을 확인하신 후 자동 투자 기능을 설정하시겠습니까?
-                            <div class="pull-right by-prc">
-                                <button type="button" class="btn-base termi">설정하기</button>
+                            기능 설명을 확인<span class="hidden-xs">하신</span> 후 자동 투자 기능을 설정하시겠습니까?
+                            <div class="setup">
+                                <p class="c-org">※ 현재 자동 투자 미사용 중</p>
+                                <a href="" class="btn-base termi">기능설명 확인 후 설정하기</a>
                             </div>
                         </div>
                         <!-- 인증 후 화면 -->
-                        <!-- 남은 설정기간 30~90일: c-green, 1~29일: c-red -->
-                        <!-- <div class="row-txt bot">
-                            남은 설정기간 [<span class="c-red">90일</span>] <button type="button" class="btn-base exten">연장하기</button>
-                            <span class="pull-right by-prc">상품별 투자금액 <span class="prc"><input type="text" class="form-base br4 prc" value="100"> 만원</span> <button type="button" class="btn-base termi">해지하기</button></span>
+                        <!-- <div class="row-txt mid after">
+                            <span class="c-blue">100만원 자동 투자 중</span><br class="show-xs"/><span class="hidden-xs">/</span> 잔여기한 [<span class="c-red">20일</span>] 종료일 [<span class="c-red">2019.04.30</span>]
+                            <div class="setup">
+                                <p class="c-green">※ 현재 자동 투자 미사용 중</p>
+                                <a href="" class="btn-base termi bg-org">기간연장 또는 해지하기</a>
+                            </div>
                         </div> -->
                     </div>
                     

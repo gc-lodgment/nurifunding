@@ -34,7 +34,7 @@
 	.mod-p2 .cancle-btn {border: 1px solid #ccc;}
 	.mod-p2 .save-btn {margin-left: 6px; border: 1px solid #398fe1;}
 
-	.myi-dep {width: 270px; height: 714px; float: left;}
+	.myi-dep {width: 270px; height: 654px; float: left;}
 	.myi-dep h2 {}
 	.myi-dep h2 .user-btn {position: relative; float: right;}
 	.myi-dep h2 .user-btn img {width: 18px;}
@@ -75,14 +75,12 @@
 
 	/*미리페이 자동 투자*/
 	.miri-autoinv {}
-	.miri-autoinv .row-txt {line-height: 1.5; word-break: keep-all;}
-	.miri-autoinv .row-txt .form-base.prc {width: 100px; text-align: right; margin-left: 10px;}
-	.miri-autoinv .row-txt .btn-base.exten {}
-	.miri-autoinv .row-txt .btn-base.termi {}
 	.miri-autoinv .row-txt.top h3 {font-size: 20px;}
-	.miri-autoinv .row-txt.mid {margin-top: 10px; font-size: 14px; letter-spacing: 0;}
-	.miri-autoinv .row-txt.bot {margin-top: 10px; font-size: 16px;}
-	.miri-autoinv .row-txt.bot .btn-base {margin-left: 10px; font-size: 16px; padding: 0px 10px;}
+	.miri-autoinv .row-txt {position: relative; line-height: 1.5; word-break: keep-all; font-size: 17px;}
+	.miri-autoinv .row-txt.mid {margin-top: 5px;}
+	.miri-autoinv .row-txt .setup {position: absolute; bottom: 0; right: 0; text-align: right;}
+	.miri-autoinv .row-txt .setup .btn-base.termi {margin-top: 5px; font-size: 17px; padding: 0px 15px;}
+	.miri-autoinv .row-txt.mid.after {margin-top: 10px;}
 
 	/* 180822 금액 위치 수정  */
 	.revenue, .total-payment, .total-invest {float: left; width: 237px; height: 200px;}
