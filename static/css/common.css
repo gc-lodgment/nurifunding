@@ -56,6 +56,7 @@ input[type="password"] {font-family: sans-serif;}
 .bg-red {background: #f45454;}
 .bg-red2 {color: #ff3600 !important;}
 .bg-org {background: #ff5400 !important;}
+.bg-org2 {background: #f74200 !important;}
 
 .c-gray, .fc-gray {color: #ccc;}
 .c-blue, .fc-blue {color: #398fe1; /* color: #126cc3; */}

@@ -22,7 +22,7 @@
     .fl-wrap, .fp-wrap, .fw-wrap {margin-top: 20px; background: #fff; border: 1px solid #ddd; padding: 5px 10px;}
     .faq-th-box, .faq-td-box {position: relative;}
     .faq-td-box {border-top: 1px solid #ddd;}
-    .faq-th, .faq-td {position: relative; float: left; font-size: 14px; padding: 12px 5px;}
+    .faq-th, .faq-td {position: relative; float: left; font-size: 14px; padding: 12px 5px; line-height: 1.3;}
     .faq-th {text-align: center;}
     .faq-td {color: #464646;}
     .faq-th.nth-1, .faq-td.nth-1 {width: 75%;}

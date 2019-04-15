@@ -14,7 +14,7 @@
 
 /*모바일 영역, col-xs*/
 @media (max-width: 767px){
-  .com-ft {position: relative; text-align: center; font-size: 22px; font-family: "Noto Sans KR", sans-serif; margin-top: 28px;}
+  .com-ft {position: relative; text-align: center; font-size: 22px; font-family: "Nanum Gothic", "Noto Sans KR", sans-serif; margin-top: 28px;}
   .com-pd {margin-bottom: 10px;}
   .com-pd.last {margin-bottom: 50px;}
   .com-box {position: relative; margin: 0 auto; width: 310px; padding: 22px 10px; background: #fff; border: 1px solid #ddd;}
@@ -42,7 +42,7 @@
 
 /*테블릿 영역, col-sm */
 @media (min-width: 768px) {
-  .com-ft {text-align: center; font-size: 36px; font-family: "Noto Sans KR", sans-serif; margin-top: 55px;}
+  .com-ft {text-align: center; font-size: 36px; font-family: "Nanum Gothic", "Noto Sans KR", sans-serif; margin-top: 55px;}
   .com-pd {margin-bottom: 20px;}
   .com-pd.last {margin-bottom: 125px;}
   .com-box {margin: 0 auto; margin-top: 0px; padding: 30px 40px; background: #fff; border: 1px solid #ddd;}
