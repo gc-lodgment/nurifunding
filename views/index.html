@@ -19,14 +19,14 @@
 	<link rel="stylesheet" href="https://nurifunding.co.kr/static/css/animate.css">
 	<link rel="stylesheet" href="https://nurifunding.co.kr/static/css/jquery.bxslider.css">
 
-	<link rel="stylesheet" href="https://nurifunding.co.kr/static/css/override.css">
+	<!-- <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/override.css">
     <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/common.css">
-    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/index2.css">
+    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/index2.css"> -->
 
 
-	<!-- <link rel="stylesheet" href="../static/css/override.css">
+	<link rel="stylesheet" href="../static/css/override.css">
 	<link rel="stylesheet" href="../static/css/common.css">
-	<link rel="stylesheet" href="../static/css/index2.css"> -->
+	<link rel="stylesheet" href="../static/css/index2.css">
 
 
 
@@ -62,6 +62,7 @@
 	<h1 class="skip">누리펀딩</h1>
 	<div class="wrap">
 		<!-- 일반 해더 -->
+		<!-- 190415 -->
 		<header class="header" id="header">
 			<div class="container header-box">
 				<div class="navbar-header">
@@ -120,10 +121,25 @@
 					</ul>
 				</div>
 			</div>
-			<div class="topbn hidden-md">
-				<a href=""><img src="https://www.nurifunding.co.kr/img/banner/banner_auto1_m.png" alt=""></a>
+			<!-- 홈/나의 투자 페이지: 상단 픽스(기본), 상품목록/상품상세/투자하기 페이지: relat 클래스 추가-->
+			<div class="topbn hidden-md relat">
+				<a href="https://www.nurifunding.co.kr/member/auto.php" class="bnbar"><img src="https://www.nurifunding.co.kr/img/banner/banner_auto1_m.png" alt="선정산 상품 자동투자기능 오픈" class="bnimg"></a>
 			</div>
 		</header>
+		<script>
+			$(function() {
+				var hd = $("#header"),
+					el = hd.children(),
+					ht_total = 0;
+				el.each(function() {
+					ht_total += $(this).outerHeight();
+				});
+				// console.log(ht_total);
+				hd.height(ht_total);
+			});
+		</script>
+		<!-- // -->
+
 		<!-- 모바일 네비게이션 -->
 		<section class="mlnb-wrap show-xs" id="mlnb-wrap">
 			<div class="mlnb-container">
@@ -594,7 +610,7 @@
 		<!-- 190415 -->
 		<!-- 메인, 내정보, 투자하기 페이지 -->
 		<div class="side-banner">
-			<a href=""><img src="https://www.nurifunding.co.kr/img/banner/banner_auto1_pc.png" alt="선정산 상품 자동투자 기능 오픈!" /></a>
+			<a href="https://www.nurifunding.co.kr/member/auto.php"><img src="https://www.nurifunding.co.kr/img/banner/banner_auto1_pc.png" alt="선정산 상품 자동투자 기능 오픈!" /></a>
 		</div>
 		<!-- // -->
 
