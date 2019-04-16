@@ -2,6 +2,7 @@ $(function() {
     
     /*함수실행*/
     //popupCen();
+    hdFn();
     
     /*모바일 바 클릭시 모바일 네비게이션 등장*/
     $(".header .nav-tab").on("click", function() {
@@ -53,6 +54,18 @@ $(function() {
     });
 });
 
+// 상단 배너 높이 
+function hdFn() {
+    $(function() {
+        var hd = $("#header"),
+            el = hd.children(),
+            ht_total = 0;
+        el.each(function() {
+            ht_total += $(this).outerHeight();
+        });
+        hd.height(ht_total);
+    });
+}
 
 /* 팝업 오픈  */
 function popupOn(openitem){

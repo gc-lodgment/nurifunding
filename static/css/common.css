@@ -6,8 +6,8 @@
 /* css 초기화 */
 @import url(https://nurifunding.co.kr/static/css/reset.css);
 @import url(https://nurifunding.co.kr/static/css/grid_1024.css);
-/* @import url(https://nurifunding.co.kr/static/css/include/pop.css); */
-@import url(../../static/css/include/pop.css);
+@import url(https://nurifunding.co.kr/static/css/include/pop.css);
+/* @import url(../../static/css/include/pop.css); */
 /*@import url(../../src/css/grid_1024.css);*/
 /*@import url(https://nurifunding.co.kr/static/fonts/nanumgothic/nanumgothic.css);
 @import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
@@ -169,15 +169,23 @@ hr {border: none; border-top: 1px solid #ddd;}
     .btn-base.btn-blue {background: #398fe1;}
     .btn-base.btn-gray {background: #989898;}
     
-    .wrap {padding-top: 46px;}
+    .wrap {}
     .header, .mlnb-wrap {z-index: 11;}
-    .header {position: fixed; width: 100%; left: 0; top: 0; background: #fff; border-bottom: 2px solid #398FE1; height: 46px;}
-    .header-box {width: 100%; position: relative; top: 18px; padding-right: 15px; padding-left: 15px;}
-    .header-box > div {position: relative; clear: both; width: 100%;}
-    .navbar-header {top: -9px;}
-    .navbar-header h2 {text-align: center;}
-    .navbar-brand {position: relative; display: inline-block; width: 140px; top: 2px;}
-    .navbar-brand img {width: 100%;}
+    .header,
+    .header-box {box-sizing: border-box; width: 100%;}
+    .header {position: relative; background: #fff; height: 87.5px;}
+    .header .header-box,
+    .header .topbn.fixed {position: fixed; width: 100%; left: 0;}
+    .header .header-box {top: 0; height: 48px; padding-right: 15px; padding-left: 15px; border-bottom: 2px solid #398FE1; background: #ffffff; z-index: 1;}
+    .header .header-box > div {position: relative; clear: both; width: 100%;}
+    .header .header-box .navbar-header {top: 9px;}
+    .header .header-box .navbar-header h2 {text-align: center;}
+    .header .header-box .navbar-header .navbar-brand {position: relative; display: inline-block; width: 140px; top: 2px;}
+    .header .header-box .navbar-header .navbar-brand img {width: 100%;}
+    .header .topbn {top: 48px;}
+    .header .topbn.relat {position: relative;}
+    .header .topbn .bnbar {display: block; width: 100%; background: #f74200;}
+    .header .topbn .bnbar .bnimg {display: block; width: 320px; margin: 0 auto;}
 
     .nav-tab {position: absolute; left: 0px; top: 6px;}
     .nav-tab .icon-bar {display: block; width: 20px; height: 2px; background: #000;}
@@ -343,11 +351,11 @@ hr {border: none; border-top: 1px solid #ddd;}
     .wrap {padding-top: 85px;}
     .header, .sub-nav {z-index: 11;}
     .header {position: fixed; width: 100%; left: 0; top: 0; background: #fff; border-bottom: 1px solid #ddd; height: 85px;}
-    .header-box {position: relative; top: 35px;}
-    .header-box > div {position: relative; float: left;}
-    .navbar-header {top: -7px;}
-    .navbar-brand {position: relative; display: inline-block; /* width: 216px; */width: 150px;}
-    .navbar-brand img {width: 150px;}
+    .header .header-box {position: relative; top: 35px;}
+    .header .header-box > div {position: relative; float: left;}
+    .header .header-box .navbar-header {top: -7px;}
+    .header .header-box .navbar-header .navbar-brand {position: relative; display: inline-block; /* width: 216px; */width: 150px;}
+    .header .header-box .navbar-header .navbar-brand img {width: 150px;}
 
     .main-nav > li, .main-nav > li > a {padding-bottom: 20px;}
     .main-nav > li {position: relative; float: left; font-size: 15px; margin-left:7px;}
@@ -437,9 +445,9 @@ hr {border: none; border-top: 1px solid #ddd;}
 
 @media (min-width: 980px){
     .header {height: 85px;}
-    .navbar-header {top: -10px;}
-    .navbar-brand {width: 200px;}
-    .navbar-brand img {width: 200px;}
+    .header .header-box .navbar-header {top: -10px;}
+    .header .header-box .navbar-header .navbar-brand {width: 200px;}
+    .header .header-box .navbar-header .navbar-brand img {width: 200px;}
 
     .main-nav > li {font-size: 17px; margin-left:8px;}
     .main-nav .h-link.fir {margin-left:20px;} 
