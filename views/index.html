@@ -19,14 +19,14 @@
 	<link rel="stylesheet" href="https://nurifunding.co.kr/static/css/animate.css">
 	<link rel="stylesheet" href="https://nurifunding.co.kr/static/css/jquery.bxslider.css">
 
-	<link rel="stylesheet" href="https://nurifunding.co.kr/static/css/override.css">
+	<!-- <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/override.css">
     <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/common.css">
-    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/index2.css">
+    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/index2.css"> -->
 
 
-	<!-- <link rel="stylesheet" href="../static/css/override.css">
+	<link rel="stylesheet" href="../static/css/override.css">
 	<link rel="stylesheet" href="../static/css/common.css">
-	<link rel="stylesheet" href="../static/css/index2.css"> -->
+	<link rel="stylesheet" href="../static/css/index2.css">
 
 
 
@@ -121,11 +121,31 @@
 					</ul>
 				</div>
 			</div>
+<<<<<<< HEAD
 			<!-- 홈/나의 투자 페이지: fixed, 상품목록/상품상세/투자하기 페이지: relat 클래스 추가-->
 			<div class="topbn hidden-md fixed">
 				<a href="https://www.nurifunding.co.kr/member/auto.php" class="bnbar"><img src="https://www.nurifunding.co.kr/img/banner/banner_auto1_m.png" alt="선정산 상품 자동투자기능 오픈" class="bnimg"></a>
 			</div>
 		</header>
+=======
+			<!-- 홈/나의 투자 페이지: 상단 픽스(기본), 상품목록/상품상세/투자하기 페이지: relat 클래스 추가-->
+			<div class="topbn hidden-md relat">
+				<a href="https://www.nurifunding.co.kr/member/auto.php" class="bnbar"><img src="https://www.nurifunding.co.kr/img/banner/banner_auto1_m.png" alt="선정산 상품 자동투자기능 오픈" class="bnimg"></a>
+			</div>
+		</header>
+		<script>
+			$(function() {
+				var hd = $("#header"),
+					el = hd.children(),
+					ht_total = 0;
+				el.each(function() {
+					ht_total += $(this).outerHeight();
+				});
+				// console.log(ht_total);
+				hd.height(ht_total);
+			});
+		</script>
+>>>>>>> 8185c47e77bdfa06b394a7304caa2df0b2a26b21
 		<!-- // -->
 
 		<!-- 모바일 네비게이션 -->

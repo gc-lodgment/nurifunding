@@ -175,7 +175,11 @@ hr {border: none; border-top: 1px solid #ddd;}
     .header-box {box-sizing: border-box; width: 100%;}
     .header {position: relative; background: #fff; height: 87.5px;}
     .header .header-box,
+<<<<<<< HEAD
     .header .topbn.fixed {position: fixed; width: 100%; left: 0;}
+=======
+    .header .topbn {position: fixed; width: 100%; top: 0; left: 0;}
+>>>>>>> 8185c47e77bdfa06b394a7304caa2df0b2a26b21
     .header .header-box {top: 0; height: 48px; padding-right: 15px; padding-left: 15px; border-bottom: 2px solid #398FE1; background: #ffffff; z-index: 1;}
     .header .header-box > div {position: relative; clear: both; width: 100%;}
     .header .header-box .navbar-header {top: 9px;}
