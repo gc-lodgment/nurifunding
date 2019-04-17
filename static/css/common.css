@@ -314,6 +314,7 @@ hr {border: none; border-top: 1px solid #ddd;}
 @media (min-width: 768px){
     
     .side-banner {z-index: 99999; position:fixed; display:inline-block; width: auto; top:200px; left: 50%; margin-left: 645px;}
+    .side-banner.subpage {top: 145px; margin-left: 540px;}
     .side-banner a {position:relative; display:inline-block;}
     .side-banner a img {max-width: none;}
 
@@ -441,6 +442,12 @@ hr {border: none; border-top: 1px solid #ddd;}
     /* 180727 한글표기를 위한 텍스트 추가_다솜 */
     .nr-money-txt {display:block; margin-top:10px; padding-right:25px; font-size:16px; line-height:16px; color:#686868; text-align:right;}
     
+}
+
+/* 사이드 배너 테블릿 & 소형 모니터 */
+@media (min-width: 768px) and (max-width: 1200px) {
+    .side-banner {z-index: 99999; position:fixed; display:inline-block; width: auto; top:200px; left: 50%; margin-left: 645px;}
+    .side-banner.subpage {top: 130px; margin-left: 540px;}
 }
 
 @media (min-width: 980px){
