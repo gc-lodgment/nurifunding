@@ -6,9 +6,9 @@
 .cont hr.sun {margin: 50px auto;}
 .sec .sec-top .sec-tit {font-size: 30px; line-height: 1.2;}
 .sec .sec-mid {font-size: 18px;}
-.sec .sec-mid .row-txt {line-height: 1.5; margin-top: 20px; letter-spacing: -0.5px;}
+.sec .sec-mid .row-txt {line-height: 1.5; margin-top: 20px; letter-spacing: -0.5px; word-break: keep-all;}
 .sec .sec-mid .row-txt.small {font-size: 16px;}
-.sec .sec-mid .row-btn .cmt {font-size: 16px;}
+.sec .sec-mid .row-btn .cmt {font-size: 16px; line-height: 1.5;}
 .sec.intro .sec-mid .row-box.type-01 {border: 1px solid #dbdbdb; background: #f9f9f9; padding: 30px 50px; margin-top: 30px;}
 .sec.intro .sec-mid .row-box.type-01 .dropdown.prc {width: 120px; margin-left: 10px;}
 .sec.intro .sec-mid .row-box.type-01 .form-box {margin-left: 30px;}
@@ -23,4 +23,7 @@
 .sec.merit .list .item.nth-3 {padding-left: 30px;}
 .sec.merit .list .sun {vertical-align: top; top: 20px; width: 1px; height: 70px; background: #8dbdec;}
 .sec.merit .list .item figure figcaption {font-size: 16px; line-height: 1.5; margin-top: 15px;}
-.sec.certi figure {margin: -40px auto;}
+.sec.merit .row-txt.notice {margin-top: 20px; font-size: 16px;}
+.sec.merit .row-txt.notice strong {display: block; margin-bottom: 10px; font-size: 18px;}
+.sec.merit .row-txt.notice .row-dot {padding-left: 20px;}
+.sec.merit .row-txt.notice .row-dot .dot {position: absolute; left: 2px;}
