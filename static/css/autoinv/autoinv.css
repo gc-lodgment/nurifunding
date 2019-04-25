@@ -12,7 +12,8 @@
 	.sec .sec-mid .row-btn .cmt {line-height: 1.5;}
 	.sec .sec-mid .row-btn .cmt > p {margin-top: 5px;}
 	.sec .sec-mid .row-btn .cmt > p:first-child {margin-top: 0px;}
-	.sec.intro .sec-mid .row-box.type-01 {border: 1px solid #dbdbdb; background: #f9f9f9; padding: 10px 30px; margin-top: 15px; line-height: 1.5; font-size: 13px;}
+	.sec.intro .sec-mid .row-box {border: 1px solid #dbdbdb; padding: 10px 10px; margin-top: 15px; line-height: 1.5; font-size: 13px;}
+	.sec.intro .sec-mid .row-box.type-01 {background: #f9f9f9; margin-top: 10px;}
 	.sec.intro .sec-mid .row-box.type-01 .dropdown.prc {top: -2px; width: 85px; margin-left: 5px;}
 	.sec.intro .sec-mid .row-box.type-01 span.sun {display: block; width: 100%; height: 1px; margin: 5px 0; background: #dbdbdb;}
 	.sec.intro .sec-mid .row-btn {margin-top: 10px;}
@@ -47,9 +48,11 @@
 	.sec .sec-mid .row-btn .cmt {font-size: 16px; line-height: 1.5;}
 	.sec .sec-mid .row-btn .cmt > p {margin-top: 5px;}
 	.sec .sec-mid .row-btn .cmt > p:first-child {margin-top: 0px;}
-	.sec.intro .sec-mid .row-box.type-01 {border: 1px solid #dbdbdb; background: #f9f9f9; padding: 30px 50px; margin-top: 30px;}
+	.sec.intro .sec-mid .row-box {border: 1px solid #dbdbdb; padding: 20px; line-height: 1.5; margin-top: 30px;}
+	.sec.intro .sec-mid .row-box.type-01 {border: 1px solid #dbdbdb; background: #f9f9f9; margin-top: 20px;}
 	.sec.intro .sec-mid .row-box.type-01 .dropdown.prc {width: 120px; margin-left: 10px;}
 	.sec.intro .sec-mid .row-box.type-01 .form-box {margin-left: 30px;}
+	.sec.intro .sec-mid .row-box.type-02 {font-size: 17px; background: #ecfdff;}
     .sec.intro .sec-mid .row-btn {margin-top: 30px;}
     .sec.intro .sec-mid .row-btn .btn-base {width: 100%; margin-top: 20px; font-size: 17px; height: 50px; line-height: 50px;}
     .sec.intro .sec-mid .row-btn .btn-base:first-child {margin-top: 0;}
