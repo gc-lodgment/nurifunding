@@ -77,42 +77,73 @@
 						<h2><a href="./index.html" class="navbar-brand"><img src="https://nurifunding.co.kr/img/logo.png" alt="누리펀딩로고"></a></h2>
 						<a href="mypage/mypage_01.html" class="my-tab show-xs"><img src="https://nurifunding.co.kr/img/myp_icon.png" alt="마이페이지"></a>
 					</div>
-					<div class="navbar-collapse pull-right hidden-xs">
-						<ul class="main-nav clearfix">
-							<li><a href="loan/loan_00.html">대출신청</a></li>
+					<nav class="navbar-collapse hidden-xs">
+						<h1 class="text-hide">GNB</h1>
+						<ul class="menu clearfix">
+							<li class="big"><a href="loan/loan_00.html">대출신청</a></li>
+							<li class="big"><a href="invest/invest_01.html">투자하기</a></li>
+							<li class="big"><a href="miripay/index.html" class="c-blue">미리페이</a></li>
 							<li class="hidden-xs hidden-sm hidden-margin"></li>
-							<li><a href="invest/invest_01.html">투자하기</a></li>
-							<li class="hidden-xs hidden-sm hidden-margin"></li>
-							<li><a href="service/index.html">회사소개</a>
-								<nav class="sub-nav">
-									<ul>
-										<li><a href="service/index.html">회사 소개</a></li>
-										<li><a href="service/index_rep.html">대표이사 소개</a></li>
-										<li><a href="service/index_ir.html">기업 IR정보</a></li>
-									</ul>
-								</nav>
+							<li><a href="faq/index.html">이용안내</a>
+								<ul class="menu-2">
+									<li><a href="">처음 오셨나요?</a></li>
+									<li><a href="">대출신청</a></li>
+									<li><a href="">투자하기</a></li>
+									<li><a href="">미리페이</a></li>
+								</ul>
 							</li>
-							<li class="hidden-xs hidden-sm hidden-margin"></li>
-							<li><a href="faq/index.html">이용안내</a></li>
-							<li class="hidden-xs hidden-sm hidden-margin"></li>
-							<li><a href="miripay/index.html">미리페이</a></li>
-							<li class="hidden-xs hidden-sm hidden-margin"></li>
-							<li><a href="autoinv/index.html">자동투자 <span class="ic-new">NEW</span></a></li>
-							<li class="hidden-xs hidden-sm hidden-margin"></li>
-							<li><a class="c-blue" href="mypage/mypage_01.html">내정보</a>
-								<nav class="sub-nav">
-									<ul>
-										<li><a href="myinvest/index.html">나의투자정보</a></li>
-										<li><a href="autoinv/">자동투자</a></li>
-										<li><a href="mypage/mypage_01.html">회원정보수정</a></li>
-										<li><a href="">계좌정보</a></li>
-										<li><a href="">로그아웃</a></li>
-									</ul>
-								</nav>
+							<li class=""><a href="service/index.html">회사소개/IR</a>
+								<ul class="menu-2">
+									<li><a href="service/index.html">회사소개</a></li>
+									<li><a href="service/index_rep.html">대표이사 소개</a></li>
+									<li><a href="service/index_ir.html">기업 IR</a></li>
+									<li><a href="">언론보도</a></li>
+									<li><a href="">CEO 컬럼</a></li>
+								</ul>
 							</li>
+							<li><a href="#none">고객지원</a>
+								<ul class="menu-2">
+									<li><a href="#none">FAQ</a></li>
+									<li><a href="#none">1:1문의하기</a></li>
+									<li><a href="#none">공지사항</a></li>
+									<li><a href="#none">자료실</a></li>
+								</ul>
+							</li>
+							<!-- 비 로그인 경우 -->
+<!-- 							<li class="btn"><a href="" class="btn-cmm btn-white">로그인</a></li>
+							<li class="btn"><a href="" class="btn-cmm btn-blue join">회원가입</a></li>
+ -->							<!-- 로그인 경우 -->
+							<li class="myinfo">
+								<a class="c-blue" href="mypage/mypage_01.html"><img src="https://nurifunding.co.kr/img/common/icon/icon_member_on.png" alt="내정보아이콘" class="icon">내정보</a>
+								<ul class="menu-2">
+									<li><a href="myinvest/index.html">나의투자정보</a></li>
+									<li><a href="autoinv/">자동투자 설정</a></li>
+									<li><a href="">출금하기</a></li>
+									<li><a href="">계좌정보</a></li>
+									<li><a href="mypage/mypage_01.html">회원정보수정</a></li>
+								</ul>
+							</li>
+							<!-- <li><a href="autoinv/index.html">자동투자 <span class="ic-new">NEW</span></a></li> -->
 						</ul>
+					</nav>
+				</div>
+				<div class="menu2-bg" id="menu2-bg">
+					<div class="group inner">
+						<a href=""><span class="c-blue">처음오셨나요?</span> 누리펀딩 이용가이드 보기</a>
 					</div>
 				</div>
+				<script>
+					var hd = $('#header');
+					hd.find('.navbar-collapse .menu > li').hover(function() {
+						if ( $(this).children('.menu-2').length > 0 ) {
+							$('#menu2-bg').addClass('on');
+						}
+					}, function() {
+						if ( $(this).children('.menu-2').length > 0 ) {
+							$('#menu2-bg').removeClass('on');
+						}
+					});
+				</script>
 			</div>
 			<!-- 홈/나의 투자 페이지: fixed, 상품목록/상품상세/투자하기 페이지: relat 클래스 추가-->
 			<div class="topbn hidden-md fixed">
