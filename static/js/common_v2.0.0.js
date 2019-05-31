@@ -2,7 +2,7 @@ $(function() {
     
     /*함수실행*/
     //popupCen();
-    // hdFn();
+    hdFn();
     
     /*모바일 바 클릭시 모바일 네비게이션 등장*/
     $(".header .nav-tab").on("click", function() {
@@ -54,16 +54,23 @@ $(function() {
     });
 });
 
-// 상단 배너 높이 
+// 상단 배너 높이 - 배너 있을 시 없을 시 높이 자동 설정
 function hdFn() {
-    $(function() {
-        var hd = $("#header"),
-            el = hd.children(),
-            ht_total = 0;
-        el.each(function() {
-            ht_total += $(this).outerHeight();
-        });
-        hd.height(ht_total);
+    var hd = $("#header"),
+        el = hd.children(),
+        ht_total = 0;
+    el.each(function() {
+        ht_total += $(this).outerHeight();
+    });
+    hd.height(ht_total);
+    hd.find('.navbar-collapse .menu > li').hover(function() {
+        if ( $(this).children('.menu-2').length > 0 ) {
+            $('#menu2-bg').addClass('on');
+        }
+    }, function() {
+        if ( $(this).children('.menu-2').length > 0 ) {
+            $('#menu2-bg').removeClass('on');
+        }
     });
 }
 
