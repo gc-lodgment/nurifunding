@@ -3,7 +3,7 @@
 @media (min-width: 992px) {
   .container {
     /*width: 945px;*/
-     width: 1024px; 
+    width: 1200px; 
   }
 }
 
@@ -13,7 +13,7 @@
 
 /*전체*/
 .wrap {position: relative; width: 100%;}
-.main {position: relative;}
+.contents.home {position: relative; font-family: 'Noto Sans KR', sans-serif;}
 
 
 /*모바일 영역, col-xs*/
@@ -423,50 +423,35 @@
 	.com-pd {padding: 98px 10px 95px;}
 	.com-ft {text-align: center; font-size: 42px; font-family: "Nanum Square", sans-serif; line-height: 1.2em;}
 	.com-box {position: relative; margin: 0 auto; margin-top: 20px;}
-	.arr-icon {display: inline-block; position: relative; background: url(https://nurifunding.co.kr/img/nrm_icon.png) no-repeat;}
+	.arr-icon {display: inline-block; position: relative; background: url('https://nurifunding.co.kr/img/nrm_icon.png') no-repeat;}
 	.br4 {border-radius: 4px;}
 	.md-block {display: block;}
 
-	.main {width: 100%; background: #126cc4;}
-	.main-box.main-common {position: relative; width: 945px; height: 272px;}
-	.main-box.main-common > div {position: absolute;}
-	.main-box.main-common > div.s1-div-1 {width: 100%; text-align: center;}
-	.main-box.main-common > div.s1-div-1 p {position: relative; /*display: inline-block;*/ font-family: "Nanum Square", "Malgun Gothic", sans-serif;}
-	.main-box.main-common > div.s1-div-1 p.nth-0 {color: #FFF; font-size: 24px; margin-top: 40px;}
-	.main-box.main-common > div.s1-div-1 p.nth-1 {width: 608px; margin: 0 auto; height: 52px; font-size: 30px; background: #09345f; color: #fff; font-weight: 200; line-height: 1.66em;
-	margin-top: 12px; letter-spacing: 1px;}
-	.main-box.main-common > div.s1-div-1 p.nth-1:after {position: absolute; content: ""; display: block; left: 50px; bottom: -27px; width: 1px; border: 14px solid #09345f; border-color: transparent; border-top-color: #09345f;}
-	.main-box.main-common > div.s1-div-1 p.nth-1 .f-bd {font-weight: 400;}
-	.main-box.main-common > div.s1-div-1 p.nth-2 {font-size: 71px; color: #fff; font-weight: 400; letter-spacing: -2px; font-weight: 400; margin-top: 20px; display: block;}
-	.main-box.main-common > div.s1-div-1 p.nth-2 i {font-style: italic;}
-	.main-box.main-common > div.s1-div-1 p.nth-3 {font-size: 38px; color: #fff; font-weight: 200; margin-top: 24px;}
+	.main {position: relative; width: 100%; background: #126cc4;}
 	.main-box.swiper-container {position: relative;  padding: 0 0px; margin: 0 auto; text-align: center;}
-	.main-box .swiper-slide {position: relative; width: 945px; height: 375px;}
-	.main-box .swiper-slide img {display: block;}
-	.main-box .swiper-slide > div {position: absolute;}
-	.main-box .swiper-slide > div.s1-div-2 {top: 68px; left: 20px; color: #fff; text-align: left; font-family: "Nanum Square", "Malgun Gothic", sans-serif;}
-	.main-box .swiper-slide > div.s1-div-2 .d1 {font-size: 37px; font-weight: 200;}
-	.main-box .swiper-slide.nth-1 > div.s1-div-2 .d1 p.nth-2, .main-box .swiper-slide.nth-1 > div.s1-div-2 .d1 p.nth-2 span {letter-spacing: -2.5px;}
-	.main-box .swiper-slide > div.s1-div-2 .d1 p.nth-2 {font-weight: 400; margin-top: 10px;}
-	.main-box .swiper-slide > div.s1-div-2 .d2 {font-size: 24px;}
-	.main-box .swiper-slide > div.s1-div-2 .d2 p {margin-top: 10px; font-weight: 300; letter-spacing: 0px;}
-	.main-box .swiper-slide > div.s1-div-2 .d2 p:first-child {margin-top: 20px;}
-	.main-box .swiper-slide > div.s1-div-2 .d2 p img {display: inline-block; position: relative; top: 5px; margin-right: 10px; width: 19px;}
-	.main-box .swiper-slide > div.s1-div-3  {top: 42px; right: 0px;}
-	.main-box .swiper-slide > div.s1-div-3 img {}
-	.main-box .swiper-slide > div.s2-div-3  {top: 53px; right: 64px;}
-	.main-box .swiper-slide > div.s3-div-3  {top: 59px; right: 50px;}
-
-	.main-box .swiper-slide > div.s2-div-2 {top: 100px;}
-	.main-box .swiper-slide > div.s3-div-2 {top: 100px; left: 30px;}
-
-	.main-box .swiper-slide > div.s2-div-2 .d1, .main-box .swiper-slide > div.s3-div-2 .d1 {font-size: 40px;}
-
-	.main-box .swiper-slide > div.s2-div-2 .d2 p.nth-2, .main-box .swiper-slide > div.s2-div-2 .d2 p.nth-4 {float: left; margin-right: 3px;}
-	.main-box .swiper-slide > div.s3-div-2 .d2 p.nth-2, .main-box .swiper-slide > div.s3-div-2 .d2 p.nth-3 {display: none;}
-	.main-box .swiper-slide > div.s3-div-2 .d2 p.nth-1:after {content: " 부동산 가치 상승,"}
-	.main-box .swiper-slide > div.s3-div-2 .d2 p.nth-4:before {content: "임대료, 기타 수익 등 꼼꼼한 "}
-
+	.main-box .swiper-slide {position: relative; height: 700px;}
+	.main-box .swiper-slide.nth-1 {background: url('https://nurifunding.co.kr/img/renew/main/m_bnr_bg.jpg') no-repeat center;}
+	.main-box .swiper-slide img {display: block; margin: 0 auto;}
+    .main .quick-bar {position: absolute; width: 100%; bottom: 0;}
+    .main .quick-bar .inner {background: #3690e2; height: 150px;}
+    .main .quick-bar .inner .fst img {display: block;}
+    .main .quick-bar .inner > [class*='box-'] {float: left; position: relative; box-sizing: border-box; font-size: 18px; color: #fff;}
+    .main .quick-bar .inner > [class*='box-'] h2 {font-size: 18px;}
+    .main .quick-bar .inner .box-2,
+    .main .quick-bar .inner .box-3 {width: 480px; padding: 20px; border-left: 1px solid #fff; height: 100%;}
+    .main .quick-bar .inner .box-2 {}
+    .main .quick-bar .inner .box-2 .list {}
+    .main .quick-bar .inner .box-2 .list > li {display: inline-block; margin: 12px 17px 0; text-align: center; font-size: 15px;}
+    .main .quick-bar .inner .box-2 .list > li figcaption {margin-top: 5px; letter-spacing: normal;}
+    .main .quick-bar .inner .box-3 h2 .more-btn {float: right;}
+    .main .quick-bar .inner .box-3 .list {margin-top: 12px; font-size: 15px;}
+    .main .quick-bar .inner .box-3 .list > li {display: table; width: 100%; margin-top: 8px; font-weight: 300;}
+    .main .quick-bar .inner .box-3 .list > li > * {display: table-cell; line-height: 1.5;}
+    .main .quick-bar .inner .box-3 .list > li:first-child > * {font-weight: 400;}
+    .main .quick-bar .inner .box-3 .list > li .tit {overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+    .main .quick-bar .inner .box-3 .list > li .tit:before {content: '·'; display: inline-block; margin-right: 5px;}
+    .main .quick-bar .inner .box-3 .list > li .create-at {text-align: right;}
+	
 	.rate {padding: 42px 0px;}
 	.rate .container {width: 100%; text-align: center; padding: 0;}
 	.rate .row {display: inline-block;}
@@ -569,7 +554,7 @@
 	.ip-more-outer {margin: 50px auto 0;}
 	.ip-more-box {text-align: center;}
 	.ip-more-btn {position: relative; left: -10px; display: inline-block; width: 65%; border: 1px solid #dcdcdc; line-height: 2.8em; font-size: 20px; background: #126cc3; color: #fff;}
-	.black-r-icon {width: 10px; height: 16px; background: url(https://nurifunding.co.kr/img/i_whiteArr.png) no-repeat; left: 8px; top: 1px;}
+	.black-r-icon {width: 10px; height: 16px; background: url('https://nurifunding.co.kr/img/i_whiteArr.png') no-repeat; left: 8px; top: 1px;}
 
 	.faq {background: #dae7f3;}
 	.fq-outer {margin-top: 30px;}
