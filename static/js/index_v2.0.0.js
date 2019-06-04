@@ -1,6 +1,6 @@
 $(function () {
 	//애니메이션 함수 호출
-	wayP("on", "#per-chart", "27");
+	wayP("on", "#per-chart", "20");
 	wayP("on", "#per-chart-m", "11.5");
 
 	//이미지로드 지연 - 로딩속도 단축

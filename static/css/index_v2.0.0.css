@@ -420,9 +420,9 @@
 
 /*테블릿 영역, col-md*/
 @media (min-width: 992px) {
-	.com-pd {padding: 80px 10px 80px;}
-	.com-ft {text-align: center; font-size: 42px; line-height: 1.2em;}
-	.com-box {position: relative; margin: 0 auto; margin-top: 20px;}
+	/* .com-pd {padding: 80px 10px 80px;} */
+	.com-ft {text-align: center; font-size: 40px; line-height: 1.2;}
+	/* .com-box {position: relative; margin: 0 auto; margin-top: 20px;} */
 	.arr-icon {display: inline-block; position: relative; background: url('https://nurifunding.co.kr/img/nrm_icon.png') no-repeat;}
 	.br4 {border-radius: 4px;}
 	.md-block {display: block;}
@@ -453,16 +453,17 @@
     .main .quick-bar .inner .box-3 .list > li .tit:before {content: '·'; display: inline-block; margin-right: 5px;}
     .main .quick-bar .inner .box-3 .list > li .create-at {text-align: right;}
     
-    .ingProduct {background: #f5f5f5;}
-    .ingProduct .inner {overflow: hidden;}
+    .ingProduct {padding: 100px 0 90px; background: #f5f5f5;}
+    .ingProduct .inner {}
     .ingProduct .inner h1 .more-btn {display: inline-block; position: relative; top: 12px; float: right; font-size: 16px; color: #555;}
     .ingProduct .inner h1 .more-btn .ic-rArrow {margin-left: 5px;}
     .ingProduct .inner h1 .more-btn .ic-rArrow:after {border-color: #555;}
-	.ingProduct .ip-wrap {position: relative; width: 1230px; left: -15px;}
+	.ingProduct .ip-wrap {position: relative; width: 1230px; left: -15px; margin-top: 20px;}
     /* .ingProduct .ip-outer {position: relative; margin: 0 15px; margin-top: 30px; padding: 0; width: 380px;} */
     .ingProduct .ip-outer {position: relative; padding: 0 15px; margin-top: 30px; width: 33.33%;}
     .ingProduct .ip-outer:nth-child(4n) {clear:both;}
-	.ingProduct .ip-outer .ip-box {position: relative; margin: 0 auto; background: #fff; border: 1px solid #ddd; overflow: hidden;}
+	.ingProduct .ip-outer .ip-box {position: relative; margin: 0 auto; background: #fff; border: 1px solid #ddd; border-radius: 10px; overflow: hidden;}
+	.ingProduct .ip-outer .ip-box:hover {box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.25);}
 	/* .ingProduct .ip-outer .thumb-box .new {position: absolute; top: 10px; left: 10px; font-size: 14px; background: rgba(38, 196, 183, 0.88); padding: 11px 5px; color: #fff; border: 2px solid #fff; z-index: 1;}
 	.ingProduct .ip-outer .thumb-box .end {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0, .58); text-align: center;}
     .ingProduct .ip-outer .thumb-box .end span {position: relative; color: #fff; display: inline-block; padding: 10px 40px; top:145px; border: 1px solid #fff; letter-spacing: 0; font-size: 20px;} */
@@ -494,94 +495,92 @@
 	.ingProduct .ip-outer.end .btn-invest,
 	.ingProduct .ip-outer.start .btn-invest {background: #09345f;}
     .ingProduct .ip-outer.wait .btn-invest {background: #5a7383;}
-    .ingProduct .ip-outer .bg-cover {display: none; border-radius: 4px;}
+    .ingProduct .ip-outer .bg-cover {display: none;}
     .ingProduct .ip-outer .bg-cover .tbl {display: table; width: 100%; height: 100%;}
     /* .ingProduct .ip-outer .bg-cover .tbl .row {display: table-row;} */
     .ingProduct .ip-outer .bg-cover .tbl .cell {display: table-cell; vertical-align: middle; text-align: center;}
     .ingProduct .ip-outer .bg-cover .tbl .cell .in {display: inline-block; z-index: 1; width: 180px; height: 180px; background: rgb(14, 26, 38, .65); border-radius: 50%; line-height: 180px; font-size: 30px; color: #fff;}
     .ingProduct .ip-outer.end .bg-cover {display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0, .3);}
-    .ingProduct .ip-outer.end .bg-cover {display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
-	/* .ingProduct .ip-outer .more-outer {margin: 50px auto 0;}
-	.ingProduct .ip-outer .more-box {text-align: center;}
-	.ingProduct .ip-outer .more-btn {position: relative; left: -10px; display: inline-block; width: 65%; border: 1px solid #dcdcdc; line-height: 2.8em; font-size: 20px; background: #126cc3; color: #fff;} */
-	/* .ingProduct .ip-outer .black-r-icon {width: 10px; height: 16px; background: url('https://nurifunding.co.kr/img/i_whiteArr.png') no-repeat; left: 8px; top: 1px;} */
+	.ingProduct .ip-outer.end .bg-cover {display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+	.ingProduct .row-btn {margin-top: 50px; text-align: center;}
+	.ingProduct .row-btn .btn-more {display: inline-block; }
+	.ingProduct .row-btn .btn-more .ic-bArrow:after {top: -10px; width: 30px; height: 30px; border-width: 5px; border-color: #90959A;}
     
-	.rate {padding: 42px 0px;}
-	.rate .container {width: 100%; text-align: center; padding: 0;}
-	.rate .row {display: inline-block;}
-	.rate [class*=rr-] {display: inline-block; width: auto; padding: 0 30px;}
-	/*.rr-nth-1 {width: 198px;}
-	.rr-nth-2 {width: 225px;}
-	.rr-nth-3 {width: 225px;}
-	.rr-nth-4 {width: 142px;}
-	.rr-nth-5 {width: 200px;}*/
-	.r-f, .r-f2 {text-align: center; color: #fff; font-family: "Nanum Gothic", sans-serif; letter-spacing: 0;}
-	.r-f {font-size: 18px;}
-	.r-f .q-w {position: relative; top: 0px; display: inline-block; margin-left: 4px; width: 22px; height: 22px; border-radius: 50%; background: #fff; text-align: center; cursor: pointer;}
-	.r-f .q {position: relative; display: block; top: 2px; left: 0px; color: #09345f; font-weight: 600; font-family: "Nanum Square", sans-serif;}
-	.r-f .q .q-t {display: none; position: absolute; width: 136px; left: -54px; bottom: 30px; color: #fff; font-weight: 400; background: #000; border-radius: 1px; text-align: left; line-height: 1.2em; font-size: 16px; padding: 10px 8px; font-size: 13px; letter-spacing: -0.5px;}
-	/*  .r-f .q .q-t:after {position: absolute; content: ""; bottom: -14px; left: 62px; display: block; width: 1px; border: 8px solid #000; border-color: transparent; border-top-color: #000;}*/
-	.r-f .q:hover .q-t {display: block;}
-	.r-f2 {font-size: 28px; margin-top: 12px; font-weight: 500;}
-	.rr-nth-5 .r-f2 {position: relative; top: -4px;}
+	.rate {background: #fff; border-top: 1px solid rgb(205,205,205);}
+	.rate .inner {text-align: center; padding: 60px 0 75px;}
+	.rate .inner .cmt {position: absolute; bottom: 30px; right: 20px; font-size: 14px; color: #555; letter-spacing: normal;}
+	.rate .inner .row {display: table; width: 100%;}
+	.rate .rr {display: table-cell; width: auto; padding: 0 30px; box-sizing: border-box;}
+	.rate .rr.nth-1 {width: 24%}
+	.rate .rr.nth-2 {width: 24%}
+	.rate .rr.nth-3 {width: 24%}
+	.rate .rr.nth-4 {width: 15%}
+	.rate .rr.nth-5 {width: 13%}
+	.rate .rr .r-f, .r-f2 {position: relative; text-align: center;}
+	.rate .rr .r-f {padding-bottom: 20px; font-size: 20px; color: #333;}
+	.rate .rr .r-f:after {content: ''; display: block; position: absolute; bottom: 0; left: 50%; margin-left: -12.5px; width: 25px; height: 2px; background: #444;}
+	.rate .rr .r-f .q-w {position: absolute; top: 0px; display: inline-block; margin-left: 4px; width: 22px; height: 22px; border-radius: 50%; background: #398fe1; line-height: 1.2; text-align: center; cursor: pointer;}
+	.rate .rr .r-f .q {position: relative; display: block; left: 0px; color: #fff; font-weight: 600; font-family: "Nanum Square", sans-serif;}
+	.rate .rr .r-f .q .q-t {display: none; position: absolute; width: 150px; left: -62px; bottom: 30px; color: #333; font-weight: 400; background: #fff; box-sizing: border-box; border: 1px solid #398fe1; border-radius: 1px; text-align: left; line-height: 1.2em; font-size: 16px; padding: 8px; font-size: 13px; letter-spacing: -0.5px;}
+	.rate .rr .r-f .q:hover .q-t {display: block;}
+	.rate .rr .r-f2 {margin-top: 23px; font-size: 32px; color: #398fe1;}
+	.rate .rr .r-f2 [id^='n'] {font-weight: 700;}
 
 	.miripayBn {position: relative; background: #7c88ff; padding: 11px 0; text-align: center;}
 
-	.benefit {background: #EBF4FB;}
-	.benefit h2 {font-weight: 600; margin-bottom: 20px;}
-	.benefit .container > .p1 {text-align: center; font-size: 18px; word-break: keep-all; line-height: 1.2em; margin-bottom: 50px; font-weight: 300;}
-	.benefit .com-box {height: 482px;}.benefit .com-box > div {position: absolute; bottom: 0; left: 0; float: left; width: 184px;}
-	.benefit .com-box .nth-1 {left: 0;}
-	.benefit .com-box .nth-2 {left: 186px;}
-	.benefit .com-box .nth-3 {left: 372px;}
-	.benefit .com-box .nth-4 {left: 558px;}
-	.benefit .com-box .nth-5 {left: 744px;}
-	.benefit .com-box .p-per, .benefit .com-box .p-tit {font-size: 12.5px; text-align: center; word-break: keep-all; color: #a0b6c8;}
-	.benefit .com-box .p-per {margin-bottom: 5px; font-size: 38px; font-weight: 300;}
-	.benefit .com-box .p-tit {margin-top: 5px; line-height: 1.1em; font-size: 24px; font-weight: 300;}
-	.benefit .com-box .p-chart {display: inline-block; width: 100%; vertical-align: bottom; background: #bdcfde; 
-	transition: all 1s; -webkit-transition: all 1s; -moz-transition: all 1s; -o-transition: all 1s;}
-	.benefit .com-box .nth-5 .p-per, .benefit .com-box .nth-5 .p-tit {color: #126cc3;}
-	.benefit .com-box .nth-5 .p-per {font-size: 55px; font-weight: 400;}
-	.benefit .com-box .p-chart {height: 0;}
-	.benefit .com-box .nth-5 .p-chart {background: #126cc3; height: 0;}
+	.easy {padding: 130px 0; background: #09345f; color: #fff;}
+	.easy h1 {font-weight: 500; margin-bottom: 20px; letter-spacing: normal;}
+	.easy .inner {}
+	.easy .split {float: left; position: relative; width: 50%; box-sizing: border-box; text-align: center;}
+	.easy .split.split-1 {width: 53%;}
+	.easy .split.split-1 .p-1 {font-size: 20px; line-height: 1.5; font-weight: 300; letter-spacing: normal;}
+	.easy .split.split-1 .row-btn {margin-top: 60px;}
+	.easy .split.split-1 .row-btn .btn-detail {display: inline-block; width: 250px; font-size: 20px; line-height: 58px; background: #398fe1; box-sizing: border-box;}
+	.easy .split.split-2 {width: 47%;}
+	.easy .split.split-2 .box {position: relative; width: 450px; margin: 25px auto 0; line-height: 94px; font-size: 24px; border: 1px solid #fff; border-radius: 10px; box-sizing: border-box;}
+	.easy .split.split-2 .box:first-child {margin-top: 0;}
+	.easy .split.split-2 .box strong {position: relative; display: inline-block; color: #398fe1; line-height: 2;}
+	.easy .split.split-2 .box strong:after {content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background: #398fe1;}
+	.easy .split.split-2 .box.nth-1:after,
+	.easy .split.split-2 .box.nth-2:after {content: ''; z-index: 1; position: absolute; bottom: -38px; left: 50%; margin-left: -24px; width: 48px; height: 48px; background: url('https://nurifunding.co.kr/img/renew/main/m_plus.png') no-repeat;}
+	
+	.benefit {padding: 130px 0 90px; background: #e1f3ff;}
+	.benefit h1 {margin-bottom: 20px; letter-spacing: normal;}
+	.benefit .inner {}
+	.benefit .split {float: left; position: relative; width: 50%; box-sizing: border-box; text-align: center;}
+	.benefit .split.split-1 .p-1 {font-size: 20px; line-height: 1.5; font-weight: 300; letter-spacing: normal;}
+	.benefit .split.split-1 .row-btn {margin-top: 60px;}
+	.benefit .split.split-1 .row-btn .btn-detail {display: inline-block; width: 250px; font-size: 20px; line-height: 58px; border: 1px solid #05315d; box-sizing: border-box; color: #05315d;}
+	.benefit .split.split-2 {}
+	/* .benefit .split.split-2 .per-chart .box {display: inline-block; position: relative; width: 110px; vertical-align: bottom;} */
+	.benefit .split.split-2 .per-chart {position: relative; margin: 0 auto; width: 520px; height: 285px; border-bottom: 4px solid #002B4B;}
+	.benefit .split.split-2 .per-chart .box {position: absolute; bottom: 0px; left: 0; width: 110px;}
+	.benefit .split.split-2 .per-chart .box.nth-1 {left: 10px;}
+	.benefit .split.split-2 .per-chart .box.nth-2 {left: 140px;}
+	.benefit .split.split-2 .per-chart .box.nth-3 {left: 270px;}
+	.benefit .split.split-2 .per-chart .box.nth-4 {left: 400px;}
+	.benefit .split.split-2 .per-chart .box .p-per, 
+	.benefit .split.split-2 .per-chart .box .p-tit {font-size: 12.5px; text-align: center; word-break: keep-all;}
+	.benefit .split.split-2 .per-chart .box .p-per {position: relative; margin-bottom: 10px; font-size: 24px; color: #022f4c;}
+	.benefit .split.split-2 .per-chart .box .p-tit {position: absolute; bottom: -30px; width: 100%; font-size: 18px;}
+	.benefit .split.split-2 .per-chart .box .p-chart {
+		display: inline-block; position: relative; width: 100%; height: 0; vertical-align: bottom; background: #5a7383;
+		transition: all 1s; -webkit-transition: all 1s; -moz-transition: all 1s; -o-transition: all 1s;
+	}
+	.benefit .split.split-2 .per-chart .box.box-nuri .p-per {z-index: 1; color: #fff; margin-bottom: 0; bottom: -40px;} 
+	.benefit .split.split-2 .per-chart .box.box-nuri .p-tit {color: #398fe1;}
+	.benefit .split.split-2 .per-chart .box.box-nuri .p-chart {background: #398fe1; height: 0;}
+	.benefit .split.split-2 .per-chart .box.box-nuri .p-chart:before {content: ''; display: block; position: absolute; top: -150px; left: -25px; width: 1px; border: 80px solid transparent; border-bottom-color: #398fe1;}
 
-	#per-chart.list-4 {width:745px;}
-	.benefit .com-box .nuri .p-per, .benefit .com-box .nuri .p-tit {color: #126cc3;}
-	.benefit .com-box .nuri .p-per {font-size: 55px; font-weight: 400;}
-	.benefit .com-box .p-chart {height: 0;}
-	.benefit .com-box .nuri .p-chart {background: #126cc3; height: 0;}
+	.benefit .split.split-2 .per-chart .box.nth-1 .p-chart {height: 32px; height: 0;}
+	.benefit .split.split-2 .per-chart .box.nth-2 .p-chart {height: 42px; height: 0;}
+	.benefit .split.split-2 .per-chart .box.nth-3 .p-chart {height: 115px; height: 0;}
+	.benefit .split.split-2 .per-chart .box.nth-4 .p-chart {height: 220px; background: #398fe1; height: 0;}
 
-	/*
-	.benefit .com-box .nth-1 .p-chart {height: 41px; height: 0;}
-	.benefit .com-box .nth-2 .p-chart {height: 54px; height: 0;}
-	.benefit .com-box .nth-3 .p-chart {height: 137px; height: 0;}
-	.benefit .com-box .nth-4 .p-chart {height: 291px; height: 0;}
-	.benefit .com-box .nth-5 .p-chart {height: 367px; background: #126cc3; height: 0;}
-	*/  
-	.ie8 .benefit .com-box .nth-1 .p-chart.chart01 {height: 41px;}
-	.ie8 .benefit .com-box .nth-2 .p-chart.chart02 {height: 54px;}
-	.ie8 .benefit .com-box .nth-3 .p-chart.chart03 {height: 137px;}
-	.ie8 .benefit .com-box .nth-4 .p-chart.chart04 {height: 291px;}
-	.ie8 .benefit .com-box .nth-5 .p-chart.chart05 {height: 367px;}
-
-
-	.easy {background: #fff;}
-	.easy h2 {font-weight: 500; margin-bottom: 20px;}
-	.easy .container > .p1 {text-align: center; font-size: 18px; word-break: keep-all; line-height: 1.2em; margin-bottom: 50px; color: #414141;}
-	.easy .com-box {text-align: center;}
-	.easy .com-box img {position: relative; display: inline-block; width: 160px; margin-top: 52px; margin-bottom: 30px;}
-	.easy .com-box div.nth-1 img {}
-	.easy .com-box div.nth-2 img {left: 15px;}
-	.easy .com-box div.nth-3 img {}
-	.easy .com-box div.nth-1 {left: 25px;}
-	.easy .com-box div.nth-1 img.plus,  .easy .com-box div.nth-2 img.plus {position: absolute; top: 34px; width: 76px;}
-	.easy .com-box div.nth-1 img.plus {left: 275px;}
-	.easy .com-box div.nth-2 img.plus {left: 296px;}
-	.easy .com-box h3 {font-size: 24px; font-weight: 500; line-height: 1.2em; margin-bottom: 8px;}
-	.easy .com-box div.nth-3 h3 {margin-bottom: 25px;}
-	.easy .com-box p {font-size: 16px; line-height: 1.2em; word-break: keep-all; font-weight: 300;}
-	/*.easy .ip-more-btn {width: 65%;}*/
+	.ie8 .benefit .split.split-2 .per-chart .box.nth-1 .p-chart {height: 32px;}
+	.ie8 .benefit .split.split-2 .per-chart .box.nth-2 .p-chart {height: 42px;}
+	.ie8 .benefit .split.split-2 .per-chart .box.nth-3 .p-chart {height: 115px;}
+	.ie8 .benefit .split.split-2 .per-chart .box.nth-4 .p-chart {height: 220px;}
 
 	.faq {background: #dae7f3;}
 	.fq-outer {margin-top: 30px;}

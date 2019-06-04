@@ -58,7 +58,7 @@
     <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
   <![endif]-->
 
-  <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
+  <!-- <script type="text/javascript" src="http://localhost:35729/livereload.js"></script> -->
 </head>
 
 <body>
@@ -198,7 +198,7 @@
 
 		<div class="contents home">
 			<!--변경내용 메인슬라이드-->
-			<section class="main">
+			<section class="sec main">
 				<h1 class="hidden">누리펀딩 버킷리스트 누리펀딩 이자면 가능하다! 펀딩 버킷리스트를 만들어보세요</h1>
 				<div class="main-box swiper-container" id="main-slider">
 					<ul class="swiper-wrapper">
@@ -261,15 +261,14 @@
 				</div>
 			</section>
 			<!-- /.main -->
-
-			<section class="ingProduct com-pd">
+			<section class="sec ingProduct">
 				<div class="group inner">
 					<h1 class="com-ft">진행중인 투자상품 <a href="https://www.nurifunding.co.kr/invest/" class="more-btn">전체보기 <span class="ic-rArrow"></span></a></h1>
 					<!--변경내용 id추가-->
-					<div class="row com-box ip-wrap">
+					<div class="row ip-wrap">
 						<!-- 상태별 클래스 진행중: start, 대기: wait, 완료: end -->
 						<div class="col-xs-12 col-sm-6 ip-outer start">
-							<div class="ip-box br4">
+							<div class="ip-box">
 								<div class="ip-top">
 									<span class="pdt-no">242호</span>
 									<span class="status">진행중</span>
@@ -306,7 +305,7 @@
 						</div>
 						<!-- /.ip-outer -->
 						<div class="col-xs-12 col-sm-6 ip-outer wait">
-							<div class="ip-box br4">
+							<div class="ip-box">
 								<div class="ip-top">
 									<span class="pdt-no">242호</span>
 									<span class="status">진행중</span>
@@ -343,7 +342,7 @@
 						</div>
 						<!-- /.ip-outer -->
 						<div class="col-xs-12 col-sm-6 ip-outer end">
-							<div class="ip-box br4">
+							<div class="ip-box">
 								<div class="ip-top">
 									<span class="pdt-no">242호</span>
 									<span class="status">진행중</span>
@@ -381,45 +380,37 @@
 						<!-- /.ip-outer -->
 					</div>
 
-					<div class="row com-box more-outer">
-						<div class="col-xs-12 com-sm-4 ip-more-box"><a href="" class="ip-more-btn br4">투자상품 모두 보러가기<span class="arr-icon black-r-icon"></span></a></div>
+					<div class="row row-btn">
+						<a href="javascript:;" class="btn-more"><span class="ic-bArrow"></span></a>
 					</div>
 				</div>
 			</section>
 			<!-- /.ingProduct -->
-
-			<!--180319 수정사항-->
-			<section class="rate bg-darkBlue">
-				<div class="container">
+			<section class="sec rate">
+				<h1 class="hidden">누적 상황</h1>
+				<div class="group inner">
 					<div class="row">
-						<div class="col-xs-6 col-sm-6 rr-nth-1">
+						<div class="col-xs-6 col-sm-6 rr nth-1">
 							<h2 class="r-f">누적 상환액</h2>
 							<!--백만원단위로 넘어갈 경우 '원'에서 '백만원'으로 바뀌게-->
-							<p class="r-f2"><span id="n1">0</span> 원</p>
+							<p class="r-f2"><span id="n1">67억 7,039</span> 만원</p>
 						</div>
-						<div class="col-xs-6 col-sm-6 rr-nth-2">
+						<div class="col-xs-6 col-sm-6 rr nth-2">
 							<h2 class="r-f">대출잔액</h2>
-							<p class="r-f2"><span id="n2">1,234</span> 백만원</p>
+							<p class="r-f2"><span id="n2">12억 4,726</span> 만원</p>
 						</div>
-						<div class="col-xs-6 col-sm-6 rr-nth-3 mt">
+						<div class="col-xs-6 col-sm-6 rr nth-3">
 							<h2 class="r-f">누적대출 취급액</h2>
-							<p class="r-f2"><span id="n3">1,070</span> 백만원</p>
+							<p class="r-f2"><span id="n3">80억 1,765</span> 만원</p>
 						</div>
-						<div class="col-xs-6 col-sm-6 rr-nth-4 mt">
+						<div class="col-xs-6 col-sm-6 rr nth-4">
 							<h2 class="r-f">평균금리</h2>
-							<p class="r-f2"><span id="n4">14.00</span>%</p>
+							<p class="r-f2"><span id="n4">11.08</span>%</p>
 						</div>
-						<div class="col-xs-6 col-sm-6 rr-nth-5 mt">
-							<h2 class="r-f">부실률<span class="q-w">
-								<span class="q">?
-									<span class="q-t">
-										현재 취급된 총<br>
-										누적대금취급액 중<br>
-										90일 이상 연체가 된<br>
-										건의 잔여원금의 비중
-									</span>
-								</span>
-								</span> / 연체율<span class="q-w">
+						<div class="col-xs-6 col-sm-6 rr nth-5">
+							<h2 class="r-f">
+								연체율
+								<span class="q-w">
 									<span class="q">?
 										<span class="q-t">
 											약정된 상환이 일부<br>
@@ -430,183 +421,140 @@
 											/ 대출잔여금<br>
 											(P2P금융협회기준)
 										</span>
-									</span>
+									</span> 
 								</span>
 							</h2>
-							<p class="r-f2"><span id="n5">0</span>% / <span id="n6">0</span>%</p>
+							<p class="r-f2"><span id="n5">0</span>%</p>
 						</div>
 					</div>
+					<div class="cmt">※ 2018년 6월 현재 기준</div>
 					<script>
-						$("#n1").animateNumber({
-							number: 0,
-							numberStep: $.animateNumber.numberStepFactories.separator(',', 3)
-						}, 2000);
-						$("#n2").animateNumber({
-							number: 1234,
-							numberStep: $.animateNumber.numberStepFactories.separator(',', 3)
-						}, 2000);
-						$("#n3").animateNumber({
-							number: 1070,
-							numberStep: $.animateNumber.numberStepFactories.separator(',', 3)
-						}, 2000);
-						$("#n4").animateNumber({
-							number: 1400,
-							numberStep: $.animateNumber.numberStepFactories.separator('.', 2)
-						}, 2000);
-						$("#n5").animateNumber({
-							number: 0,
-							numberStep: $.animateNumber.numberStepFactories.separator('.', 2)
-						}, 2000);
-						$("#n6").animateNumber({
-							number: 0,
-							numberStep: $.animateNumber.numberStepFactories.separator('.', 2)
-						}, 2000);
+						// $("#n1").animateNumber({
+						// 	number: 677039,
+						// 	numberStep: $.animateNumber.numberStepFactories.separator(',', 3)
+						// }, 2000);
+						// $("#n2").animateNumber({
+						// 	number: 124726,
+						// 	numberStep: $.animateNumber.numberStepFactories.separator(',', 3)
+						// }, 2000);
+						// $("#n3").animateNumber({
+						// 	number: 801765,
+						// 	numberStep: $.animateNumber.numberStepFactories.separator(',', 3)
+						// }, 2000);
+						// $("#n4").animateNumber({
+						// 	number: 1108,
+						// 	numberStep: $.animateNumber.numberStepFactories.separator('.', 2)
+						// }, 2000);
+						// $("#n5").animateNumber({
+						// 	number: 0,
+						// 	numberStep: $.animateNumber.numberStepFactories.separator('.', 2)
+						// }, 2000);
+
 					</script>
 				</div>
 			</section>
-			<!--180917 미리페이 띠배너-->
-			<section class="miripayBn">
-				<h2 class="hidden">보유하신 매출채권으로 필요자금 긴급지원! 미리페이 선지급 서비스로 간편하고 빠르게!</h2>
-				<figure>
-					<img src="http://nurifunding.co.kr/img/banner/bn_miripay.png" alt="미리페이 선지급 서비스" class="hidden-xs">
-					<img src="http://nurifunding.co.kr/img/banner/bn_miripay_m.png" alt="미리페이 선지급 서비스" class="hidden-md">
-				</figure>
+			<!-- /.rate -->
+			<section class="sec easy">
+				<div class="group inner">
+					<div class="split split-1">
+						<h1 class="com-ft">웹 보안 + 금융 노하우 + 법률 자문<br>P2P 금융의 최고의 인력</h1>
+						<p class="p-1">누리펀딩의 30년의 금융 전문 노하우와 웹보안 기술력으로<br>안전한 정보관리와 안심거래가 가능합니다.</p>
+						<div class="row-btn"><a href="https://www.nurifunding.co.kr/service/" class="btn-detail">자세히 보기</a></div>
+					</div>
+
+					<div class="split split-2">
+						<div class="col-xs-12 box nth-1">
+							<h2><strong>IT전문기업의</strong> 개인 정보 유출 방지</h2>
+						</div>
+						<div class="col-xs-12 box nth-2">
+							<h2><strong>금융 전문가의</strong> 여신심사 금융 노하우</h2>
+						</div>
+						<div class="col-xs-12 box nth-3">
+							<h2><strong>변호사</strong> 계약서 법률 검토</h2>
+						</div>
+					</div>
+				</div>
 			</section>
-			<!--180319 수정사항 End-->
-			<section class="benefit com-pd">
-				<div class="container">
-					<h2 class="com-ft">WHY <span class="c-blue2">NURI</span> FUNDING?</h2>
-					<p class="p1">P2P 투자는 수익률이 먼저? NO! 누리펀딩은 원금을 지키는 리스크 관리를 더 소중하게 생각합니다.</p>
-					<!--180308 변경내용 시작-->
-					<!--PC버전 차트-->
-					<div class="row com-box hidden-xs" id="per-chart">
-						<div class="nth-1">
-							<p class="p-per"><span id="p-per1">1.52</span>%</p>
-							<p class="p-chart"></p>
-							<p class="p-tit">예금 금리</p>
-						</div>
-						<div class="nth-2">
-							<p class="p-per"><span id="p-per2">2.15</span>%</p>
-							<p class="p-chart"></p>
-							<p class="p-tit">국고채 (5년물)</p>
-						</div>
-						<div class="nth-3">
-							<p class="p-per"><span id="p-per3">6.85</span>%</p>
-							<p class="p-chart"></p>
-							<p class="p-tit">KOSPI</p>
-						</div>
-						<div class="nth-4">
-							<p class="p-per"><span id="p-per4">12.86</span>%</p>
-							<p class="p-chart"></p>
-							<p class="p-tit">P2P업체 평균</p>
-						</div>
-						<div class="nth-5">
-							<p class="p-per"><span id="p-per5">13.67</span>%</p>
-							<p class="p-chart"></p>
-							<p class="p-tit">누리펀딩</p>
-						</div>
-						<input type="hidden" id="per5_val" value="1367">
-						<script>
-							$("#per-chart > div").each(function(idx, item) {
-								var $this = $(this),
-									perData = $this.find(".p-per > span").text(),
-									perHeight = perData * 27;
-								
-								$this.children(".p-chart").height(perHeight);
-							});
-						</script>
+			<!-- /.easy -->
+			<section class="sec benefit">
+				<div class="group inner">
+					<div class="split split-1">
+						<h1 class="com-ft">고금리 혜택과 리스크 관리</h1>
+						<p class="p-1">
+							P2P 투자는 수익률이 먼저? NO!<br>
+							누리펀딩은 고금리 혜택은 물론<br>
+							원금을 지키는 리스크 관리도 소중하게 생각합니다.
+						</p>
+						<div class="row-btn"><a href="https://www.nurifunding.co.kr/service/" class="btn-detail">자세히 보기</a></div>
 					</div>
-					<!--M버전 차트-->
-					<div class="row com-box show-xs" id="per-chart-m">
-						<div class="nth-1">
-							<p class="p-per"><span id="p-per1">1.52</span>%</p>
-							<p class="p-chart"></p>
-							<p class="p-tit">예금 금리</p>
+					<div class="split split-2">
+						<!--PC버전 차트-->
+						<div class="cf hidden-xs per-chart" id="per-chart">
+							<div class="box nth-1">
+								<p class="p-per"><span id="p-per1">1.56</span>%</p>
+								<p class="p-chart"></p>
+								<p class="p-tit">예금 금리</p>
+							</div>
+							<div class="box nth-2">
+								<p class="p-per"><span id="p-per2">1.89</span>%</p>
+								<p class="p-chart"></p>
+								<p class="p-tit">국고채 (5년물)</p>
+							</div>
+							<div class="box nth-3">
+								<p class="p-per"><span id="p-per3">5.61</span>%</p>
+								<p class="p-chart"></p>
+								<p class="p-tit">KOSPI</p>
+							</div>
+							<div class="box nth-4 box-nuri">
+								<p class="p-per"><span id="p-per5">11.06</span>%</p>
+								<p class="p-chart"></p>
+								<p class="p-tit">누리펀딩</p>
+							</div>
+							<div class="tooltip">최소 2배 이상의 안정적인 수익률</div>
 						</div>
-						<div class="nth-2">
-							<p class="p-per"><span id="p-per2">2.15</span>%</p>
-							<p class="p-chart"></p>
-							<p class="p-tit">국고채 (5년물)</p>
-						</div>
-						<div class="nth-3">
-							<p class="p-per"><span id="p-per3">6.85</span>%</p>
-							<p class="p-chart"></p>
-							<p class="p-tit">KOSPI</p>
-						</div>
-						<div class="nth-4">
-							<p class="p-per"><span id="p-per4">12.86</span>%</p>
-							<p class="p-chart"></p>
-							<p class="p-tit">P2P업체 평균</p>
-						</div>
-						<div class="nth-5">
-							<p class="p-per"><span id="p-per5">13.67</span>%</p>
-							<p class="p-chart"></p>
-							<p class="p-tit">누리펀딩</p>
-						</div>
-						<input type="hidden" id="per5_val" value="1367">
-						<script>
-							$("#per-chart-m > div").each(function(idx, item) {
-								var $this = $(this),
-									perData = $this.find(".p-per > span").text(),
-									perHeight = perData * 11.5;
-								
-								$this.children(".p-chart").height(perHeight);
-							});
-						</script>
+						<!--M버전 차트-->
+						<!-- <div class="row show-xs" id="per-chart-m">
+							<div class="box">
+								<p class="p-per"><span id="p-per1">1.52</span>%</p>
+								<p class="p-chart"></p>
+								<p class="p-tit">예금 금리</p>
+							</div>
+							<div class="box">
+								<p class="p-per"><span id="p-per2">2.15</span>%</p>
+								<p class="p-chart"></p>
+								<p class="p-tit">국고채 (5년물)</p>
+							</div>
+							<div class="box">
+								<p class="p-per"><span id="p-per3">6.85</span>%</p>
+								<p class="p-chart"></p>
+								<p class="p-tit">KOSPI</p>
+							</div>
+							<div class="box">
+								<p class="p-per"><span id="p-per4">12.86</span>%</p>
+								<p class="p-chart"></p>
+								<p class="p-tit">P2P업체 평균</p>
+							</div>
+							<div class="box">
+								<p class="p-per"><span id="p-per5">13.67</span>%</p>
+								<p class="p-chart"></p>
+								<p class="p-tit">누리펀딩</p>
+							</div>
+							<input type="hidden" id="per5_val" value="1367">
+							<script>
+								$("#per-chart-m > div").each(function(idx, item) {
+									var $this = $(this),
+										perData = $this.find(".p-per > span").text(),
+										perHeight = perData * 11.5;
+									
+									$this.children(".p-chart").height(perHeight);
+								});
+							</script>
+						</div> -->
 					</div>
-					
-					<!--변경내용 끝-->
+
 				</div>
 			</section>
 			
-			<!--변경내용 시작-->
-			<section class="easy com-pd">
-				<div class="container">
-					<!--변경내용_170530-->
-					<h2 class="com-ft">웹 보안 + 금융 노하우 + 법률 자문<br>P2P 금융의 최고의 인력입니다.</h2>
-					<div class="row com-box" id="easy">
-						<div class="col-xs-12 col-sm-4 col-md-3 nth-1">
-							<img src="https://nurifunding.co.kr/img/easy_01.png" alt="개인정보유출방지">
-							<h3>IT전문기업의<br>개인 정보 유출 방지</h3>
-							<img class="plus" src="https://nurifunding.co.kr/img/icon_plus.png" alt="플러스">
-						</div>
-						<!--<div class="col-xs-12 col-sm-1 plus nth-4"><img src="https://nurifunding.co.kr/img/icon_plus.png" alt="플러스"></div>-->
-						<div class="col-xs-12 col-sm-4 col-md-4 col-md-offset-1 nth-2">
-							<img src="https://nurifunding.co.kr/img/easy_02.png" alt="전문가의설명">
-							<h3>금융 전문가의<br>여신심사 금융 노하우</h3>
-							<img class="plus" src="https://nurifunding.co.kr/img/icon_plus.png" alt="플러스">
-						</div>
-						<!--<div class="col-xs-12 col-sm-1 plus nth-5"><img src="https://nurifunding.co.kr/img/icon_plus.png" alt="플러스"></div>-->
-						<div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-1 nth-3">
-							<img src="https://nurifunding.co.kr/img/easy_03.png" alt="쉬운투자">
-							<h3>변호사<br>계약서 법률 검토</h3>
-						</div>
-						<div class="col-xs-12 ip-more-outer">
-							<div class="col-xs-12 com-sm-4 ip-more-box"><a href="./service/index.html" class="ip-more-btn br4">자세히 보러가기<span class="arr-icon black-r-icon"></span></a></div>
-						</div>
-					</div>
-
-					<!--변경내용_170530 끝-->
-				</div>
-			</section>
-			<!--변경내용 끝-->
-			<!-- 180510 코스닥 벤처펀딩 추가 -->
-	<!--
-			<section class="vcfund fom-pd">
-				<div class="container">
-					<p class="vf-tit-1"><span class="f-bd">KOSDAQ </span>VC Fund</p>
-					<h2 class="com-ft c-blue2 f-bd">코스닥 벤처펀드도 누리펀딩!</h2>
-					<p class="vf-tit-2">친절한 상담을 약속드립니다.</p>
-					<div class="vf-box">
-						<p class="vf-txt-1">코스닥벤처펀드란?</p>
-						<p class="vf-txt-2">
-							코스닥 시장활성화 방안의 일환으로 도입된 펀드로 펀드 투자금의 절반을 혁신, 벤처기업에 투자하는 상품입니다.<br>
-							(2018년 3월 5일 첫 선을 보임)
-						</p>
-					</div>
-				</div>
-			</section>
-	-->
 			<section class="faq com-pd">
 				<div class="container">
 					<h2 class="com-ft">자주하는 질문</h2>
