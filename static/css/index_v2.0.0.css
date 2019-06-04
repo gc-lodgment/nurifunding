@@ -544,7 +544,7 @@
 	.easy .split.split-2 .box.nth-1:after,
 	.easy .split.split-2 .box.nth-2:after {content: ''; z-index: 1; position: absolute; bottom: -38px; left: 50%; margin-left: -24px; width: 48px; height: 48px; background: url('https://nurifunding.co.kr/img/renew/main/m_plus.png') no-repeat;}
 	
-	.benefit {padding: 130px 0 90px; background: #e1f3ff;}
+	.benefit {padding: 130px 0; background: #e1f3ff;}
 	.benefit h1 {margin-bottom: 20px; letter-spacing: normal;}
 	.benefit .inner {}
 	.benefit .split {float: left; position: relative; width: 50%; box-sizing: border-box; text-align: center;}
@@ -560,15 +560,14 @@
 	.benefit .split.split-2 .per-chart .box.nth-3 {left: 270px;}
 	.benefit .split.split-2 .per-chart .box.nth-4 {left: 400px;}
 	.benefit .split.split-2 .per-chart .box .p-per, 
-	.benefit .split.split-2 .per-chart .box .p-tit {font-size: 12.5px; text-align: center; word-break: keep-all;}
 	.benefit .split.split-2 .per-chart .box .p-per {position: relative; margin-bottom: 10px; font-size: 24px; color: #022f4c;}
-	.benefit .split.split-2 .per-chart .box .p-tit {position: absolute; bottom: -30px; width: 100%; font-size: 18px;}
+	.benefit .split.split-2 .per-chart .box .p-tit {position: absolute; bottom: -35px; width: 100%; font-size: 18px; text-align: center; word-break: keep-all;}
 	.benefit .split.split-2 .per-chart .box .p-chart {
 		display: inline-block; position: relative; width: 100%; height: 0; vertical-align: bottom; background: #5a7383;
 		transition: all 1s; -webkit-transition: all 1s; -moz-transition: all 1s; -o-transition: all 1s;
 	}
 	.benefit .split.split-2 .per-chart .box.box-nuri .p-per {z-index: 1; color: #fff; margin-bottom: 0; bottom: -40px;} 
-	.benefit .split.split-2 .per-chart .box.box-nuri .p-tit {color: #398fe1;}
+	.benefit .split.split-2 .per-chart .box.box-nuri .p-tit {font-size: 22px; color: #398fe1; font-weight: 700;}
 	.benefit .split.split-2 .per-chart .box.box-nuri .p-chart {background: #398fe1; height: 0;}
 	.benefit .split.split-2 .per-chart .box.box-nuri .p-chart:before {content: ''; display: block; position: absolute; top: -150px; left: -25px; width: 1px; border: 80px solid transparent; border-bottom-color: #398fe1;}
 
