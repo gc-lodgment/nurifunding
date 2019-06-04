@@ -123,6 +123,8 @@ select.base-1 {
 
 /* 공통속성 css */
 hr {border: none; border-top: 1px solid #ddd;}
+.btn-base.btn-blue {background: #398fe1;}
+.btn-base.btn-gray {background: #989898;}
 /*jquery컴포넌트 공통 속성*/
 
 /* 리뉴얼에서는 .container 사용 X 대체 .group  사용 */
@@ -189,8 +191,6 @@ hr {border: none; border-top: 1px solid #ddd;}
     .form-input {}
     .form-select {}
     .btn-base {position: relative; display: inline-block; vertical-align: middle; box-sizing: border-box; color: #fff; background: #398fe1; height: 26px; padding: 0 5px; border-radius: 3px; line-height: 26px; font-size: 13px; text-align: center;}
-    .btn-base.btn-blue {background: #398fe1;}
-    .btn-base.btn-gray {background: #989898;}
     
     .wrap {}
     .header, .mlnb-wrap {z-index: 11;}
@@ -367,8 +367,7 @@ hr {border: none; border-top: 1px solid #ddd;}
     .form-input {}
     .form-select {}
     .btn-base {position: relative; display: inline-block; vertical-align: middle; box-sizing: border-box; color: #fff; background: #398fe1; height: 36px; padding: 0 5px; border-radius: 3px; line-height: 36px; font-size: 14px; text-align: center;}
-    .btn-base.btn-blue {background: #398fe1;}
-    .btn-base.btn-gray {background: #989898;}
+
 
     /* PC 해더 시작 */
     .wrap {}
