@@ -4,9 +4,9 @@
 @import url('https://nurifunding.co.kr/static/fonts/nanumgothic/nanumgothic.css');
 @import url('https://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css');
 /* css 초기화 */
-/* @import url('https://nurifunding.co.kr/static/css/grid_1200.css'); */
+@import url('https://nurifunding.co.kr/static/css/grid_1200.css');
 @import url('https://nurifunding.co.kr/static/css/include/pop.css');
-@import url('../../static/css/grid_1200.css');
+/* @import url('../../static/css/grid_1200.css'); */
 /* @import url('../../static/css/include/pop.css'); */
 /*@import url('https://nurifunding.co.kr/static/fonts/nanumgothic/nanumgothic.css');
 @import url('https://fonts.googleapis.com/earlyaccess/notosanskr.css');
@@ -43,7 +43,7 @@ input[type="password"] {font-family: sans-serif;}
 
 
 .blind {visibility: hidden;}
-.bounceIn, .fadeIn, .flipInX, .fadeInLeft {visibility: visible;}
+.fadeInUp, .bounceIn, .fadeIn, .flipInX, .fadeInLeft {visibility: visible;}
 
 /*폰트 색상*/
 .bg-blue {background-color: #398fe1;}

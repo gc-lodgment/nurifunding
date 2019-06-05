@@ -40,7 +40,7 @@ $(function () {
 
 //interactive 효과
 function wayP(on, itm, ht) {
-	//차트
+	// 차트
 	$(itm).children('div').each(function (index, item) {
 		var perData = $(item).find('.p-per > span').text(),
 			perHeight = perData * ht ;
@@ -51,15 +51,33 @@ function wayP(on, itm, ht) {
 			$(itm).children('.tooltip').addClass('on');
 
 		}, {
-			offset: '99%'
+			offset: '75%'
 		});
 	});
 	
-	//쉬운 대출
-	$("#easy > div img, #easy > div h3, #easy > div p, #easy > div.ip-more-outer").each(function (idx, item) {
+	// 진행중인 투자상품
+	$("#ingProduct .ip-outer").each(function (idx, item) {
 		$(item).addClass("blind");
 		$(item).waypoint(function () {
-			$(item).addClass('animated fadeIn');
+			$(item).addClass('animated fadeInUp');
+		}, {
+			offset: '75%'
+		});
+	});
+
+	// 쉬운 대출
+	// $("#easy .split-1 > *").each(function (idx, item) {
+	// 	$(item).addClass("blind");
+	// 	$(item).waypoint(function () {
+	// 		$(item).addClass('animated fadeInUp');
+	// 	}, {
+	// 		offset: '75%'
+	// 	});
+	// });
+	$("#easy .split-2").each(function (idx, item) {
+		$(item).addClass("blind");
+		$(item).waypoint(function () {
+			$(item).addClass('animated fadeInUp');
 		}, {
 			offset: '75%'
 		});

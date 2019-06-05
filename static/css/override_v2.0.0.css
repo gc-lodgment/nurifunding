@@ -6,8 +6,8 @@
 
 .bx-wrapper .bx-controls-direction a {width: 30px; height: auto; top: 158px; z-index: auto;}
 .bx-wrapper .bx-controls-direction a img {width: 100%;}
-.bx-wrapper .bx-prev {left: -50px;}
-.bx-wrapper .bx-next {right: -50px;}
+/* .bx-wrapper .bx-prev {left: -50px;}
+.bx-wrapper .bx-next {right: -50px;} */
 
 /* 메인 슬라이더 */
 .main .swiper-container .bx-wrapper .bx-pager,
