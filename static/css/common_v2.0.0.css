@@ -259,28 +259,28 @@ hr {border: none; border-top: 1px solid #ddd;}
     .footer .f-txt .xs-br {display: block;}
 
     /* 180528 푸터 수정 */
-    .footer-01 {position:relative; box-sizing:border-box; min-width:225px; margin:0 auto; padding:25px 40px 35px; color: #b4b4b4; background: #282828;}
-    .footer-01 .f-link-list {margin-top:5px}
-    .footer-01 .f-link-list li {float:left; margin-left:6px}
-    .footer-01 .f-link-list li:first-child {margin-left:0;}
-    .footer-01 .f-link-list li a {display:block; width:80%;}
+    .footer {position:relative; box-sizing:border-box; min-width:225px; margin:0 auto; padding:25px 40px 35px; color: #b4b4b4; background: #282828;}
+    .footer .f-link-list {margin-top:5px}
+    .footer .f-link-list li {float:left; margin-left:6px}
+    .footer .f-link-list li:first-child {margin-left:0;}
+    .footer .f-link-list li a {display:block; width:80%;}
     
-    .footer-01 .logo {position:relative; display:block; width:150px; margin-left:-6px;}
-    .footer-01 .a-txt {position:relative; display:inline-block;}
-    .footer-01 .a-txt a {float:left; margin-left:13px; margin-top:10px; font-size:13px; color: #d3d3d3}
-    .footer-01 .a-txt a:first-child {margin-left:0}
-    .footer-01 .a-txt .nth-4 {clear:both; float:left; margin-left:0}
+    .footer .logo {position:relative; display:block; width:150px; margin-left:-6px;}
+    .footer .a-txt {position:relative; display:inline-block;}
+    .footer .a-txt a {float:left; margin-left:13px; margin-top:10px; font-size:13px; color: #d3d3d3}
+    .footer .a-txt a:first-child {margin-left:0}
+    .footer .a-txt .nth-4 {clear:both; float:left; margin-left:0}
     
-    .footer-01 .f-adr-box {position:relative; margin-top:15px;}
-    .footer-01 .f-adr-box .f-adr {margin-top:15px}
-    .footer-01 .f-adr-box .f-adr:first-child {padding-top:115px;}
-    .footer-01 .f-adr-box .f-adr.last {position:absolute; top:0; margin-top:0}
+    .footer .f-adr-box {position:relative; margin-top:15px;}
+    .footer .f-adr-box .f-adr {margin-top:15px}
+    .footer .f-adr-box .f-adr:first-child {padding-top:115px;}
+    .footer .f-adr-box .f-adr.last {position:absolute; top:0; margin-top:0}
     
-    .footer-01 .f-adr-box .f-adr address {font-size:12px; line-height:1.5em; word-break:keep-all;}
-    .footer-01 .f-adr-box .f-adr address span {display:block; margin-bottom:2px; font-size:15px;}
-    .footer-01 .f-txt-box {position:relative; margin-top:15px;}
-    .footer-01 .f-txt {font-size:12px; line-height:1.5em; word-break:keep-all;}
-    .footer-01 .f-txt span {display:inline-block}
+    .footer .f-adr-box .f-adr address {font-size:12px; line-height:1.5em; word-break:keep-all;}
+    .footer .f-adr-box .f-adr address span {display:block; margin-bottom:2px; font-size:15px;}
+    .footer .f-txt-box {position:relative; margin-top:15px;}
+    .footer .f-txt {font-size:12px; line-height:1.5em; word-break:keep-all;}
+    .footer .f-txt span {display:inline-block}
     
     
     
@@ -288,8 +288,8 @@ hr {border: none; border-top: 1px solid #ddd;}
     
     /*
     
-    .footer-01 .f-adr-box .f-adr {float:left; margin-right:35px}
-    .footer-01 .f-adr-box .f-link-list {margin-top:10px;}*/
+    .footer .f-adr-box .f-adr {float:left; margin-right:35px}
+    .footer .f-adr-box .f-link-list {margin-top:10px;}*/
     
     /* 180523_사이드배너_카카오톡 플러스 친구_다솜 */
     .side-banner {z-index: 9; position:fixed; display:inline-block; width: 110px; bottom:85px; right:0}
@@ -376,7 +376,10 @@ hr {border: none; border-top: 1px solid #ddd;}
     /*.gnb .sub-navbar {z-index: 3;}*/
     .header, .gnb {height: 90px;}
     .header {position: relative;}
-    .gnb {position: fixed; left: 0; width: 100%; background: #fff;}
+    .gnb {position: fixed; left: 0; width: 100%; background: #fff;
+        transition: box-shadow 1s;
+    }
+    .gnb.on {box-shadow: 0 1px 2px 1px rgba(0,0,0, .1);}
     .gnb > .inner {height: 100%; position: relative;}
     .gnb .navbar-header {position: absolute; left: 0; top: 28px;}
     .gnb .navbar-header .navbar-brand {position: relative; display: inline-block; width: 200px;}
@@ -474,26 +477,34 @@ hr {border: none; border-top: 1px solid #ddd;}
 
     
     /* 180528 푸터 수정 */
-    .footer-01 {position:relative; padding:25px 0 70px; color: #b4b4b4; background: #282828;}
-    .footer-01 .footer-box {/* width:1000px;  */ padding-left:0; }
-    .footer-01 .f-link-box {margin-top:30px; padding:0 0 95px 8px;}
-    .footer-01 .f-link-list {}
-    .footer-01 .f-link-list li {float:left; margin-left:12px}
-    .footer-01 .f-link-list li:first-child {margin-left:0}
-    .footer-01 .f-link-list li a {display:block}
-    .footer-01 .f-link-list li a img {max-width:162px}
-    .footer-01 .logo {position:absolute; display:inline-block; top:0;}
-    .footer-01 .a-txt {position:relative; display:inline-block; padding:10px 0 0 200px;}
-    .footer-01 .a-txt a {margin-left: 15px; font-size:15px; color: #d3d3d3}
-    .footer-01 .f-adr-box {position:relative; margin-top:40px; margin-left:8px}
-    .footer-01 .f-adr-box .f-adr {float:left; width: 237px; margin-right:10px}
-    .footer-01 .f-adr-box .f-adr.last {margin-right:0}
-    .footer-01 .f-adr-box .f-adr address {font-size:12px; line-height:20px; word-break:keep-all;}
-    .footer-01 .f-adr-box .f-adr address span {display:block; margin-bottom:2px; font-size:16px;}
-    .footer-01 .f-adr-box .f-link-list {display:inline-block; margin-top:10px;}
-    .footer-01 .f-txt-box {position:absolute; bottom:0;}
-    .footer-01 .f-txt {margin-left:8px; font-size:12px; line-height:20px;}
-    .footer-01 .f-txt span {display:inline-block}
+    .footer {position:relative; padding-bottom: 20px; background: #3D3F49; color: #ccc;}
+    .footer [class*='area-'] {border-top: 1px solid #4f515b;}
+    .footer [class*='area-']:first-child {border-top: 0;}
+    .footer .area-term {padding: 20px 0; background: #33353e;}
+    .footer .area-term .link {position: relative; display: inline-block; padding: 0 30px; font-size: 15px; line-height: 1.2; color: #bbb; letter-spacing: normal;}
+    .footer .area-term .link:before {content: ''; display: inline-block; position: absolute; left: -1px; top: 2px; width: 1px; height: 15px; background: #bbb;}
+    .footer .area-term .link:first-child {padding-left: 0;}
+    .footer .area-term .link:first-child:before {display: none;}
+    .footer .area-contact {padding: 30px 0;}
+    .footer .area-contact .inner {font-size: 0;}
+    .footer .area-contact .inner > * {display: inline-block; position: relative; vertical-align: middle;}
+    .footer .area-contact .logo {margin-right: 65px;}
+    .footer .area-contact .s-1 {font-size: 27px; color: #fff;}
+    .footer .area-contact .s-2 {top: -1px; margin-left: 10px; font-size: 35px; color: #398fe1;}
+    .footer .area-contact .s-3 {margin-left: 10px; margin-right: 35px; font-size: 18px; color: #ccc; font-weight: 300;}
+    .footer .area-contact .link {margin-left: 10px;}
+    .footer .area-addr [class*='row-'] {position: relative;}
+    .footer .area-addr .row-addr {padding: 35px 0;}
+    .footer .area-addr .row-addr .split {float: left; position: relative; width: 50%;}
+    .footer .area-addr .row-addr .split address {font-size: 16px; line-height: 1.5; font-weight: 300;}
+    .footer .area-addr .row-addr .split address span {margin-right: 5px; font-size: 18px; font-weight: 500;}
+    .footer .area-addr .row-addr .split.split-1 .link {position: absolute; bottom: 0px; right: 45px;}
+    .footer .area-addr .row-notice {padding: 15px; background: #41434E; font-size: 13px; line-height: 1.4; color: #9f9f9f; letter-spacing: 0; word-break: keep-all;}
+    .footer .area-addr .row-certify {padding: 20px 0;}
+    .footer .area-addr .row-certify .list > li {margin-left: 20px; display: inline-block; vertical-align: middle;}
+    .footer .area-addr .row-certify .list > li:first-child {margin-left: 0;}
+    .footer .area-addr .row-certify .list > li .link > img {}
+    .footer small {float: right; position: absolute; top: 35px; right: 0; font-size: 13px; color: #bbb;}
     
     /* 180622_툴팁박스_다솜 */
     .tooltip-box {display:inline-block; }
@@ -543,18 +554,18 @@ hr {border: none; border-top: 1px solid #ddd;}
     .gnb .navbar-collapse .menu .h-link.fir {margin-left:20px;} 
     .gnb .navbar-collapse .menu .h-link img {width:130px;}
 
-    .footer-01 .footer-box {width:1000px; padding-left:30px;}
-    .footer-01 .a-txt a {margin-left: 20px; font-size:16px;}
-    .footer-01 .f-adr-box .f-adr {width: auto; margin-right:35px}
-    .footer-01 .f-adr-box .f-adr address {font-size:14px; line-height:23px;}
-    .footer-01 .f-adr-box .f-adr address span {font-size:20px;}
-    .footer-01 .f-txt {font-size:14px; line-height:23px;}
+    .footer .footer-box {width:1000px; padding-left:30px;}
+    .footer .a-txt a {margin-left: 20px; font-size:16px;}
+    .footer .f-adr-box .f-adr {width: auto; margin-right:35px}
+    .footer .f-adr-box .f-adr address {font-size:14px; line-height:23px;}
+    .footer .f-adr-box .f-adr address span {font-size:20px;}
+    .footer .f-txt {font-size:14px; line-height:23px;}
 
     .tooltip-detail {right:auto; margin-left:-40px}*/
 }
 
 /* 
-    .footer-01 .f-txt span {display:inline-block} */
+    .footer .f-txt span {display:inline-block} */
 
 /*@media (min-width: 980px) {
 	.hidden-md {display: none !important;}

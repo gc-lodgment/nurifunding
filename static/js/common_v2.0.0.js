@@ -72,6 +72,15 @@ function hdFn() {
             $('#menu2-bg').removeClass('on');
         }
     });
+
+    $(window).on('scroll', function() {
+        var scr = $(window).scrollTop();
+        if ( scr > 0 ) {
+            hd.children('.gnb').addClass('on');
+        } else {
+            hd.children('.gnb').removeClass('on');
+        }
+    });
 }
 
 /* 팝업 오픈  */

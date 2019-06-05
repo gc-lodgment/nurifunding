@@ -14,6 +14,7 @@
 /*전체*/
 .wrap {position: relative; width: 100%;}
 .contents.home {position: relative; font-family: 'Noto Sans KR', sans-serif;}
+.contents.home, * {letter-spacing: -0.5px;}
 
 
 /*모바일 영역, col-xs*/
@@ -434,35 +435,37 @@
 	.main-box .swiper-slide img {display: block; margin: 0 auto;}
     .main .quick-bar {position: absolute; width: 100%; bottom: 0;}
     .main .quick-bar .inner {background: #3690e2; height: 150px;}
-    .main .quick-bar .inner .fst img {display: block;}
-    .main .quick-bar .inner > [class*='box-'] {float: left; position: relative; box-sizing: border-box; font-size: 18px; color: #fff;}
-    .main .quick-bar .inner > [class*='box-'] h2 {font-size: 18px;}
-    .main .quick-bar .inner .box-2,
-    .main .quick-bar .inner .box-3 {width: 480px; padding: 20px; border-left: 1px solid #fff; height: 100%;}
-    .main .quick-bar .inner .box-2 {}
-    .main .quick-bar .inner .box-2 .list {font-size: 0; white-space: nowrap;}
-    .main .quick-bar .inner .box-2 .list > li {display: inline-block; margin: 12px 20px 0; text-align: center; font-size: 15px;}
-    .main .quick-bar .inner .box-2 .list > li:first-child {margin-left: 15px;}
-    .main .quick-bar .inner .box-2 .list > li figcaption {margin-top: 5px; letter-spacing: normal;}
-    .main .quick-bar .inner .box-3 h2 .more-btn {float: right;}
-    .main .quick-bar .inner .box-3 .list {margin-top: 12px; font-size: 15px;}
-    .main .quick-bar .inner .box-3 .list > li {display: table; width: 100%; margin-top: 8px; font-weight: 300;}
-    .main .quick-bar .inner .box-3 .list > li > * {display: table-cell; line-height: 1.5;}
-    .main .quick-bar .inner .box-3 .list > li:first-child > * {font-weight: 400;}
-    .main .quick-bar .inner .box-3 .list > li .tit {overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
-    .main .quick-bar .inner .box-3 .list > li .tit:before {content: '·'; display: inline-block; margin-right: 5px;}
-    .main .quick-bar .inner .box-3 .list > li .create-at {text-align: right;}
+    .main .quick-bar .box .fst img {display: block;}
+    .main .quick-bar .box {float: left; position: relative; box-sizing: border-box; font-size: 18px; color: #fff;}
+    .main .quick-bar .box h2 {font-size: 18px;}
+    .main .quick-bar .box-2,
+    .main .quick-bar .box-3 {width: 480px; padding: 20px; border-left: 1px solid #fff; height: 100%;}
+    .main .quick-bar .box-2 {}
+    .main .quick-bar .box-2 .list {font-size: 0; white-space: nowrap;}
+    .main .quick-bar .box-2 .list > li {display: inline-block; margin: 12px 20px 0; text-align: center; font-size: 15px;}
+    .main .quick-bar .box-2 .list > li:first-child {margin-left: 15px;}
+    .main .quick-bar .box-2 .list > li figcaption {margin-top: 5px; letter-spacing: normal;}
+    .main .quick-bar .box-3 h2 .more-btn {float: right;}
+    .main .quick-bar .box-3 .list {margin-top: 12px; font-size: 15px;}
+    .main .quick-bar .box-3 .list > li {display: table; width: 100%; margin-top: 8px; font-weight: 300;}
+    .main .quick-bar .box-3 .list > li > * {display: table-cell; line-height: 1.5;}
+    .main .quick-bar .box-3 .list > li:first-child > * {font-weight: 400;}
+    .main .quick-bar .box-3 .list > li .tit {overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+    .main .quick-bar .box-3 .list > li .tit:before {content: '·'; display: inline-block; margin-right: 5px;}
+    .main .quick-bar .box-3 .list > li .create-at {text-align: right;}
     
     .ingProduct {padding: 100px 0 90px; background: #f5f5f5;}
-    .ingProduct .inner {}
-    .ingProduct .inner h1 .more-btn {display: inline-block; position: relative; top: 12px; float: right; font-size: 16px; color: #555;}
-    .ingProduct .inner h1 .more-btn .ic-rArrow {margin-left: 5px;}
-    .ingProduct .inner h1 .more-btn .ic-rArrow:after {border-color: #555;}
+    .ingProduct {}
+    .ingProduct h1 .more-btn {display: inline-block; position: relative; top: 12px; float: right; font-size: 16px; color: #555;}
+    .ingProduct h1 .more-btn .ic-rArrow {margin-left: 5px;}
+    .ingProduct h1 .more-btn .ic-rArrow:after {border-color: #555;}
 	.ingProduct .ip-wrap {position: relative; width: 1230px; left: -15px; margin-top: 20px;}
-    /* .ingProduct .ip-outer {position: relative; margin: 0 15px; margin-top: 30px; padding: 0; width: 380px;} */
     .ingProduct .ip-outer {position: relative; padding: 0 15px; margin-top: 30px; width: 33.33%;}
     .ingProduct .ip-outer:nth-child(4n) {clear:both;}
-	.ingProduct .ip-outer .ip-box {position: relative; margin: 0 auto; background: #fff; border: 1px solid #ddd; border-radius: 10px; overflow: hidden;}
+	.ingProduct .ip-outer .ip-box {
+		position: relative; margin: 0 auto; background: #fff; border: 1px solid #ddd; border-radius: 10px; overflow: hidden;
+		transition: box-shadow 0.3s; -webkit-transition: box-shadow 0.3s;
+	}
 	.ingProduct .ip-outer .ip-box:hover {box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.25);}
 	/* .ingProduct .ip-outer .thumb-box .new {position: absolute; top: 10px; left: 10px; font-size: 14px; background: rgba(38, 196, 183, 0.88); padding: 11px 5px; color: #fff; border: 2px solid #fff; z-index: 1;}
 	.ingProduct .ip-outer .thumb-box .end {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0, .58); text-align: center;}
@@ -508,8 +511,8 @@
     
 	.rate {background: #fff; border-top: 1px solid rgb(205,205,205);}
 	.rate .inner {text-align: center; padding: 60px 0 75px;}
-	.rate .inner .cmt {position: absolute; bottom: 30px; right: 20px; font-size: 14px; color: #555; letter-spacing: normal;}
-	.rate .inner .row {display: table; width: 100%;}
+	.rate .row {display: table; width: 100%;}
+	.rate .row-cmt {position: absolute; bottom: 30px; right: 20px; font-size: 14px; color: #555; letter-spacing: normal;}
 	.rate .rr {display: table-cell; width: auto; padding: 0 30px; box-sizing: border-box;}
 	.rate .rr.nth-1 {width: 24%}
 	.rate .rr.nth-2 {width: 24%}
@@ -544,7 +547,7 @@
 	.easy .split.split-2 .box.nth-1:after,
 	.easy .split.split-2 .box.nth-2:after {content: ''; z-index: 1; position: absolute; bottom: -38px; left: 50%; margin-left: -24px; width: 48px; height: 48px; background: url('https://nurifunding.co.kr/img/renew/main/m_plus.png') no-repeat;}
 	
-	.benefit {padding: 130px 0; background: #e1f3ff;}
+	.benefit {padding: 130px 0 90px; background: #e1f3ff;}
 	.benefit h1 {margin-bottom: 20px; letter-spacing: normal;}
 	.benefit .inner {}
 	.benefit .split {float: left; position: relative; width: 50%; box-sizing: border-box; text-align: center;}
@@ -559,40 +562,62 @@
 	.benefit .split.split-2 .per-chart .box.nth-2 {left: 140px;}
 	.benefit .split.split-2 .per-chart .box.nth-3 {left: 270px;}
 	.benefit .split.split-2 .per-chart .box.nth-4 {left: 400px;}
-	.benefit .split.split-2 .per-chart .box .p-per, 
 	.benefit .split.split-2 .per-chart .box .p-per {position: relative; margin-bottom: 10px; font-size: 24px; color: #022f4c;}
 	.benefit .split.split-2 .per-chart .box .p-tit {position: absolute; bottom: -35px; width: 100%; font-size: 18px; text-align: center; word-break: keep-all;}
 	.benefit .split.split-2 .per-chart .box .p-chart {
-		display: inline-block; position: relative; width: 100%; height: 0; vertical-align: bottom; background: #5a7383;
+		display: block; position: relative; width: 100%; height: 0; background: #5a7383;
 		transition: all 1s; -webkit-transition: all 1s; -moz-transition: all 1s; -o-transition: all 1s;
 	}
-	.benefit .split.split-2 .per-chart .box.box-nuri .p-per {z-index: 1; color: #fff; margin-bottom: 0; bottom: -40px;} 
+	.benefit .split.split-2 .per-chart .box.box-nuri .p-per {z-index: 1; color: #fff;} 
+	.benefit .split.split-2 .per-chart .box.box-nuri.on .p-per {bottom: -35px;}
 	.benefit .split.split-2 .per-chart .box.box-nuri .p-tit {font-size: 22px; color: #398fe1; font-weight: 700;}
 	.benefit .split.split-2 .per-chart .box.box-nuri .p-chart {background: #398fe1; height: 0;}
-	.benefit .split.split-2 .per-chart .box.box-nuri .p-chart:before {content: ''; display: block; position: absolute; top: -150px; left: -25px; width: 1px; border: 80px solid transparent; border-bottom-color: #398fe1;}
-
+	.benefit .split.split-2 .per-chart .box.box-nuri .p-chart:before {content: ''; display: block; position: absolute; top: -160px; left: -25px; width: 1px; border: 80px solid transparent; border-bottom-color: #398fe1;}
 	.benefit .split.split-2 .per-chart .box.nth-1 .p-chart {height: 32px; height: 0;}
 	.benefit .split.split-2 .per-chart .box.nth-2 .p-chart {height: 42px; height: 0;}
 	.benefit .split.split-2 .per-chart .box.nth-3 .p-chart {height: 115px; height: 0;}
 	.benefit .split.split-2 .per-chart .box.nth-4 .p-chart {height: 220px; background: #398fe1; height: 0;}
-
+	/* .benefit .split.split-2 .per-chart .box.nth-1 .p-chart {height: 32px;}
+	.benefit .split.split-2 .per-chart .box.nth-2 .p-chart {height: 42px;}
+	.benefit .split.split-2 .per-chart .box.nth-3 .p-chart {height: 115px;}
+	.benefit .split.split-2 .per-chart .box.nth-4 .p-chart {height: 220px;} */
 	.ie8 .benefit .split.split-2 .per-chart .box.nth-1 .p-chart {height: 32px;}
 	.ie8 .benefit .split.split-2 .per-chart .box.nth-2 .p-chart {height: 42px;}
 	.ie8 .benefit .split.split-2 .per-chart .box.nth-3 .p-chart {height: 115px;}
 	.ie8 .benefit .split.split-2 .per-chart .box.nth-4 .p-chart {height: 220px;}
+	.benefit .split.split-2 .per-chart .box .p-per,
+	.benefit .split.split-2 .per-chart .tooltip,
+	.benefit .split.split-2 .per-chart .tooltip:after {
+		visibility: hidden; opacity: 0;
+		transition: all 0.3s linear 1.5s;
+	}
+	.benefit .split.split-2 .per-chart .box .p-per {transition: all 0.3s linear 1s;}
+	.benefit .split.split-2 .per-chart .tooltip {
+		display: block; z-index: 1; position: absolute; top: -15px; right: 90px; min-width: 304px; padding: 0 20px; background: #ff9933; line-height: 50px; font-size: 20px; color: #fff; letter-spacing: -0.5px;
+	}
+	.benefit .split.split-2 .per-chart .tooltip:after {content: ''; display: block; position: absolute; bottom: -13px; right: 0; width: 1px; border: 20px solid transparent; border-right-color: #ff9933;}
+	.benefit .split.split-2 .per-chart .tooltip.on:after,
+	.benefit .split.split-2 .per-chart .tooltip.on,
+	.benefit .split.split-2 .per-chart .box.on .p-per {visibility: visible; opacity: 1;}
+	.benefit .row-cmt {margin-top: 70px; font-size: 16px; color: #666;}
 
-	.faq {background: #dae7f3;}
-	.fq-outer {margin-top: 30px;}
-	.fq-box {padding: 20px 15px; background: #fff;}
-	.fqh3, .fq-a {position: relative; padding-left: 40px;}
-	.fqh3 {padding-bottom: 15px; border-bottom: 1px solid #e5e5e5; font-size: 18px; line-height: 1.2em; letter-spacing: 0; min-height: 58px;}
-	.fq-a {padding-top: 13px; font-size: 16px; line-height: 1.3em; min-height: 116px;}
-	.q-icon, .a-icon {position: absolute; top: 0; left: 0; width: 30px; height: 33px;}
-	.q-icon {background-position: -100px; top: 4px;}
-	.a-icon {background-position: -150px; top: 18px;}
-	.fq-btn-outer {margin: 50px auto 0px;}
-	.fq-btn-box {text-align: center;}
-	.fq-btn {display: inline-block; width: 65%; border:1px solid #dcdcdc; line-height: 2.8em; font-size: 20px; background: #126cc3; color: #fff;}
+	.bn-account {background: #4DA7F5;}
+
+	/* .faq {padding: 100px 0 90px; background: #dae7f3;} */
+	.faq {padding: 100px 0 90px; background: #E1F3FF;}
+	.faq .fq-wrap {position: relative; width: 1230px; left: -15px; margin-top: 20px;}
+    .faq .fq-wrap .fq-outer {float: left; position: relative; padding: 0 15px; margin-top: 30px; width: 33.33%;}
+	.faq .fq-wrap .fq-outer .fq-box {padding: 20px 15px; background: #fff;}
+	.faq .fq-wrap .fq-outer .fq-box .fq-q, 
+	.faq .fq-wrap .fq-outer .fq-box .fq-a {position: relative; padding-left: 40px;}
+	.faq .fq-wrap .fq-outer .fq-box .fq-q {padding-bottom: 15px; border-bottom: 1px solid #e5e5e5; font-size: 18px; line-height: 2.3; letter-spacing: 0; min-height: 58px;}
+	.faq .fq-wrap .fq-outer .fq-box .fq-a {padding-top: 13px; font-size: 16px; line-height: 1.3em; min-height: 116px;}
+	.faq .fq-wrap .fq-outer .fq-box .q-icon, 
+	.faq .fq-wrap .fq-outer .fq-box .a-icon {position: absolute; top: 0; left: 0; width: 30px; height: 33px;}
+	.faq .fq-wrap .fq-outer .fq-box .q-icon {background-position: -100px; top: 4px;}
+	.faq .fq-wrap .fq-outer .fq-box .a-icon {background-position: -150px; top: 18px;}
+	.faq .row-btn {margin-top: 50px; text-align: center;}
+	.faq .row-btn .btn-more {display: inline-block; width: 250px; font-size: 20px; line-height: 58px; background: #126cc3; box-sizing: border-box; color: #fff;}
 
 	/* 180510_코스닥 벤처펀딩_다솜 */
 	.vcfund {padding:65px 0 70px; text-align:center; background: #fff;}

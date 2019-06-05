@@ -11,10 +11,9 @@ $(function () {
 
 	//메인 bxslider
 	$('.swiper-wrapper').bxSlider({
-		// auto: true,
-		speed: 500,
-		duration: 7500,
-		slideMargin: 50
+		auto: true,
+		speed: 800,
+		duration: 8000,
 	});
 
 });
@@ -42,50 +41,17 @@ $(function () {
 //interactive 효과
 function wayP(on, itm, ht) {
 	//차트
-	$(itm).children('div').each(function (idx, item) {
-		var $this = $(this)
-			, $pChart = $this.find('.p-chart')
-			, perData = $this.find(".p-per > span").text()
-			, perHeight = perData * ht ;
+	$(itm).children('div').each(function (index, item) {
+		var perData = $(item).find('.p-per > span').text(),
+			perHeight = perData * ht ;
 		
-		$(item).waypoint(function () {
-			$this.children(".p-chart").height(perHeight);
+		$(itm).waypoint(function () {
+			$(item).children('.p-chart').height(perHeight);
+			$(item).addClass('on');
+			$(itm).children('.tooltip').addClass('on');
+
 		}, {
-			offset: '95%'
-		});
-	});
-	
-	$(itm).children('div').each(function (idx, item) {
-		var $this = $(this)
-			, $pPer = $this.find(".p-per");
-		$pPer.addClass("blind");
-		
-		$pPer.waypoint(function () {
-			$pPer.addClass('fadeIn');
-            
-			$("#p-per1").animateNumber({
-				number: $('#per1_val').val(),
-				numberStep: $.animateNumber.numberStepFactories.separator('.', 2)
-			}, 1000);
-			$("#p-per2").animateNumber({
-				number: $('#per2_val').val(),
-				numberStep: $.animateNumber.numberStepFactories.separator('.', 2)
-			}, 1000);
-			$("#p-per3").animateNumber({
-				number: $('#per3_val').val(),
-				numberStep: $.animateNumber.numberStepFactories.separator('.', 2)
-			}, 1000);
-			$("#p-per4").animateNumber({
-				number: $('#per4_val').val(),
-				numberStep: $.animateNumber.numberStepFactories.separator('.', 2)
-			}, 1000);
-			$("#p-per5").animateNumber({
-				number: $('#per5_val').val(),
-				numberStep: $.animateNumber.numberStepFactories.separator('.', 2)
-			}, 1000);
-			
-		}, {
-			offset: '89%'
+			offset: '99%'
 		});
 	});
 	
