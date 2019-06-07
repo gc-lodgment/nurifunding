@@ -20,13 +20,13 @@
 	<link rel="stylesheet" href="https://nurifunding.co.kr/static/css/jquery.bxslider.css">
 
 	<link rel="stylesheet" href="https://nurifunding.co.kr/static/css/reset.css">
-	<link rel="stylesheet" href="https://nurifunding.co.kr/static/css/override_v2.0.0.css">
+	<!-- <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/override_v2.0.0.css">
     <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/common_v2.0.0.css">
-    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/index_v2.0.0.css">
+    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/index_v2.0.0.css"> -->
 
-	<!-- <link rel="stylesheet" href="../static/css/override_v2.0.0.css">
+	<link rel="stylesheet" href="../static/css/override_v2.0.0.css">
 	<link rel="stylesheet" href="../static/css/common_v2.0.0.css">
-	<link rel="stylesheet" href="../static/css/index_v2.0.0.css"> -->
+	<link rel="stylesheet" href="../static/css/index_v2.0.0.css">
 
 
 
@@ -39,10 +39,10 @@
 	<script type="text/javascript" src="https://nurifunding.co.kr/static/js/jquery.easing.min.js"></script>
 	<!--<script type="text/javascript" src="https://nurifunding.co.kr/static/js/components_custom.js"></script>-->
 
-	<script type="text/javascript" src="https://nurifunding.co.kr/static/js/common_v2.0.0.js"></script>
-	<script type="text/javascript" src="https://nurifunding.co.kr/static/js/index_v2.0.0.js"></script>
-	<!-- <script type="text/javascript" src="../static/js/common_v2.0.0.js"></script>
-	<script type="text/javascript" src="../static/js/index_v2.0.0.js"></script> -->
+	<!-- <script type="text/javascript" src="https://nurifunding.co.kr/static/js/common_v2.0.0.js"></script>
+	<script type="text/javascript" src="https://nurifunding.co.kr/static/js/index_v2.0.0.js"></script> -->
+	<script type="text/javascript" src="../static/js/common_v2.0.0.js"></script>
+	<script type="text/javascript" src="../static/js/index_v2.0.0.js"></script>
 
 	<!--<link rel="stylesheet" href="../static/css/common_ie9lt.css">
     <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/common_ie9lt.css">
@@ -75,16 +75,42 @@
 	                        <span class="icon-bar b3"></span>
 	                    </button>
 						<h2><a href="./index.html" class="navbar-brand"><img src="https://nurifunding.co.kr/img/logo.png" alt="누리펀딩로고"></a></h2>
-						<a href="mypage/mypage_01.html" class="my-tab show-xs"><img src="https://nurifunding.co.kr/img/myp_icon.png" alt="마이페이지"></a>
+						<a href="mypage/mypage_01.html" class="my-tab show-xs"><img src="https://nurifunding.co.kr/img/renew/common/icon/icon_member.png" alt="마이페이지"></a>
 					</div>
-					<nav class="navbar-collapse hidden-xs">
+					<div class="bg-drop"></div>
+					<nav class="navbar-collapse" id="navbar-collapse">
 						<h1 class="text-hide">GNB</h1>
+						
+						<div class="nc-header hidden-md">
+							<div class="nc-logobar">
+								<a href="./index.html" class="nc-logo"><img src="https://nurifunding.co.kr/img/lnb_logo.png" alt="누리펀딩"></a>
+								<a href="javascript:;" class="cls-btn"><img src="https://nurifunding.co.kr/img/cls_icon.png" alt="닫기"></a>
+							</div>
+							<!-- 190412 -->
+							<!-- 로그인 전 -->
+							<div class="nc-login">
+								<p>지금 바로 로그인하고</p>
+								<p>누리펀딩의 투자서비스를 이용하세요!</p>
+								<p class="nth-3"><a href="login/index.html">로그인</a><a href="join/join_01.html" class="nth-2">회원가입</a></p>
+							</div>
+							<!-- 로그인 후 -->
+							<!-- <div class="nc-login">
+								<p>전형진님 안녕하세요.</p>
+								<p>누리펀딩입니다.  <a href="javascript:;" class="lgout">로그아웃 <img class="img-lock" src="https://nurifunding.co.kr/img/icon/ic_lock.png" alt="로그아웃"></a></p>
+								<p class="nth-3">
+									<a href="">나의투자</a>
+									<a href="">자동투자</a>
+									<a href="">회원정보</a>
+									<a href="">계좌정보</a>
+								</p>
+							</div> -->
+						</div>
 						<ul class="menu clearfix">
 							<li class="big"><a href="loan/loan_00.html">대출신청</a></li>
 							<li class="big"><a href="invest/invest_01.html">투자하기</a></li>
 							<li class="big"><a href="miripay/index.html" class="c-blue">미리페이</a></li>
 							<li class="hidden-xs hidden-sm hidden-margin"></li>
-							<li><a href="faq/index.html">이용안내</a>
+							<li><a href="javascript:;">이용안내</a>
 								<ul class="menu-2">
 									<li><a href="">처음 오셨나요?</a></li>
 									<li><a href="">대출신청</a></li>
@@ -92,7 +118,7 @@
 									<li><a href="">미리페이</a></li>
 								</ul>
 							</li>
-							<li class=""><a href="service/index.html">회사소개/IR</a>
+							<li class="javascript:;"><a href="">회사소개/IR</a>
 								<ul class="menu-2">
 									<li><a href="service/index.html">회사소개</a></li>
 									<li><a href="service/index_rep.html">대표이사 소개</a></li>
@@ -101,7 +127,7 @@
 									<li><a href="">CEO 컬럼</a></li>
 								</ul>
 							</li>
-							<li><a href="#none">고객지원</a>
+							<li><a href="javascript:;">고객지원</a>
 								<ul class="menu-2">
 									<li><a href="#none">FAQ</a></li>
 									<li><a href="#none">1:1문의하기</a></li>
@@ -110,10 +136,10 @@
 								</ul>
 							</li>
 							<!-- 비 로그인 경우 -->
-<!-- 							<li class="btn"><a href="" class="btn-cmm btn-white">로그인</a></li>
-							<li class="btn"><a href="" class="btn-cmm btn-blue join">회원가입</a></li>
+<!-- 							<li class="btn hidden-xs"><a href="" class="btn-cmm btn-white">로그인</a></li>
+							<li class="btn hidden-xs"><a href="" class="btn-cmm btn-blue join">회원가입</a></li>
  -->							<!-- 로그인 경우 -->
-							<li class="myinfo">
+							<li class="myinfo hidden-xs">
 								<a class="c-blue" href="mypage/mypage_01.html"><img src="https://nurifunding.co.kr/img/renew/common/icon/icon_member_on.png" alt="내정보아이콘" class="icon">내정보</a>
 								<ul class="menu-2">
 									<li><a href="myinvest/index.html">나의투자정보</a></li>
@@ -127,7 +153,7 @@
 						</ul>
 					</nav>
 				</div>
-				<div class="menu2-bg" id="menu2-bg">
+				<div class="menu2-bg hidden-xs" id="menu2-bg">
 					<div class="group inner">
 						<a href=""><span class="c-blue">처음오셨나요?</span> 누리펀딩 이용가이드 보기</a>
 					</div>
@@ -143,74 +169,37 @@
 		</header>
 		<!-- // -->
 
-		<!-- 모바일 네비게이션 -->
-		<section class="mlnb-wrap show-xs" id="mlnb-wrap">
-			<div class="mlnb-container">
-				<header class="mlnb-header">
-					<p>
-						<a href="./index.html" class="mh-logo"><img src="https://nurifunding.co.kr/img/lnb_logo.png" alt="누리펀딩"></a>
-						<a href="javascript:void(0)" class="cls-btn"><img src="https://nurifunding.co.kr/img/cls_icon.png" alt="닫기"></a>
-					</p>
-					<!-- 190412 -->
-					<!-- 로그인 전 -->
-					<div class="t-box">
-						<p>지금 바로 로그인하고</p>
-						<p>누리펀딩의 투자서비스를 이용하세요!</p>
-						<p class="nth-3"><a href="login/index.html">로그인</a><a href="join/join_01.html" class="nth-2">회원가입</a></p>
-					</div>
-					<!-- 로그인 후 -->
-					<!-- <div class="t-box">
-						<p>전형진님 안녕하세요.</p>
-						<p>누리펀딩입니다.  <a href="javascript:;" class="lgout">로그아웃 <img class="img-lock" src="https://nurifunding.co.kr/img/icon/ic_lock.png" alt="로그아웃"></a></p>
-						<p class="nth-3">
-							<a href="">나의투자</a>
-							<a href="">자동투자</a>
-							<a href="">회원정보</a>
-							<a href="">계좌정보</a>
-						</p>
-					</div> -->
-				</header>
-				<ul class="mlnb">
-					<li><a href="loan/loan_00.html">대출신청<img src="https://nurifunding.co.kr/img/arrow_r_icon.png" alt="바로가기"></a></li>
-					<li><a href="invest/invest_01.html">투자하기<img src="https://nurifunding.co.kr/img/arrow_r_icon.png" alt="바로가기"></a></li>
-					<li><a href="autoinv/">자동투자 <span class="ic-new big">NEW</span> <img src="https://nurifunding.co.kr/img/arrow_r_icon.png" alt="바로가기"></a></li>
-					<li><a href="javascript:;">회사소개<img src="https://nurifunding.co.kr/img/arrow_r_icon.png" alt="바로가기"></a>
-						<nav class="m-sub-nav">
-							<ul>
-								<li><a href="service/index.html">회사 소개</a></li>
-								<li><a href="service/index_rep.html">대표이사 소개</a></li>
-								<li><a href="service/index_ir.html">기업 IR정보</a></li>
-							</ul>
-						</nav>
-					</li>
-					<li><a href="javascript:;">이용안내<img src="https://nurifunding.co.kr/img/arrow_r_icon.png" alt="바로가기"></a>
-						<nav class="m-sub-nav">
-							<ul>
-								<li><a href="">FAQ</a></li>
-								<li><a href="">공지사항</a></li>
-								<li><a href="">자료실</a></li>
-							</ul>
-						</nav>
-					</li>
-				</ul>
-			</div>
-		</section>
-
 		<div class="contents home">
 			<!--변경내용 메인슬라이드-->
-			<section class="sec main">
+			<section class="sec main" id="main">
 				<h1 class="hidden">누리펀딩 버킷리스트 누리펀딩 이자면 가능하다! 펀딩 버킷리스트를 만들어보세요</h1>
-				<div class="main-box swiper-container" id="main-slider">
-					<ul class="swiper-wrapper">
-						<li class="swiper-slide nth-1"><img src="https://nurifunding.co.kr/img/renew/main/m_bnr_01.png" alt="누리펀딩버킷리스트" class="img"></li>
-						<li class="swiper-slide nth-1"><img src="https://nurifunding.co.kr/img/renew/main/m_bnr_02.png" alt="누리펀딩버킷리스트" class="img"></li>
-						<li class="swiper-slide nth-1"><img src="https://nurifunding.co.kr/img/renew/main/m_bnr_03.png" alt="누리펀딩버킷리스트" class="img"></li>
+				<div class="main-box swiper-container">
+					<ul class="swiper-wrapper" id="main-slider">
+						<li class="swiper-slide bg-1">
+							<img src="https://nurifunding.co.kr/img/renew/main/m_bnr_01.png" alt="대출도 투자도 모두 다 누리펀딩" class="img show-md">
+							<img src="https://nurifunding.co.kr/img/renew/m/main/m_bnr_01.png" alt="대출도 투자도 모두 다 누리펀딩" class="img show-xs">
+						</li>
+						<li class="swiper-slide bg-1">
+							<img src="https://nurifunding.co.kr/img/renew/main/m_bnr_02.png" alt="누리펀딩버킷리스트" class="img show-md">
+							<img src="https://nurifunding.co.kr/img/renew/m/main/m_bnr_02.png" alt="누리펀딩버킷리스트" class="img show-xs">
+						</li>
+						<li class="swiper-slide bg-1">
+							<a href="https://www.nurifunding.co.kr/notice/view.php?var=EUw=&page=1"><img src="https://nurifunding.co.kr/img/renew/main/m_bnr_03.png" alt="누리펀딩이용후기이벤트" class="img show-md"></a>
+							<a href="https://www.nurifunding.co.kr/notice/view.php?var=EUw=&page=1"><img src="https://nurifunding.co.kr/img/renew/m/main/m_bnr_03.png" alt="누리펀딩이용후기이벤트" class="img show-xs"></a>
+						</li>
 					</ul>
+					<div class="group abs show-md">
+						<ul class="certi-list">
+							<li><img src="https://nurifunding.co.kr/img/renew/main/m_certify.png" alt=""></li>
+							<li><img src="https://nurifunding.co.kr/img/renew/main/m_certify_01.png" alt=""></li>
+							<li><img src="https://nurifunding.co.kr/img/renew/main/m_certify_02.png" alt=""></li>
+						</ul>
+					</div>
 				</div>
-				<div class="quick-bar">
+				<div class="quick-bar ">
 					<div class="group inner">
 						<div class="box box-1">
-							<a href="javascript:;" class="fst"><img src="https://nurifunding.co.kr/img/renew/main/bnr_start.png" alt="처음방문하셨나요?"></a>
+							<a href="javascript:;" class="fst"></a>
 						</div>
 						<div class="box box-2">
 							<h2>바로가기</h2>						
@@ -256,6 +245,10 @@
 								<li><a href="https://www.nurifunding.co.kr/notice/view.php?var=EUw=&page=1" class="tit">[이벤트] 참가자 100% 선물증정! 누리펀딩 이용후기 이벤트</a><span class="create-at">2019.05.20</span></li>
 								<li><a href="https://www.nurifunding.co.kr/notice/view.php?var=EUw=&page=1" class="tit">[이벤트] 참가자 100% 선물증정! 누리펀딩 이용후기 이벤트</a><span class="create-at">2019.05.20</span></li>
 							</ul>
+						</div>
+						<div class="box-1-2">
+							<img src="https://nurifunding.co.kr/img/renew/main/bnr_startguide.png" alt="성공투자를위한첫걸음 투자시작하기">
+							<a href="https://www.nurifunding.co.kr/invest/" class="btn-start"><span class="hidden">투자 시작하기</span></a>
 						</div>
 					</div>
 				</div>
@@ -705,6 +698,63 @@
                 
 		    </div>
 		</footer>
+		
+		<div class="fixed area-shortcut">
+			<div class="group">
+				<ul class="list">
+					<li><a href="javascript:;" onclick="modalDisplay($('.modal-inquiry'), true)"><img src="https://nurifunding.co.kr/img/renew/common/icon_inquiry.png" alt="상담신청"></a></li>
+					<li><a href="javascript:;" id="goTop"><img src="https://nurifunding.co.kr/img/renew/common/icon_top.png" alt="상단으로이동"></a></li>
+				</ul>
+
+			</div>
+		</div>
+
+		<div class="modal-mask modal-inquiry">
+			<div class="modal-wrapper">
+				<div class="modal-container">
+					<div class="modal-header">
+						<h2>
+							<strong>상담신청</strong>
+							<span class="pull-right nuri"><span class="c-blue">NURI</span>FUNDING</span>
+						</h2>
+						<a href="javascript:;" class="btn-close" onclick="modalDisplay($('.modal-inquiry'), false)"><img src="https://nurifunding.co.kr/img/renew/common/icon/icon_close.png" alt="닫기"></a>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<input type="text" class="form-input" value="" placeholder="이름을 입력하세요">
+						</div>
+						<div class="row">
+							<input type="number" class="form-input" value="" placeholder="전화번호를 입력하세요요(숫자만 입력)">
+						</div>
+						<div class="row">
+							<select name="" id="" class="form-select">
+								<option value="">직업을 선택하세요</option>
+								<option value=""></option>
+							</select>
+						</div>
+						<div class="row">
+							<select name="" id="" class="form-select">
+								<option value="">상담 항목선택</option>
+								<option value=""></option>
+							</select>
+						</div>
+						<div class="row">
+							<textarea name="" id="" cols="30" rows="10" placeholder="내용을 간단하게 입력해주세요" class="form-ta"></textarea>
+						</div>
+						<div class="row">
+							<label><input type="checkbox" class="form-chkbox"> <span>개인정보 취급방침 동의</span></label>
+							<a href="https://www.nurifunding.co.kr/policy/policy.php" target="_blank" class="pull-right a-more">자세히 보기</a>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<div class="row row-btn">
+							<a href="javascript:;" class="btn-submit">상담신청</a>
+						</div>
+						<p class="row row-cmt">※ 신청해주신 정보를 통해 24시간 이내로 고객님께 연락드리겠습니다.</p>
+					</div>
+				</div>
+			</div>
+		</div>
 		
 	</div>
 </body>

@@ -19,9 +19,7 @@
 
 /*모바일 영역, col-xs*/
 @media (max-width: 767px){
-	.com-pd {padding: 28px 10px 25px;}
-	.com-ft {text-align: center; font-size: 18px; font-family: "Nanum Square", sans-serif; line-height: 1.2em;}
-	.com-box {position: relative; margin: 0 auto; margin-top: 15px; width: 300px;}
+	.com-ft {text-align: center; font-size: 18px; font-family: "Noto Sans KR", sans-serif; line-height: 1.2;}
 	.arr-icon {display: inline-block; position: relative; background: url(https://nurifunding.co.kr/img/nrm_icon_m.png) no-repeat;} .br4 {border-radius: 4px;}
 	.xs-block {display: block;}
 
@@ -48,11 +46,19 @@
 	.pop-phishing .pop-contents .pop-bottom a {display: inline-block; vertical-align: middle;}
 	.pop-phishing .pop-contents .pop-bottom .clsBtn {font-size: 13px; text-align: center; font-weight: 700; margin-left: 12px; margin-right: -10px; background: #fff; box-sizing: border-box; border: 1px solid #ccc; padding: 0 12px; line-height: 26px;}
 
-	.main {width: 100%; background: #126cc3;}
+	.main {position: relative; width: 100%; background: #126cc4;}
+	.main-box.swiper-container {position: relative;  padding: 0 0px; margin: 0 auto; text-align: center;}
+	.main-box .swiper-slide {position: relative; height: 700px;}
+	.main-box .swiper-slide.bg-1 {background: url('https://nurifunding.co.kr/img/renew/main/m_bnr_bg.jpg') no-repeat center;}
+	.main-box .swiper-slide img {display: block; margin: 0 auto;}
+
+	.main .quick-bar {position: absolute;}
+
+	/* .main {width: 100%; background: #126cc3;}
 	.main-box.main-common {position: relative; height: 202px;}
 	.main-box.main-common > div {position: absolute;}
 	.main-box.main-common > div.s1-div-1 {width: 100%; text-align: center;}
-	.main-box.main-common > div.s1-div-1 p {position: relative; /*display: inline-block;*/ font-family: "Nanum Square", "Malgun Gothic", sans-serif;}
+	.main-box.main-common > div.s1-div-1 p {position: relative; font-family: "Nanum Square", "Malgun Gothic", sans-serif;}
 	.main-box.main-common > div.s1-div-1 p.nth-0 {color: #FFF; font-size: 16px; margin-top: 28px;}
 	.main-box.main-common > div.s1-div-1 p.nth-1 {width: 300px; margin: 0 auto; height: 30px; font-size: 16px; background: #09345f; color: #fff; font-weight: 200; line-height: 1.75em;
 	margin-top: 8px; letter-spacing: 0.5px; text-indent: -8px;}
@@ -79,7 +85,7 @@
 	.main-box .swiper-slide > div.s2-div-3  {top: 86px; right: 10px;}
 	.main-box .swiper-slide > div.s2-div-3 img {width: 158px;}
 	.main-box .swiper-slide > div.s3-div-3  {top: 85px; right: 10px;}
-	.main-box .swiper-slide > div.s3-div-3 img {width: 155px;}
+	.main-box .swiper-slide > div.s3-div-3 img {width: 155px;} */
 
 	.rate {padding: 20px 0px;}
 	.rate .container {width: 320px;}
@@ -211,13 +217,13 @@
     .main-box .swiper-slide > div.s1-div-2 .d2 p {letter-spacing: 0; font-size: 16px;}
 }
 @media (min-width: 360px) and (max-width: 480px){
-    .main-box.swiper-container {width: 100%;}
+    /* .main-box.swiper-container {width: 100%;}
     .main-box .swiper-slide {height: 230px;}
     .main-box .swiper-slide > div.s1-div-2 .d2 {font-size: 14px;}
     .main-box .swiper-slide > div.s1-div-3 img {width: 165px;}
     .main-box .swiper-slide > div.s3-div-3 img {width: 169px;}
     .main-box .swiper-slide > div.s2-div-3 img {width: 174px;}
-}
+} */
 @media (min-device-width: 320px) {
     .main-box.main-common > div.s1-div-1 p.nth-3 {font-size: 20px;}
 }
@@ -431,20 +437,30 @@
 	.main {position: relative; width: 100%; background: #126cc4;}
 	.main-box.swiper-container {position: relative;  padding: 0 0px; margin: 0 auto; text-align: center;}
 	.main-box .swiper-slide {position: relative; height: 700px;}
-	.main-box .swiper-slide.nth-1 {background: url('https://nurifunding.co.kr/img/renew/main/m_bnr_bg.jpg') no-repeat center;}
+	.main-box .swiper-slide.bg-1 {background: url('https://nurifunding.co.kr/img/renew/main/m_bnr_bg.jpg') no-repeat center;}
 	.main-box .swiper-slide img {display: block; margin: 0 auto;}
+	.main-box .certi-list {z-index: 5; position: absolute; top: 56px; right: -160px; width: 124px;}
+	.main-box .certi-list > li:first-child {margin-bottom: 10px;}
     .main .quick-bar {position: absolute; width: 100%; bottom: 0;}
-    .main .quick-bar .inner {background: #3690e2; height: 150px;}
+    .main .quick-bar .inner {background: #3690e2; height: 150px; overflow: hidden;}
     .main .quick-bar .box .fst img {display: block;}
     .main .quick-bar .box {float: left; position: relative; box-sizing: border-box; font-size: 18px; color: #fff;}
-    .main .quick-bar .box h2 {font-size: 18px;}
+	.main .quick-bar .box h2 {font-size: 18px;}
+	.main .quick-bar .box-1 {width: 240px; height: 150px; background: url('https://nurifunding.co.kr/img/renew/main/bnr_start.png'); cursor: pointer;}
+	.main .quick-bar .box-1.on {background: url('https://nurifunding.co.kr/img/renew/main/bnr_start_over.png');}
+	.main .quick-bar .box-1-2 {position: absolute; top: 0; left: 240px;
+		opacity: 0; visibility: hidden;
+		transition: all .3s; -webkit-transition: all .3s;
+	}
+	.main .quick-bar .box-1-2.on {opacity: 1; visibility: visible;}
+	.main .quick-bar .box-1-2 .btn-start {position: absolute; width: 102px; height: 102px; top: 24px; right: 44px; border-radius: 50%;}
     .main .quick-bar .box-2,
     .main .quick-bar .box-3 {width: 480px; padding: 20px; border-left: 1px solid #fff; height: 100%;}
     .main .quick-bar .box-2 {}
     .main .quick-bar .box-2 .list {font-size: 0; white-space: nowrap;}
     .main .quick-bar .box-2 .list > li {display: inline-block; margin: 12px 20px 0; text-align: center; font-size: 15px;}
     .main .quick-bar .box-2 .list > li:first-child {margin-left: 15px;}
-    .main .quick-bar .box-2 .list > li figcaption {margin-top: 5px; letter-spacing: normal;}
+	.main .quick-bar .box-2 .list > li figcaption {margin-top: 5px; letter-spacing: normal;}
     .main .quick-bar .box-3 h2 .more-btn {float: right;}
     .main .quick-bar .box-3 .list {margin-top: 12px; font-size: 15px;}
     .main .quick-bar .box-3 .list > li {display: table; width: 100%; margin-top: 8px; font-weight: 300;}
@@ -456,7 +472,7 @@
     
     .ingProduct {padding: 100px 0 90px; background: #f5f5f5;}
     .ingProduct {}
-    .ingProduct h1 .more-btn {display: inline-block; position: relative; top: 12px; float: right; font-size: 16px; color: #555;}
+    .ingProduct h1 .more-btn {display: inline-block; position: absolute; top: 25px; right: 0; font-size: 16px; color: #555;}
     .ingProduct h1 .more-btn .ic-rArrow {margin-left: 5px;}
     .ingProduct h1 .more-btn .ic-rArrow:after {border-color: #555;}
 	.ingProduct .ip-wrap {position: relative; width: 1230px; left: -15px; margin-top: 20px;}

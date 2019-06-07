@@ -2,16 +2,14 @@ $(function() {
     
     /*함수실행*/
     //popupCen();
-    hdFn();
+    goAreaFn();
+    modalDisplay();
+
+    $(window).resize(function(){
+        hdFn();
+        tooltip();
+    }).resize();
     
-    /*모바일 바 클릭시 모바일 네비게이션 등장*/
-    $(".header .nav-tab").on("click", function() {
-        $("#mlnb-wrap").addClass("on");
-    });
-    /*모바일 네비게이션 닫기 버튼*/
-    $("#mlnb-wrap .cls-btn").on("click", function() {
-        $("#mlnb-wrap").removeClass("on");
-    });
     /* 드롭다운 */
     $(".dropdown").on("click", ".btn", function() {
         $(this).next().slideToggle("fast");
@@ -24,55 +22,22 @@ $(function() {
         $(this).closest("ul").next().find("li").removeClass("on");
         $(this).closest("ul").next().find("li").eq(thIdx).addClass("on");
     });
-  
-
-	$(window).resize(function(){
-        var winW = $(window).width();
-        
-        /* 툴팁 */
-        if (winW <= 768) {
-            $(".btn-tooltip").on("click", function() {
-             $(".tooltip-detail").fadeIn();
-            });
-
-            $(".tooltip-detail").on("click", function() {
-                $(".tooltip-detail").fadeOut();
-            });
-        }else{
-            $(".btn-tooltip").hover(function(){
-                $(".tooltip-detail").fadeIn();
-            }, function(){
-                $(".tooltip-detail").fadeOut();
-            });
-        }
-        
-	}).resize();
     
     //팝업 닫기
     $('.pop-close').on('click', function(){
         popupOff('.pop-com');
     });
+
 });
 
-// 상단 배너 높이 - 배너 있을 시 없을 시 높이 자동 설정
+// Mobile 해더 기능 
 function hdFn() {
-    var hd = $("#header"),
+    var winWidth = $(window).width(),
+        winHeight = $(window).height()
+        hd = $("#header"),
         el = hd.children(),
         ht_total = 0;
-    el.each(function() {
-        ht_total += $(this).outerHeight();
-    });
-    hd.height(ht_total);
-    hd.find('.navbar-collapse .menu > li').hover(function() {
-        if ( $(this).children('.menu-2').length > 0 ) {
-            $('#menu2-bg').addClass('on');
-        }
-    }, function() {
-        if ( $(this).children('.menu-2').length > 0 ) {
-            $('#menu2-bg').removeClass('on');
-        }
-    });
-
+    // 공통
     $(window).on('scroll', function() {
         var scr = $(window).scrollTop();
         if ( scr > 0 ) {
@@ -81,6 +46,73 @@ function hdFn() {
             hd.children('.gnb').removeClass('on');
         }
     });
+    if ( winWidth >= 1200 ) {
+        hd.find('.navbar-collapse .menu > li').hover(function() {
+            if ( $(this).children('.menu-2').length > 0 ) {
+                $('#menu2-bg').addClass('on');
+            }
+        }, function() {
+            if ( $(this).children('.menu-2').length > 0 ) {
+                $('#menu2-bg').removeClass('on');
+            }
+        });
+    
+    } else {
+        // 상단 배너 높이 - 배너 있을 시 없을 시 높이 자동 설정
+        el.each(function() {
+            ht_total += $(this).outerHeight();
+        });
+        hd.height(ht_total);
+        /*모바일 바 클릭시 모바일 네비게이션 등장*/
+        $('.header .nav-tab').on('click', function() {
+            var ncHeaderHt = $('.nc-header').outerHeight();
+            $('#navbar-collapse').addClass('on');
+            $('#navbar-collapse').prev().addClass('on');
+            $('#navbar-collapse .menu').height( winHeight - ncHeaderHt);
+        });
+        /*모바일 네비게이션 닫기 버튼*/
+        $('#navbar-collapse .cls-btn').on('click', function() {
+            navbarCollapse.close();
+        });
+        $('#navbar-collapse').prev('.bg-drop').on('click', function() {
+            navbarCollapse.close();
+        });
+    }
+
+    var navbarCollapse = {
+        close: function() {
+            $('#navbar-collapse').removeClass('on');
+            $('#navbar-collapse').prev().removeClass('on');
+        }
+    }
+}
+
+function bgDrop(flag) {
+    if (flag == true) {
+        $('#bg-drop').addClass('on')
+    } else {
+        $('#bg-drop').removeClass('on')
+    }
+}
+
+function tooltip() {
+    var winW = $(window).width();
+    /* 툴팁 */
+    if (winW <= 768) {
+        $(".btn-tooltip").on("click", function() {
+            $(".tooltip-detail").fadeIn();
+        });
+
+        $(".tooltip-detail").on("click", function() {
+            $(".tooltip-detail").fadeOut();
+        });
+    } else {
+        $(".btn-tooltip").hover(function(){
+            $(".tooltip-detail").fadeIn();
+        }, function(){
+            $(".tooltip-detail").fadeOut();
+        });
+    }
 }
 
 /* 팝업 오픈  */
@@ -124,6 +156,26 @@ function auto_price(pri) {
 	$('input[name="at_price"]').val(pri);
 }
 
+// 버튼 클릭시 이동 영역
+function goAreaFn() {
+	$('#goTop').on('click', function() {
+		$('html, body').animate({ scrollTop: 0 }, 400);
+	});
+}
+
+// 모달 영역
+function modalDisplay(obj, flag) {
+    switch (flag) {
+        case true: 
+            obj.addClass('on');
+            break;
+        case false: 
+            obj.removeClass('on');
+            break;
+        default:
+            break;
+    }
+}
 
 //# 자동투자 인증문자 회신여부 체크
 function at_tid_chk(tid) {	

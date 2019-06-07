@@ -1,7 +1,9 @@
 $(function () {
-	//애니메이션 함수 호출
+
+	sliderFn();
 	wayP("on", "#per-chart", "20");
 	wayP("on", "#per-chart-m", "11.5");
+	firstStep();
 
 	//이미지로드 지연 - 로딩속도 단축
 	/*$("img.lazy").lazyload({
@@ -9,36 +11,27 @@ $(function () {
 	  effect : "fadeIn"       
 	});*/
 
-	//메인 bxslider
-	$('.swiper-wrapper').bxSlider({
+});
+
+// slider 영역
+function sliderFn() {
+	$('#main-slider').bxSlider({
 		auto: true,
 		speed: 800,
 		duration: 8000,
 	});
+}
 
-});
-//메인슬라이드 애니메이션
-// function msAni(flag) {
-// 	if (flag == "on") {
-// 		var $_slide = $(".swiper-slide");
-// 		$_slide.find(".s1-div-2 .d1, .s1-div-2 .d2, .s1-div-3").hide();
-// 		setTimeout(function () {
-// 			$_slide.find(".s1-div-2 .d1").fadeIn();
-// 		}, 0);
-// 		setTimeout(function () {
-// 			$_slide.find(".s1-div-2 .d2").fadeIn();
-// 		}, 500);
-// 		setTimeout(function () {
-// 			$_slide.find(".s1-div-3").fadeIn();
-// 		}, 1000);
-// 	} else if (flag == "off") {
-// 		var $_slide = $(".swiper-slide");
-// 		$_slide.find(".s1-div-2 .d1, .s1-div-2 .d2, .s1-div-3").show();
+function firstStep() {
+	var main = $('#main');
+	main.find('.quick-bar .box-1').on('click', function() {
+		console.log('work');
+		$(this).toggleClass('on');
+		$(this).closest('.quick-bar').find('.box-1-2').toggleClass('on');
+	});
+}
 
-// 	}
-// }
-
-//interactive 효과
+//애니메이션 함수 호출  영역
 function wayP(on, itm, ht) {
 	// 차트
 	$(itm).children('div').each(function (index, item) {
@@ -61,7 +54,7 @@ function wayP(on, itm, ht) {
 		$(item).waypoint(function () {
 			$(item).addClass('animated fadeInUp');
 		}, {
-			offset: '75%'
+			offset: '70%'
 		});
 	});
 
