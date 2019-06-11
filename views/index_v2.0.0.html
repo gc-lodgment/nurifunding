@@ -29,14 +29,16 @@
 	<link rel="stylesheet" href="../static/css/index_v2.0.0.css">
 
 
-
+	<!--js 플러그인 관련(css, js) 추가-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+	
 	<script type="text/javascript" src="https://nurifunding.co.kr/static/js/jquery-1.10.2.min.js"></script>
-	<!--js 추가-->
-	<!--<script type="text/javascript" src="https://nurifunding.co.kr/static/js/jquery.lazyload.min.js"></script>-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 	<script type="text/javascript" src="https://nurifunding.co.kr/static/js/jquery.bxslider.min.js"></script>
-	<script type="text/javascript" src="https://nurifunding.co.kr/static/js/jquery.animateNumber.min.js"></script>
 	<script type="text/javascript" src="https://nurifunding.co.kr/static/js/waypoints.min.js"></script>
 	<script type="text/javascript" src="https://nurifunding.co.kr/static/js/jquery.easing.min.js"></script>
+	<!--<script type="text/javascript" src="https://nurifunding.co.kr/static/js/jquery.lazyload.min.js"></script>-->
+	<!-- <script type="text/javascript" src="https://nurifunding.co.kr/static/js/jquery.animateNumber.min.js"></script> -->
 	<!--<script type="text/javascript" src="https://nurifunding.co.kr/static/js/components_custom.js"></script>-->
 
 	<!-- <script type="text/javascript" src="https://nurifunding.co.kr/static/js/common_v2.0.0.js"></script>
@@ -79,7 +81,7 @@
 					</div>
 					<div class="bg-drop"></div>
 					<nav class="navbar-collapse" id="navbar-collapse">
-						<h1 class="text-hide">GNB</h1>
+						<h1 class="sr-only">GNB</h1>
 						
 						<div class="nc-header hidden-md">
 							<div class="nc-logobar">
@@ -172,18 +174,18 @@
 		<div class="contents home">
 			<!--변경내용 메인슬라이드-->
 			<section class="sec main" id="main">
-				<h1 class="hidden">누리펀딩 버킷리스트 누리펀딩 이자면 가능하다! 펀딩 버킷리스트를 만들어보세요</h1>
+				<h1 class="sr-only">누리펀딩 버킷리스트 누리펀딩 이자면 가능하다! 펀딩 버킷리스트를 만들어보세요</h1>
 				<div class="main-box swiper-container">
 					<ul class="swiper-wrapper" id="main-slider">
-						<li class="swiper-slide bg-1">
+						<li class="swiper-slide slide-1 bg-1">
 							<img src="https://nurifunding.co.kr/img/renew/main/m_bnr_01.png" alt="대출도 투자도 모두 다 누리펀딩" class="img show-md">
 							<img src="https://nurifunding.co.kr/img/renew/m/main/m_bnr_01.png" alt="대출도 투자도 모두 다 누리펀딩" class="img show-xs">
 						</li>
-						<li class="swiper-slide bg-1">
+						<li class="swiper-slide slide-2 bg-1">
 							<img src="https://nurifunding.co.kr/img/renew/main/m_bnr_02.png" alt="누리펀딩버킷리스트" class="img show-md">
 							<img src="https://nurifunding.co.kr/img/renew/m/main/m_bnr_02.png" alt="누리펀딩버킷리스트" class="img show-xs">
 						</li>
-						<li class="swiper-slide bg-1">
+						<li class="swiper-slide slide-3 bg-1">
 							<a href="https://www.nurifunding.co.kr/notice/view.php?var=EUw=&page=1"><img src="https://nurifunding.co.kr/img/renew/main/m_bnr_03.png" alt="누리펀딩이용후기이벤트" class="img show-md"></a>
 							<a href="https://www.nurifunding.co.kr/notice/view.php?var=EUw=&page=1"><img src="https://nurifunding.co.kr/img/renew/m/main/m_bnr_03.png" alt="누리펀딩이용후기이벤트" class="img show-xs"></a>
 						</li>
@@ -196,13 +198,17 @@
 						</ul>
 					</div>
 				</div>
-				<div class="quick-bar ">
+				<div class="quick-bar">
 					<div class="group inner">
 						<div class="box box-1">
-							<a href="javascript:;" class="fst"></a>
+							<a href="javascript:;" class="fst hidden-xs"></a>
+							<a href="javascript:;" class="fst-guide hidden-md">
+								<p class="p-1">처음 방문<br>하셨나요?</p>
+								<p class="p-2">성공 투자를 위한<br>첫걸음</p>
+							</a>
 						</div>
 						<div class="box box-2">
-							<h2>바로가기</h2>						
+							<h2 class="hidden-xs">바로가기</h2>						
 							<ul class="list">
 								<li>
 									<a href="https://www.nurifunding.co.kr/member/myinvest.php">
@@ -238,7 +244,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="box box-3">
+						<div class="box box-3 hidden-xs">
 							<h2>새소식 <a href="https://www.nurifunding.co.kr/notice/" class="more-btn"><img src="https://nurifunding.co.kr/img/renew/main/m_btn_more.png" alt="더보기"></a></h2>
 							<ul class="list">
 								<li><a href="https://www.nurifunding.co.kr/notice/view.php?var=EUw=&page=1" class="tit">[이벤트] 참가자 100% 선물증정! 누리펀딩 이용후기 이벤트</a><span class="create-at">2019.05.20</span></li>
@@ -246,9 +252,12 @@
 								<li><a href="https://www.nurifunding.co.kr/notice/view.php?var=EUw=&page=1" class="tit">[이벤트] 참가자 100% 선물증정! 누리펀딩 이용후기 이벤트</a><span class="create-at">2019.05.20</span></li>
 							</ul>
 						</div>
-						<div class="box-1-2">
+						<div class="box box-3 hidden-md">
+							<span class="tt">공지</span> <span class="t">누리펀딩, 선정산 서비스 '미리페이' 출시</span>
+						</div>
+						<div class="box-1-2 hidden-xs">
 							<img src="https://nurifunding.co.kr/img/renew/main/bnr_startguide.png" alt="성공투자를위한첫걸음 투자시작하기">
-							<a href="https://www.nurifunding.co.kr/invest/" class="btn-start"><span class="hidden">투자 시작하기</span></a>
+							<a href="https://www.nurifunding.co.kr/invest/" class="btn-start"><span class="sr-only">투자 시작하기</span></a>
 						</div>
 					</div>
 				</div>
@@ -258,150 +267,152 @@
 				<div class="group inner">
 					<h1 class="com-ft">진행중인 투자상품 <a href="https://www.nurifunding.co.kr/invest/" class="more-btn">전체보기 <span class="ic-rArrow"></span></a></h1>
 					<!--변경내용 id추가-->
-					<div class="row ip-wrap">
-						<!-- 상태별 클래스 진행중: start, 대기: wait, 완료: end -->
-						<div class="col-xs-12 col-sm-6 ip-outer start">
-							<div class="ip-box">
-								<div class="ip-top">
-									<span class="pdt-no">242호</span>
-									<span class="status">진행중</span>
-									<span class="date">19.04.30 16시 ~ 19.05.03 14시</span>
-								</div>
-								<h3 class="iph3">247호, 소셜오픈마켓(쿠팡 등 모든 쇼핑몰) 매출채권 선정산(미리페이)</h3>
-								<ul class="ip-inner">
-									<li class="nth-1 clearfix">
-										<p class="pull-left">예상수익률</p>
-										<p class="pull-right">10.0%</p>
-									</li>
-									<li class="nth-2 clearfix">
-										<p class="pull-left">기간</p>
-										<p class="pull-right">2개월</p>
-									</li>
-									<li class="nth-3 clearfix">
-										<p class="pull-left">상환방식</p>
-										<p class="pull-right">만기일시상환</p>
-									</li>
-									<li class="nth-4 clearfix">
-										<p class="pull-left">모집현황</p>
-										<p class="pull-right">2,310 / 3,500만원</p>
-									</li>
-								</ul>
-								<div class="per-bar">
-									<p class="bar" style="width: 80.61%"></p>
-									<span class="per">80.61%</span>
-								</div>
-								<div class="row-status">투자가능 금액: <span class="c-blue">1,190만원</span></div>
-								<p class="btn-box"><a href="" class="btn btn-invest br4">투자하기</a></p>
+					<div class="swiper-container ip-container">
+						<div class="swiper-wrapper row ip-wrap">
+							<!-- 상태별 클래스 진행중: start, 대기: wait, 완료: end -->
+							<div class="swiper-slide ip-outer start">
+								<div class="ip-box">
+									<div class="ip-top">
+										<span class="pdt-no">242호</span>
+										<span class="status">진행중</span>
+										<span class="date">19.04.30 16시 ~ 19.05.03 14시</span>
+									</div>
+									<h3 class="iph3">247호, 소셜오픈마켓(쿠팡 등 모든 쇼핑몰) 매출채권 선정산(미리페이)</h3>
+									<ul class="ip-inner">
+										<li class="nth-1 clearfix">
+											<p class="pull-left">예상수익률</p>
+											<p class="pull-right">10.0%</p>
+										</li>
+										<li class="nth-2 clearfix">
+											<p class="pull-left">기간</p>
+											<p class="pull-right">2개월</p>
+										</li>
+										<li class="nth-3 clearfix">
+											<p class="pull-left">상환방식</p>
+											<p class="pull-right">만기일시상환</p>
+										</li>
+										<li class="nth-4 clearfix">
+											<p class="pull-left">모집현황</p>
+											<p class="pull-right">2,310 / 3,500만원</p>
+										</li>
+									</ul>
+									<div class="per-bar">
+										<p class="bar" style="width: 80.61%"></p>
+										<span class="per">80.61%</span>
+									</div>
+									<div class="row-status">투자가능 금액: <span class="c-blue">1,190만원</span></div>
+									<p class="btn-box"><a href="" class="btn btn-invest br4">투자하기</a></p>
 
-								<div class="bg-cover"><div class="tbl"><div class="cell"><span class="in">판매완료</span></div></div></div>
+									<div class="bg-cover"><div class="tbl"><div class="cell"><span class="in">판매완료</span></div></div></div>
+								</div>
 							</div>
-						</div>
-						<!-- /.ip-outer -->
-						<div class="col-xs-12 col-sm-6 ip-outer wait">
-							<div class="ip-box">
-								<div class="ip-top">
-									<span class="pdt-no">242호</span>
-									<span class="status">진행중</span>
-									<span class="date">19.04.30 16시 ~ 19.05.03 14시</span>
-								</div>
-								<h3 class="iph3">247호, 소셜오픈마켓(쿠팡 등 모든 쇼핑몰) 매출채권 선정산(미리페이)</h3>
-								<ul class="ip-inner">
-									<li class="nth-1 clearfix">
-										<p class="pull-left">예상수익률</p>
-										<p class="pull-right">10.0%</p>
-									</li>
-									<li class="nth-2 clearfix">
-										<p class="pull-left">기간</p>
-										<p class="pull-right">2개월</p>
-									</li>
-									<li class="nth-3 clearfix">
-										<p class="pull-left">상환방식</p>
-										<p class="pull-right">만기일시상환</p>
-									</li>
-									<li class="nth-4 clearfix">
-										<p class="pull-left">모집현황</p>
-										<p class="pull-right">2,310 / 3,500만원</p>
-									</li>
-								</ul>
-								<div class="per-bar">
-									<p class="bar" style="width: 0"></p>
-									<span class="per">0%</span>
-								</div>
-								<div class="row-status">투자가능 금액: <span class="c-blue">1,190만원</span></div>
-								<p class="btn-box"><a href="" class="btn btn-invest br4">투자시작: 00:34:10</a></p>
+							<!-- /.ip-outer -->
+							<div class="swiper-slide ip-outer wait">
+								<div class="ip-box">
+									<div class="ip-top">
+										<span class="pdt-no">242호</span>
+										<span class="status">진행중</span>
+										<span class="date">19.04.30 16시 ~ 19.05.03 14시</span>
+									</div>
+									<h3 class="iph3">247호, 소셜오픈마켓(쿠팡 등 모든 쇼핑몰) 매출채권 선정산(미리페이)</h3>
+									<ul class="ip-inner">
+										<li class="nth-1 clearfix">
+											<p class="pull-left">예상수익률</p>
+											<p class="pull-right">10.0%</p>
+										</li>
+										<li class="nth-2 clearfix">
+											<p class="pull-left">기간</p>
+											<p class="pull-right">2개월</p>
+										</li>
+										<li class="nth-3 clearfix">
+											<p class="pull-left">상환방식</p>
+											<p class="pull-right">만기일시상환</p>
+										</li>
+										<li class="nth-4 clearfix">
+											<p class="pull-left">모집현황</p>
+											<p class="pull-right">2,310 / 3,500만원</p>
+										</li>
+									</ul>
+									<div class="per-bar">
+										<p class="bar" style="width: 0"></p>
+										<span class="per">0%</span>
+									</div>
+									<div class="row-status">투자가능 금액: <span class="c-blue">1,190만원</span></div>
+									<p class="btn-box"><a href="" class="btn btn-invest br4">투자시작: 00:34:10</a></p>
 
-								<div class="bg-cover"><div class="tbl"><div class="cell"><span class="in">판매완료</span></div></div></div>
+									<div class="bg-cover"><div class="tbl"><div class="cell"><span class="in">판매완료</span></div></div></div>
+								</div>
 							</div>
-						</div>
-						<!-- /.ip-outer -->
-						<div class="col-xs-12 col-sm-6 ip-outer end">
-							<div class="ip-box">
-								<div class="ip-top">
-									<span class="pdt-no">242호</span>
-									<span class="status">진행중</span>
-									<span class="date">19.04.30 16시 ~ 19.05.03 14시</span>
-								</div>
-								<h3 class="iph3">247호, 소셜오픈마켓(쿠팡 등 모든 쇼핑몰) 매출채권 선정산(미리페이)</h3>
-								<ul class="ip-inner">
-									<li class="nth-1 clearfix">
-										<p class="pull-left">예상수익률</p>
-										<p class="pull-right">10.0%</p>
-									</li>
-									<li class="nth-2 clearfix">
-										<p class="pull-left">기간</p>
-										<p class="pull-right">2개월</p>
-									</li>
-									<li class="nth-3 clearfix">
-										<p class="pull-left">상환방식</p>
-										<p class="pull-right">만기일시상환</p>
-									</li>
-									<li class="nth-4 clearfix">
-										<p class="pull-left">모집현황</p>
-										<p class="pull-right">2,310 / 3,500만원</p>
-									</li>
-								</ul>
-								<div class="per-bar">
-									<p class="bar" style="width: 100%"></p>
-									<span class="per">100%</span>
-								</div>
-								<div class="row-status">투자가능 금액: <span class="c-blue">1,190만원</span></div>
-								<p class="btn-box"><a href="" class="btn btn-invest br4">투자하기</a></p>
+							<!-- /.ip-outer -->
+							<div class="swiper-slide ip-outer end">
+								<div class="ip-box">
+									<div class="ip-top">
+										<span class="pdt-no">242호</span>
+										<span class="status">진행중</span>
+										<span class="date">19.04.30 16시 ~ 19.05.03 14시</span>
+									</div>
+									<h3 class="iph3">247호, 소셜오픈마켓(쿠팡 등 모든 쇼핑몰) 매출채권 선정산(미리페이)</h3>
+									<ul class="ip-inner">
+										<li class="nth-1 clearfix">
+											<p class="pull-left">예상수익률</p>
+											<p class="pull-right">10.0%</p>
+										</li>
+										<li class="nth-2 clearfix">
+											<p class="pull-left">기간</p>
+											<p class="pull-right">2개월</p>
+										</li>
+										<li class="nth-3 clearfix">
+											<p class="pull-left">상환방식</p>
+											<p class="pull-right">만기일시상환</p>
+										</li>
+										<li class="nth-4 clearfix">
+											<p class="pull-left">모집현황</p>
+											<p class="pull-right">2,310 / 3,500만원</p>
+										</li>
+									</ul>
+									<div class="per-bar">
+										<p class="bar" style="width: 100%"></p>
+										<span class="per">100%</span>
+									</div>
+									<div class="row-status">투자가능 금액: <span class="c-blue">1,190만원</span></div>
+									<p class="btn-box"><a href="" class="btn btn-invest br4">투자하기</a></p>
 
-								<div class="bg-cover"><div class="tbl"><div class="cell"><span class="in">판매완료</span></div></div></div>
+									<div class="bg-cover"><div class="tbl"><div class="cell"><span class="in">판매완료</span></div></div></div>
+								</div>
 							</div>
+							<!-- /.ip-outer -->
 						</div>
-						<!-- /.ip-outer -->
+
+						<div class="swiper-pagination"></div>
 					</div>
-
 					<!-- 개발 요청: 버튼 클릭시 상품이 더 노출되도록 불러오기 -->
-					<div class="row row-btn">
+					<div class="row row-btn hidden-xs">
 						<a href="javascript:;" class="btn-more"><span class="ic-bArrow"></span></a>
 					</div>
 				</div>
 			</section>
 			<!-- /.ingProduct -->
 			<section class="sec rate">
-				<h1 class="hidden">누적 상황</h1>
+				<h1 class="sr-only">누적 상황</h1>
 				<div class="group inner">
 					<div class="row">
-						<div class="col-xs-6 col-sm-6 rr nth-1">
+						<div class="rr nth-1">
 							<h2 class="r-f">누적 상환액</h2>
-							<!--백만원단위로 넘어갈 경우 '원'에서 '백만원'으로 바뀌게-->
 							<p class="r-f2"><span id="n1">67억 7,039</span> 만원</p>
 						</div>
-						<div class="col-xs-6 col-sm-6 rr nth-2">
+						<div class="rr nth-2">
 							<h2 class="r-f">대출잔액</h2>
 							<p class="r-f2"><span id="n2">12억 4,726</span> 만원</p>
 						</div>
-						<div class="col-xs-6 col-sm-6 rr nth-3">
+						<div class="rr nth-3">
 							<h2 class="r-f">누적대출 취급액</h2>
 							<p class="r-f2"><span id="n3">80억 1,765</span> 만원</p>
 						</div>
-						<div class="col-xs-6 col-sm-6 rr nth-4">
+						<div class="rr nth-4">
 							<h2 class="r-f">평균금리</h2>
 							<p class="r-f2"><span id="n4">11.08</span>%</p>
 						</div>
-						<div class="col-xs-6 col-sm-6 rr nth-5">
+						<div class="rr nth-5">
 							<h2 class="r-f">
 								연체율
 								<span class="q-w">
@@ -429,21 +440,23 @@
 				<div class="group inner">
 					<div class="split split-1">
 						<h1 class="com-ft">웹 보안 + 금융 노하우 + 법률 자문<br>P2P 금융의 최고의 인력</h1>
-						<p class="p-1">누리펀딩의 30년의 금융 전문 노하우와 웹보안 기술력으로<br>안전한 정보관리와 안심거래가 가능합니다.</p>
-						<div class="row-btn"><a href="https://www.nurifunding.co.kr/service/" class="btn-detail">자세히 보기</a></div>
+						<p class="p-1">누리펀딩의 30년의 금융 전문 노하우와<br class="hidden-md"> 웹보안 기술력으로<br>안전한 정보관리와 안심거래가 가능합니다.</p>
+						<div class="row-btn hidden-xs"><a href="https://www.nurifunding.co.kr/service/" class="btn-detail">자세히 보기</a></div>
 					</div>
 
 					<div class="split split-2">
-						<div class="col-xs-12 box nth-1">
+						<div class="box nth-1">
 							<h2><strong>IT전문기업의</strong> 개인 정보 유출 방지</h2>
 						</div>
-						<div class="col-xs-12 box nth-2">
+						<div class="box nth-2">
 							<h2><strong>금융 전문가의</strong> 여신심사 금융 노하우</h2>
 						</div>
-						<div class="col-xs-12 box nth-3">
+						<div class="box nth-3">
 							<h2><strong>변호사</strong> 계약서 법률 검토</h2>
 						</div>
 					</div>
+
+					<div class="row-btn"><a href="https://www.nurifunding.co.kr/service/" class="btn-detail">자세히 보기</a></div>
 				</div>
 			</section>
 			<!-- /.easy -->
@@ -456,11 +469,11 @@
 							누리펀딩은 고금리 혜택은 물론<br>
 							원금을 지키는 리스크 관리도 소중하게 생각합니다.
 						</p>
-						<div class="row-btn"><a href="https://www.nurifunding.co.kr/service/" class="btn-detail">자세히 보기</a></div>
+						<div class="row-btn hidden-xs"><a href="https://www.nurifunding.co.kr/service/" class="btn-detail">자세히 보기</a></div>
 					</div>
 					<div class="split split-2">
-						<!--PC버전 차트-->
-						<div class="cf hidden-xs per-chart" id="per-chart">
+						<!--차트-->
+						<div class="cf per-chart" id="per-chart">
 							<div class="box nth-1">
 								<p class="p-per"><span id="p-per1">1.56</span>%</p>
 								<p class="p-chart"></p>
@@ -483,48 +496,12 @@
 							</div>
 							<div class="tooltip">최소 2배 이상의 안정적인 수익률</div>
 						</div>
-						<!--M버전 차트-->
-						<!-- <div class="row show-xs" id="per-chart-m">
-							<div class="box">
-								<p class="p-per"><span id="p-per1">1.52</span>%</p>
-								<p class="p-chart"></p>
-								<p class="p-tit">예금 금리</p>
-							</div>
-							<div class="box">
-								<p class="p-per"><span id="p-per2">2.15</span>%</p>
-								<p class="p-chart"></p>
-								<p class="p-tit">국고채 (5년물)</p>
-							</div>
-							<div class="box">
-								<p class="p-per"><span id="p-per3">6.85</span>%</p>
-								<p class="p-chart"></p>
-								<p class="p-tit">KOSPI</p>
-							</div>
-							<div class="box">
-								<p class="p-per"><span id="p-per4">12.86</span>%</p>
-								<p class="p-chart"></p>
-								<p class="p-tit">P2P업체 평균</p>
-							</div>
-							<div class="box">
-								<p class="p-per"><span id="p-per5">13.67</span>%</p>
-								<p class="p-chart"></p>
-								<p class="p-tit">누리펀딩</p>
-							</div>
-							<input type="hidden" id="per5_val" value="1367">
-							<script>
-								$("#per-chart-m > div").each(function(idx, item) {
-									var $this = $(this),
-										perData = $this.find(".p-per > span").text(),
-										perHeight = perData * 11.5;
-									
-									$this.children(".p-chart").height(perHeight);
-								});
-							</script>
-						</div> -->
 
 						<div class="row-cmt">
 							※ 은행연합회, 금융투자협회, 저축은행중앙회, 누리펀딩 (2018년 6월 현재)
 						</div>
+
+						<div class="row-btn hidden-md"><a href="https://www.nurifunding.co.kr/service/" class="btn-detail">자세히 보기</a></div>
 					</div>
 
 				</div>
@@ -532,10 +509,14 @@
 			<!-- /.benefit -->
 
 			<section class="sec bn-account">
-				<h1 class="hidden">누리펀딩 투자의 첫 걸음! 투자를 위한 계좌를 등록하세요.</h1>
+				<h1 class="sr-only">누리펀딩 투자의 첫 걸음! 투자를 위한 계좌를 등록하세요.</h1>
 				<div class="group">
 					<a href="https://www.nurifunding.co.kr/member/account.php">
-						<img src="https://nurifunding.co.kr/img/renew/main/m_bnr_s_01.jpg" alt="계좌드록하기">
+						<div class="img-account hidden-md" role="img">
+							<p class="sr-only">누리펀딩 투자의 첫 걸은! 투자를 위한 계좌를 등록하세요.</p>
+						</div>
+						<img src="https://nurifunding.co.kr/img/renew/main/m_bnr_s_01.jpg" alt="계좌등록하기" class="hidden-xs">
+						<!-- <img src="https://nurifunding.co.kr/img/renew/main/m_bnr_s_01.jpg" alt="계좌등록하기"> -->
 					</a>
 				</div>
 			</section>
@@ -545,20 +526,20 @@
 				<div class="group inner">
 					<h1 class="com-ft">자주하는 질문</h1>
 					<div class="row fq-wrap">
-						<div class="col-xs-12 fq-outer">
+						<div class="fq-outer">
 							<div class="fq-box br4">
 								<h2 class="fq-q"><span class="arr-icon q-icon"></span>누리펀딩은 어떻게 만들어졌나요?</h2>
 								<p class="fq-a"><span class="arr-icon a-icon"></span>30년 경력 탄탄한 금융 전문가와 토탈 IT 서비스 전문 기업으로10년 동안 온라인 사이트의 보안을 책임져온 ㈜이비즈네트웍스가 누리펀딩에서 만났습니다.</p>
 							</div>
 						</div>
 
-						<div class="col-xs-12 fq-outer">
+						<div class="fq-outer">
 							<div class="fq-box br4">
 								<h2 class="fq-q"><span class="arr-icon q-icon"></span>대출 신청 자격 요건은 무엇인가요?</h2>
 								<p class="fq-a"><span class="arr-icon a-icon"></span>기업과 개인 신용등급이 낮은 경우에도 대출취급이 가능하나 담보물 가치에 따라 대출금액이 제한 됩니다.</p>
 							</div>
 						</div>
-						<div class="col-xs-12 fq-outer">
+						<div class="fq-outer">
 							<div class="fq-box br4">
 								<h2 class="fq-q"><span class="arr-icon q-icon"></span>누리여신평가 등급이 무엇인가요?</h2>
 								<p class="fq-a"><span class="arr-icon a-icon"></span>누리펀딩이 개발한 알고리즘을 바탕으로 채무자의 신용등급과 담보 가치를 결합한 여신평가 등급입니다.</p>
@@ -566,7 +547,7 @@
 						</div>
 					</div>
 
-					<div class="row row-btn"><a href="" class="btn-more">질문 전체 보러가기</a></div>
+					<div class="row row-btn"><a href="https://www.nurifunding.co.kr/faq/" class="btn-more">질문 전체 보러가기</a></div>
 				</div>
 			</section>
 			<!-- /.faq -->
@@ -648,13 +629,17 @@
 			</div>
 			<div class="cf area-contact">
 				<div class="group inner">
-					<a href="javascript:;" class="logo"><img class="" src="https://nurifunding.co.kr/img/renew/common/logo_f.png" alt="푸터로고"></a>
+					<a href="javascript:;" class="logo hidden-xs"><img src="https://nurifunding.co.kr/img/renew/common/logo_f.png" alt="푸터로고"></a>
 					<span class="s-1">고객센터</span>
 					<span class="s-2">1666-4570</span>
+					<a href="https://www.nurifunding.co.kr/faq/" class="btn-faq">FAQ</a>
+					<br class="hidden-md">
 					<span class="s-3">(운영시간: 평일: 09시~18시 / 점심: 13시~14시)</span>
+					<br class="hidden-md">
 					<a href="https://blog.naver.com/jkkim317" target="_blank" class="link"><img src="https://nurifunding.co.kr/img/renew/common/footer_blog.png" alt="누리펀딩블로그바로가기"></a>
 					<a href="" target="_blank" class="link"><img src="https://nurifunding.co.kr/img/renew/common/footer_cafe.png" alt="누리펀딩카페로바로가기"></a>
 					<a href="http://pf.kakao.com/_xnjkKC" target="_blank" class="link"><img src="https://nurifunding.co.kr/img/renew/common/footer_kakao.png" alt="누리펀딩카카오친구"></a>
+					<a href="javascript:;" class="logo hidden-md"><img src="https://nurifunding.co.kr/img/renew/common/logo_f.png" alt="푸터로고"></a>
 				</div>
 			</div>	
 			<div class="cf area-addr">
