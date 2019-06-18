@@ -47,14 +47,13 @@
 	.pop-phishing .pop-contents .pop-bottom .clsBtn {font-size: 13px; text-align: center; font-weight: 700; margin-left: 12px; margin-right: -10px; background: #fff; box-sizing: border-box; border: 1px solid #ccc; padding: 0 12px; line-height: 26px;}
 
 	.main {position: relative; width: 100%; background: #126cc4;}
-	.main-box {height: 477px;}
 	.main-box.swiper-container {position: relative;  padding: 0 0px; margin: 0 auto; text-align: center;}
-	.main-box .swiper-slide {position: relative; height: 350px;}
+	.main-box .swiper-slide {position: relative; height: 430px;}
 	.main-box .swiper-slide.bg-1 {background: url('https://nurifunding.co.kr/img/renew/main/m_bnr_bg.jpg') no-repeat center / cover;}
 	.main-box .swiper-slide img {display: block; position: relative; width: 320px; margin: 0 auto;}
 	.main-box .swiper-slide.slide-1 img {top: 15px;}
 
-	.main .quick-bar {position: absolute; width: 100%; bottom: 0;}
+	.main .quick-bar {position: relative; width: 100%; margin-top: -80px;}
     .main .quick-bar .inner {background: #3690e2;}
     .main .quick-bar .box .fst img {display: block;}
     .main .quick-bar .box {float: left; position: relative; box-sizing: border-box; font-size: 18px; color: #fff;}
@@ -246,7 +245,7 @@
 	.faq .fq-wrap .fq-outer .fq-box .fq-q, 
 	.faq .fq-wrap .fq-outer .fq-box .fq-a {position: relative; padding-left: 24px; word-break: keep-all;}
 	.faq .fq-wrap .fq-outer .fq-box .fq-q {padding-bottom: 15px; border-bottom: 1px solid #e5e5e5; font-size: 16px; letter-spacing: 0;}
-	.faq .fq-wrap .fq-outer .fq-box .fq-a {padding-top: 13px; font-size: 15px; line-height: 1.3; min-height: 116px;}
+	.faq .fq-wrap .fq-outer .fq-box .fq-a {padding-top: 13px; font-size: 15px; line-height: 1.3;}
 	.faq .fq-wrap .fq-outer .fq-box .q-icon, 
 	.faq .fq-wrap .fq-outer .fq-box .a-icon {position: absolute; top: 0; left: 0; width: 17px; height: 22px;}
 	.faq .fq-wrap .fq-outer .fq-box .q-icon {background-position: -50px; top: -2px;}
@@ -254,20 +253,6 @@
 	.faq .row-btn {margin-top: 25px; text-align: center;}
 	.faq .row-btn .btn-more {display: inline-block; width: 180px; font-size: 15px; line-height: 42px; background: #126cc3; box-sizing: border-box; color: #fff;}
 	
-	/* .faq {background: #dae7f3;}
-	.fq-outer {margin-top: 10px;}
-	.fq-outer:first-child {margin-top: 0px;}
-	.fq-box {padding: 20px 10px; background: #fff;}
-	.fqh3, .fq-a {position: relative; padding-left: 24px; word-break: keep-all;}
-	.fqh3 {padding-bottom: 15px; border-bottom: 1px solid #e5e5e5;}
-	.fq-a {padding-top: 13px; font-size: 14px; line-height: 1.3em;}
-	.q-icon, .a-icon {position: absolute; top: 0; left: 0; width: 17px; height: 20px;}
-	.q-icon {background-position: -50px; top: -2px;}
-	.a-icon {background-position: -75px; top: 15px;}
-	.fq-btn-outer {margin: 20px auto 5px;}
-	.fq-btn-box {text-align: center;}
-	.fq-btn {display: inline-block; width: 100%; border: 1px solid #dcdcdc; line-height: 2.5em; font-size: 15px; background: #126cc3; color: #fff;} */
-
 	/* 180510_코스닥 벤처펀딩_다솜 */
 	.vcfund {padding:32px 0 35px; text-align:center; background: #fff;}
 	.vcfund .vf-tit-1 {position:relative; margin-bottom:5px; padding-bottom:7px; font-size:15px;}
@@ -327,9 +312,7 @@
 }
 /*테블릿 영역, col-sm */
 @media (min-width: 768px) and (max-width: 991px) {
-	.com-pd {padding: 98px 10px 95px;}
 	.com-ft {text-align: center; font-size: 42px; font-family: "Nanum Square", sans-serif; line-height: 1.2em;}
-	.com-box {position: relative; margin: 0 auto; margin-top: 10px;}
 	.arr-icon {display: inline-block; position: relative; background: url(https://nurifunding.co.kr/img/nrm_icon.png) no-repeat;}
 	.br4 {border-radius: 4px;}
 	.sm-block {display: block;}
@@ -514,7 +497,7 @@
 	.main-box .certi-list {z-index: 5; position: absolute; top: 56px; right: -160px; width: 124px;}
 	.main-box .certi-list > li:first-child {margin-bottom: 10px;}
 
-    .main .quick-bar {position: absolute; width: 100%; bottom: 0;}
+	.main .quick-bar {position: relative; width: 100%; margin-top: -150px;}
     .main .quick-bar .inner {background: #3690e2; height: 150px; overflow: hidden;}
     .main .quick-bar .box .fst img {display: block;}
     .main .quick-bar .box {float: left; position: relative; box-sizing: border-box; font-size: 18px; color: #fff;}

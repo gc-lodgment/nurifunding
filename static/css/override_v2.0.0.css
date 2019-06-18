@@ -28,3 +28,5 @@
     .bx-wrapper .bx-next {right: -10px;} */
 }
 
+/* swiper 재정의 */
+.swiper-container {z-index: auto !important;}

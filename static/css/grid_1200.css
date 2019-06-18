@@ -748,7 +748,7 @@
 .affix {
   position: fixed;
 }
-.show-xs, .show-sm, .show-md, .show-lg {
+.show-xxs, .show-xs, .show-sm, .show-md, .show-lg {
   display: none !important;
 }
 @media (max-width: 767px) {
@@ -756,6 +756,14 @@
     display: none !important;
   }
   .show-xs {
+    display: block !important;
+  }
+}
+@media (max-width: 320px) {
+  .hidden-xxs {
+    display: none !important;
+  }
+  .show-xxs {
     display: block !important;
   }
 }

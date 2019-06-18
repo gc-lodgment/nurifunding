@@ -4,9 +4,9 @@
 @import url('https://nurifunding.co.kr/static/fonts/nanumgothic/nanumgothic.css');
 @import url('https://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css');
 /* css 초기화 */
-@import url('https://nurifunding.co.kr/static/css/grid_1200.css');
+/* @import url('https://nurifunding.co.kr/static/css/grid_1200.css'); */
 @import url('https://nurifunding.co.kr/static/css/include/pop.css');
-/* @import url('../../static/css/grid_1200.css'); */
+@import url('../../static/css/grid_1200.css');
 /* @import url('../../static/css/include/pop.css'); */
 /*@import url('https://nurifunding.co.kr/static/fonts/nanumgothic/nanumgothic.css');
 @import url('https://fonts.googleapis.com/earlyaccess/notosanskr.css');
@@ -298,74 +298,38 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
     .footer {position:relative; padding-bottom: 20px; background: #3a3d47; color: #ccc;}
     /* .footer [class*='area-'] {border-top: 1px solid #4f515b;}
     .footer [class*='area-']:first-child {border-top: 0;} */
-    .footer .area-term {padding: 10px 0; text-align: center;}
+    .footer .area-term {padding: 5px 0; text-align: center;}
     .footer .area-term .link {position: relative; display: inline-block; padding: 0 3px; font-size: 11px; line-height: 1.2; color: #bbb; letter-spacing: -1px;}
     .footer .area-term .link:before {content: ''; display: inline-block; position: absolute; left: -1px; top: 1px; width: 1px; height: 11px; background: #bbb;}
     /* .footer .area-term .link:first-child {padding-left: 0;} */
     .footer .area-term .link:first-child:before {display: none;}
     .footer .area-contact, 
     .footer .area-addr {width: 96%; margin: 0 auto;}
-    .footer .area-contact {margin-top: 30px;}
+    .footer .area-contact {margin-top: 20px;}
     .footer .area-contact .inner {font-size: 0; text-align: center;}
     .footer .area-contact .inner > * {position: relative; display: inline-block; vertical-align: middle; line-height: 1.2;}
-    .footer .area-contact .logo {display: block; width: 150px; margin-top: 30px;}
-    .footer .area-contact .s-1 {font-size: 17px; color: #fff; text-indent: 25px;}
-    .footer .area-contact .s-2 {top: -1px; margin-left: 10px; font-size: 25px; color: #398fe1;}
-    .footer .area-contact .s-3 {margin-top: -4px; font-size: 11.5px; color: #ccc; font-weight: 300; text-indent: -24px;}
+    .footer .area-contact .logo {display: block; width: 150px; margin-top: 20px;}
+    .footer .area-contact .s-1 {font-size: 17px; color: #fff; margin-left: 13px;}
+    .footer .area-contact .s-2 {top: -1px; margin-left: 8px; font-size: 23px; color: #398fe1;}
+    .footer .area-contact .s-3 {margin-top: -4px; font-size: 11.5px; color: #ccc; font-weight: 300; margin-left: -25px;}
     .footer .area-contact .btn-faq {display: inline-block; width: 35px; top: 9px; margin-left: 25px; line-height: 35px; border: solid 1px #50525b; color: #fff; font-size: 12px; text-align: center;}
-    .footer .area-contact .link {margin-left: 10px; margin-top: 12px;}
+    .footer .area-contact .link {margin: 0px 5px; margin-top: 12px;}
     .footer .area-addr [class*='row-'] {position: relative;}
-    .footer .area-addr .row-addr {padding: 35px 0;}
-    .footer .area-addr .row-addr .split {float: left; position: relative; width: 50%;}
-    .footer .area-addr .row-addr .split address {font-size: 16px; line-height: 1.5; font-weight: 300;}
-    .footer .area-addr .row-addr .split address span {margin-right: 5px; font-size: 18px; font-weight: 500;}
-    .footer .area-addr .row-addr .split.split-1 .link {position: absolute; bottom: 0px; right: 45px;}
-    .footer .area-addr .row-notice {padding: 15px; background: #41434E; font-size: 13px; line-height: 1.4; color: #9f9f9f; letter-spacing: 0; word-break: keep-all;}
-    .footer .area-addr .row-certify {padding: 20px 0;}
-    .footer .area-addr .row-certify .list > li {margin-left: 20px; display: inline-block; vertical-align: middle;}
+    .footer .area-addr .row-addr {padding: 15px 0 20px;}
+    .footer .area-addr .row-addr .split {position: relative;}
+    .footer .area-addr .row-addr .split address {font-size: 12px; line-height: 1.5; font-weight: 300;}
+    .footer .area-addr .row-addr .split address span {margin-right: 5px; font-size: 14px; font-weight: 500;}
+    .footer .area-addr .row-addr .split.split-1 .link {position: absolute; bottom: 2px; right: 0px; width: 75px;}
+    .footer .area-addr .row-addr .split.split-2 {margin-top: 10px;}
+    .footer .area-addr .row-notice {padding: 8px; background: #41434E; font-size: 11.5px; line-height: 1.4; color: #9f9f9f; letter-spacing: 0; word-break: keep-all;}
+    .footer .area-addr .row-certify {padding: 5px 0 15px;}
+    /* .footer .area-addr .row-certify .list {text-align: center;} */
+    .footer .area-addr .row-certify .list > li {margin: 10px 0 0 15px; display: inline-block; vertical-align: middle;}
     .footer .area-addr .row-certify .list > li:first-child {margin-left: 0;}
-    .footer .area-addr .row-certify .list > li .link > img {}
-    .footer small {float: right; position: absolute; top: 35px; right: 0; font-size: 13px; color: #bbb;}
-    
-    /* .footer {padding: 40px 0; background: #282828; margin-top: 0;}
-    .footer .row {width: 300px; margin: 0 auto;}
-    .footer .a-txt, .footer .f-txt, .footer .c-txt {margin-top: 15px; color: #b4b4b4;}
-    .footer .c-txt {margin-top: 10px;}
-    .footer .footer-box div[class*="-txt"]:first-child {margin-top: 0px;}
-    .footer .a-txt > a {display: inline-block; margin-left: 7px; color: #d3d3d3; font-size: 13px;}
-    .footer .a-txt > a:first-child {margin-left: 0;}
-    .footer .f-txt, .footer .f-txt address {font-size: 12px; line-height: 1.5em; word-break: keep-all;}
-    .footer .c-txt small {font-size: 11px; margin-bottom: 5px; display: block;}
-    .fc-yellow {color: #ffea00;}
-
-    .footer .f-txt .xs-br {display: block;}
-
-    .footer {position:relative; box-sizing:border-box; min-width:225px; margin:0 auto; padding:25px 40px 35px; color: #b4b4b4; background: #282828;}
-    .footer .f-link-list {margin-top:5px}
-    .footer .f-link-list li {float:left; margin-left:6px}
-    .footer .f-link-list li:first-child {margin-left:0;}
-    .footer .f-link-list li a {display:block; width:80%;}
-    
-    .footer .logo {position:relative; display:block; width:150px; margin-left:-6px;}
-    .footer .a-txt {position:relative; display:inline-block;}
-    .footer .a-txt a {float:left; margin-left:13px; margin-top:10px; font-size:13px; color: #d3d3d3}
-    .footer .a-txt a:first-child {margin-left:0}
-    .footer .a-txt .nth-4 {clear:both; float:left; margin-left:0}
-    
-    .footer .f-adr-box {position:relative; margin-top:15px;}
-    .footer .f-adr-box .f-adr {margin-top:15px}
-    .footer .f-adr-box .f-adr:first-child {padding-top:115px;}
-    .footer .f-adr-box .f-adr.last {position:absolute; top:0; margin-top:0}
-    
-    .footer .f-adr-box .f-adr address {font-size:12px; line-height:1.5em; word-break:keep-all;}
-    .footer .f-adr-box .f-adr address span {display:block; margin-bottom:2px; font-size:15px;}
-    .footer .f-txt-box {position:relative; margin-top:15px;}
-    .footer .f-txt {font-size:12px; line-height:1.5em; word-break:keep-all;}
-    .footer .f-txt span {display:inline-block} */
-    
-    /*
-    .footer .f-adr-box .f-adr {float:left; margin-right:35px}
-    .footer .f-adr-box .f-link-list {margin-top:10px;}*/
+    .footer .area-addr .row-certify .list > li:nth-child(4) {margin-left: 35px;}
+    .footer .area-addr .row-certify .list > li:nth-child(5) {margin-left: 50px;}
+    .footer .area-addr .row-certify .list > li .link > img {width: auto; height: 20px;}
+    .footer small {display: block; margin-top: 20px; text-align: center; font-size: 13px; color: #bbb;}
     
     /* 180523_사이드배너_카카오톡 플러스 친구_다솜 */
     .side-banner {z-index: 9; position:fixed; display:inline-block; width: 110px; bottom:85px; right:0}
@@ -405,6 +369,11 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
 
     /* 180727 한글표기를 위한 텍스트 추가_다솜 */
     .nr-money-txt {display:block; margin-top:10px; padding-right:11%; font-size:15px; line-height:15px; color:#686868; text-align:right;}
+}
+
+@media (max-width: 320px) {
+    .footer .area-addr .row-addr .split.split-1 .link {width: 55px;}
+    .footer .area-addr .row-certify .list > li .link > img {height: 18px;}
 }
 
 /*테블릿 & PC영역*/
@@ -595,34 +564,20 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
     
     .side-banner {z-index: 99999; position:fixed; display:inline-block; width: auto; top:200px; left: 50%; margin-left: 645px;}
     .side-banner.subpage {top: 130px; margin-left: 540px;}
+
+
 }
 
-@media (min-width: 980px){
-    /*.header {height: 85px;}
-    .gnb .navbar-header {top: -10px;}
-    .gnb .navbar-header .navbar-brand {width: 200px;}
-    .gnb .navbar-header .navbar-brand img {width: 200px;}
+@media (min-width: 768px) and (max-width: 991px) {
 
-    .gnb .navbar-collapse .menu > li {font-size: 17px; margin-left:8px;}
-    .gnb .navbar-collapse .menu .h-link.fir {margin-left:20px;} 
-    .gnb .navbar-collapse .menu .h-link img {width:130px;}
-
-    .footer .footer-box {width:1000px; padding-left:30px;}
-    .footer .a-txt a {margin-left: 20px; font-size:16px;}
-    .footer .f-adr-box .f-adr {width: auto; margin-right:35px}
-    .footer .f-adr-box .f-adr address {font-size:14px; line-height:23px;}
-    .footer .f-adr-box .f-adr address span {font-size:20px;}
-    .footer .f-txt {font-size:14px; line-height:23px;}
-
-    .tooltip-detail {right:auto; margin-left:-40px}*/
 }
 
-/* 
-    .footer .f-txt span {display:inline-block} */
+@media (min-width: 992px) and (max-width: 1199px){
+    .gnb .navbar-collapse .menu > li.big {margin-left: 20px;}
+    .gnb .navbar-collapse .menu .hidden-margin,
+    .gnb .navbar-collapse .menu > li.big {margin-left: 25px;}
+}
 
-/*@media (min-width: 980px) {
-	.hidden-md {display: none !important;}
-}*/
 @media (max-width: 1560px){
   .side-banner {left: auto; margin-left: auto; right: 10px;}
 }
