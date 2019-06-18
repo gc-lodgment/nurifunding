@@ -534,8 +534,10 @@
 
 	/* 180622_상단 수정_다솜 */
 	.invest-detail-view-area {position:relative; }
-	.invest-detail-view-area .invest-img {position:relative; width:100%; height:245px; background:rgba(0, 0, 0, 0.5)}
-	.invest-detail-view-area .invest-img img {width:100%; height:100%;}
+	/* .invest-detail-view-area .invest-img {position:relative; width:100%; height:245px; background:rgba(0, 0, 0, 0.5)} */
+	/* .invest-detail-view-area .invest-img img {width:100%; height:100%;} */
+	.invest-detail-view-area .invest-img {position:relative; width:100%; height: auto; background:rgba(0, 0, 0, 0.5)}
+	.invest-detail-view-area .invest-img img {width:100%;}
 	/* 180730 이미지 없을 경우 */
 	.invest-detail-view-area .invest-img span {display:block; padding:30% 20px 0; font-size:18px; line-height:22px; font-weight:600; color:#fff; text-align:center;}
 
