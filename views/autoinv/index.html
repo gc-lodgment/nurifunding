@@ -23,10 +23,10 @@
     <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/common.css">
     <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/autoinv/autoinv.css">
 
-	<!-- <link rel="stylesheet" href="../../static/css/override.css">
-	<link rel="stylesheet" href="../../static/css/common.css">
-	<link rel="stylesheet" href="../../static/css/autoinv/autoinv.css"> -->
-
+	<!-- <link rel="stylesheet" href="../../static/css/override.css"> -->
+	<!--<link rel="stylesheet" href="../../static/css/common.css">-->
+	<!--<link rel="stylesheet" href="../../static/css/autoinv/autoinv.css">-->
+	
 	<script type="text/javascript" src="https://nurifunding.co.kr/static/js/jquery-1.10.2.min.js"></script>
 	<!--js 추가-->
 	<!--<script type="text/javascript" src="https://nurifunding.co.kr/static/js/jquery.lazyload.min.js"></script>-->
@@ -39,9 +39,9 @@
 	<script type="text/javascript" src="https://nurifunding.co.kr/static/js/common.js"></script>
 	<script type="text/javascript" src="https://nurifunding.co.kr/static/js/autoinv/autoinv.js"></script>
 
-	<!-- <script type="text/javascript" src="../../static/js/common.js"></script>
-    <script type="text/javascript" src="../../static/js/autoinv/autoinv.js"></script> -->
+	<!-- <script type="text/javascript" src="../../static/js/common.js"></script> -->
 
+    <!--<script type="text/javascript" src="../../static/js/autoinv/autoinv.js"></script>-->
 	<!-- <link rel="stylesheet" href="../../static/css/common_ie9lt.css">
         <link rel="stylesheet" href="../../static/css/autoinv_ie9lt.css">
     <script type="text/javascript" src="../../static/js/ie9_lt.js"></script> -->
@@ -209,7 +209,7 @@
 							<span class="c-blue">현재 예치금 잔액</span> : 200,000원
 						</div>
 						<!-- 투자 전 -->
-						<div class="row-box type-01 ta-center">
+						<!--<div class="row-box type-01 ta-center">
 							상품별 투자금액
 							<div class="dropdown prc">
 								<button type="button" class="btn">금액선택<span class="pull-right">▼</span></button>
@@ -232,16 +232,19 @@
 								<p class="c-red">※ 자동투자 금액에 비하여 예치금이 작을 경우<span class="show-xs"></span> 투자는 진행되지 않습니다.<br/>반드시 고객님의 예치금을 확인해주세요.</p>
 								<p>※ 기능 설정 시 설정시점 이후의 선정산 상품부터<span class="show-xs"></span>자동투자가 시작됩니다.</p>
 							</div>
-						</div>
+						</div>-->
 						<!-- 투자 후 -->
-						<!-- <div class="row-box type-01 ta-center">
-							<span class="c-blue">100만원 자동 투자 중</span> <span class="sun"></span> <span class="hidden-xs">&nbsp;/&nbsp;</span> 잔여기한 [ <span class="c-red">20일</span> ] 종료일 [ <span class="c-red">2019.04.30</span> ]
+						<!-- 20190619 버튼 및 팝업 추가 -->
+						 <div class="row-box type-01 ta-center">
+						    <!-- 팝업에서 금액 선택 후 팝업 창 나오면 선택 한 금액 반영되어 있게 -->
+							<span class="c-blue"><em>100</em>만원 자동 투자 중<a href="javascript:void(0);" onclick="popupOpen('.pop-autoinv');" class="btn-base btn-blue">투자금 변경</a> </span> <span class="sun"></span> <span class="hidden-xs">&nbsp;/&nbsp;</span> 잔여기한 [ <span class="c-red">20일</span> ] 종료일 [ <span class="c-red">2019.04.30</span> ]
+							
 						</div>
 						<div class="row-btn">
 							<a href="" class="btn-base btn-blue">자동투자 기한 연장하기</a> 
 							<a href="" class="btn-base btn-gray">자동투자 해지하기</a> 
 							<div class="cmt ta-center">※ 자동투자 해지는 반드시 누리펀딩 홈페이지에서만<span class="show-xs"></span> 이용해 주시기 바랍니다.</div>
-						</div> -->
+						</div> 
 					</div>
 				</section>
 				<hr class="sun" />
@@ -315,6 +318,33 @@
 				</section>
 			</div>
 		</div>
+		
+		<!-- 20190619 팝업 추가 -->
+		<div class="pop-container pop-autoinv" style="display: none">
+            <div class="bg-back"></div>
+
+            <div class="pop-wrapper">
+				<div class="pop-area clr">
+                     <div class="row">
+                        <div class="dropdown prc">
+                            <button type="button" class="btn">금액선택<span class="pull-right">▼</span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">10</a></li>
+                                <li><a href="#">30</a></li>
+                                <li><a href="#">50</a></li>
+                                <li><a href="#">100</a></li>
+                            </ul>
+                        </div>
+                        <span>만원 자동투자</span>
+                    </div>
+                    <div class="row row-btn">
+                        <a href="javascript:void(0);" onclick="popupClose('.pop-autoinv');" class="btn-base btn-blue"><span class="show-xs">변경</span><span class="hidden-xs">변경하기</span></a> 
+                        <a href="javascript:void(0);" onclick="popupClose('.pop-autoinv');" class="btn-base btn-gray"><span class="show-xs">취소</span><span class="hidden-xs">변경취소</span></a> 
+                    </div>
+                </div>
+            </div>
+		</div>
+		<!--// .pop-container.pop-autoinv-->
 
 
 		<footer class="footer-01">
