@@ -181,6 +181,7 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
 @media (min-width: 992px) {
   .group {
     /*width: 970px;*/
+    width: 100%;
   }
 }
 @media (min-width: 1200px) {
@@ -206,35 +207,8 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
 
 .header, .footer {letter-spacing: -0.75px;}
 
-/*모바일 영역*/
-@media (max-width: 767px){
-    
-    .dropdown {position: relative; display: inline-block; vertical-align: middle; color: #333;}
-    .dropdown .btn {position: relative; border: 1px solid #ddd; background: #fff; color: #333; box-sizing: border-box; padding: 0px 10px; border-radius: 6px; text-align: left; outline: none; width: 100%; font-size: 13px; height: 29px; line-height: 26px;}
-	.dropdown .btn span {position: relative; font-size:10px; color: #398FE2;}
-	.dropdown .dropdown-menu {display: none; position: absolute; border: 1px solid #ddd; background: #fff; border-radius: 6px; margin-top: -1px; z-index: 1; width: 100%;}
-	.dropdown .dropdown-menu li a {display: block; padding: 5px 10px; line-height: 1.2em; font-size: 1em; text-align: left;}
-	.dropdown .dropdown-menu li a:hover {color: #398fe2;}
-
-	.form-box {position: relative;}
-	.form-box * {vertical-align: middle;}
-	.form-check,
-	.form-radio {
-		position: relative; appearance: none; -webkit-appearance: none;  -moz-appearance: none;  -ms-appearance: none; 
-		background: #fff; border: 1px solid #ddd; outline: none; cursor: pointer;
-	}
-	.form-check {width: 17px; height: 17px;}
-	.form-check:checked {background: #fff url(http://img.nurifunding.co.kr/check-icon.png) no-repeat 3px 2px; background-size: 10px;}
-	.form-radio {width: 17px; height: 17px; border-radius: 50%;}
-	.form-radio:checked {background: #fff url(https://nurifunding.co.kr/img/radio_icon.png) no-repeat -1px; background-size: 17px;}
-    .form-base {
-    	appearance: none; -webkit-appearance: none;  -moz-appearance: none;  -ms-appearance: none; 
-    	position: relative; display: inline-block; vertical-align: middle; background: #fff; height: 29px; padding: 0 5px; padding-bottom: 2px; width: 50px; box-sizing: border-box; font-size: 13px; border: 1px solid #ddd;
-    }
-    .btn-base {position: relative; display: inline-block; vertical-align: middle; box-sizing: border-box; color: #fff; background: #398fe1; height: 26px; padding: 0 5px; border-radius: 3px; line-height: 26px; font-size: 13px; text-align: center;}
-    
-    .wrap {}
-    /* Mobile 해더 시작 */
+/* 모바일 테블릿 통합 */
+@media (max-width: 991px) {
     .wrap {}
     .header, .footer {font-family: 'Noto Sans KR', sans-serif;}
     .header {z-index: 11;}
@@ -330,6 +304,37 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
     .footer .area-addr .row-certify .list > li:nth-child(5) {margin-left: 50px;}
     .footer .area-addr .row-certify .list > li .link > img {width: auto; height: 20px;}
     .footer small {display: block; margin-top: 20px; text-align: center; font-size: 13px; color: #bbb;}
+}
+
+/*모바일 영역*/
+@media (max-width: 767px){
+    
+    .dropdown {position: relative; display: inline-block; vertical-align: middle; color: #333;}
+    .dropdown .btn {position: relative; border: 1px solid #ddd; background: #fff; color: #333; box-sizing: border-box; padding: 0px 10px; border-radius: 6px; text-align: left; outline: none; width: 100%; font-size: 13px; height: 29px; line-height: 26px;}
+	.dropdown .btn span {position: relative; font-size:10px; color: #398FE2;}
+	.dropdown .dropdown-menu {display: none; position: absolute; border: 1px solid #ddd; background: #fff; border-radius: 6px; margin-top: -1px; z-index: 1; width: 100%;}
+	.dropdown .dropdown-menu li a {display: block; padding: 5px 10px; line-height: 1.2em; font-size: 1em; text-align: left;}
+	.dropdown .dropdown-menu li a:hover {color: #398fe2;}
+
+	.form-box {position: relative;}
+	.form-box * {vertical-align: middle;}
+	.form-check,
+	.form-radio {
+		position: relative; appearance: none; -webkit-appearance: none;  -moz-appearance: none;  -ms-appearance: none; 
+		background: #fff; border: 1px solid #ddd; outline: none; cursor: pointer;
+	}
+	.form-check {width: 17px; height: 17px;}
+	.form-check:checked {background: #fff url(http://img.nurifunding.co.kr/check-icon.png) no-repeat 3px 2px; background-size: 10px;}
+	.form-radio {width: 17px; height: 17px; border-radius: 50%;}
+	.form-radio:checked {background: #fff url(https://nurifunding.co.kr/img/radio_icon.png) no-repeat -1px; background-size: 17px;}
+    .form-base {
+    	appearance: none; -webkit-appearance: none;  -moz-appearance: none;  -ms-appearance: none; 
+    	position: relative; display: inline-block; vertical-align: middle; background: #fff; height: 29px; padding: 0 5px; padding-bottom: 2px; width: 50px; box-sizing: border-box; font-size: 13px; border: 1px solid #ddd;
+    }
+    .btn-base {position: relative; display: inline-block; vertical-align: middle; box-sizing: border-box; color: #fff; background: #398fe1; height: 26px; padding: 0 5px; border-radius: 3px; line-height: 26px; font-size: 13px; text-align: center;}
+    
+    /* Mobile 해더 시작 */
+    
     
     /* 180523_사이드배너_카카오톡 플러스 친구_다솜 */
     .side-banner {z-index: 9; position:fixed; display:inline-block; width: 110px; bottom:85px; right:0}
@@ -377,7 +382,7 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
 }
 
 /*테블릿 & PC영역*/
-@media (min-width: 768px){
+@media (min-width: 992px){
     
     .side-banner {z-index: 99999; position:fixed; display:inline-block; width: auto; top:200px; left: 50%; margin-left: 645px;}
     .side-banner.subpage {top: 145px; margin-left: 540px;}
@@ -569,13 +574,25 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-
+    .hidden-margin {display: none;}
 }
 
 @media (min-width: 992px) and (max-width: 1199px){
-    .gnb .navbar-collapse .menu > li.big {margin-left: 20px;}
+    .gnb {padding: 0 10px;}
     .gnb .navbar-collapse .menu .hidden-margin,
+    .gnb .navbar-collapse .menu > li.myinfo,
     .gnb .navbar-collapse .menu > li.big {margin-left: 25px;}
+    .gnb .navbar-collapse .menu > li {margin-left: 15px;}
+    .gnb .navbar-collapse .menu .hidden-margin {width: auto;}
+    .gnb .navbar-collapse .menu > li.myinfo {margin-left: 30px;}
+
+    .footer > [class*="area-"] {padding-left: 10px; padding-right: 10px;}
+    .footer .area-contact .logo {margin-right: 25px;}
+    .footer .area-contact .s-1 {font-size: 20px;}
+    .footer .area-contact .s-2 {font-size: 28px;}
+    .footer .area-contact .s-3 {font-size: 15px; margin-right: 0;}
+    .footer .area-addr .row-addr .split address {font-size: 14px;}
+    .footer .area-addr .row-addr .split address span {font-size: 16px;}
 }
 
 @media (max-width: 1560px){

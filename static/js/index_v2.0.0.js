@@ -13,11 +13,11 @@ $(function () {
 	$(window).resize(function() {
 		var winWidth = $(window).width();
 		// console.log(winWidth)
-		if ( winWidth <= 767 ) {
+		if ( winWidth <= 991 ) {
 			ingProductFn();
 			benefitChart("#per-chart", "11");
 		} 
-		if ( winWidth >= 768 ) {
+		if ( winWidth >= 992 ) {
 			benefitChart("#per-chart", "20");
 		}
 	}).resize();
@@ -45,6 +45,12 @@ function ingProductFn() {
 			el: '.swiper-pagination',
 			type: 'fraction',
 		},
+	});
+	$(window).resize(function() {
+		var winWidth = $(window).width();
+		if ( winWidth >= 992 ) {
+			ipSwiper.destroy();
+		}
 	});
 }
 
