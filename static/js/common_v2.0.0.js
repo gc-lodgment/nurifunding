@@ -2,6 +2,7 @@ $(function() {
     
     /*함수실행*/
     //popupCen();
+    // init();
     goAreaFn();
     modalDisplay();
 
@@ -29,6 +30,40 @@ $(function() {
     });
 
 });
+
+function init() {
+    $('[data-modal]').on('click', function() {
+        var modalNm = $(this).attr('data-modal');
+        var obj =$('.modal-mask.' + modalNm);
+        modalDisplay(obj, 'enter');
+    });
+    $('[data-dismiss]').on('click', function() {
+        var type = $(this).attr('data-dismiss');
+        switch (type) {
+            case ('modal'):
+                modalDisplay($(this).closest('.modal-mask'), 'leave');
+                break;
+            default:
+                break;
+        }
+    });
+}
+
+// 모달 영역
+function modalDisplay(obj, flag) {
+    switch (flag) {
+        case ('enter'): 
+            obj.addClass('enter');
+            break;
+        case ('leave'): 
+            obj.addClass('leave');
+            obj.removeClass('enter');
+            setTimeout(function() {obj.removeClass('leave');}, 300);
+            break;
+        default:
+            break;
+    }
+}
 
 // Mobile 해더 기능 
 function hdFn() {
@@ -161,20 +196,6 @@ function goAreaFn() {
 	$('#goTop').on('click', function() {
 		$('html, body').animate({ scrollTop: 0 }, 400);
 	});
-}
-
-// 모달 영역
-function modalDisplay(obj, flag) {
-    switch (flag) {
-        case true: 
-            obj.addClass('on');
-            break;
-        case false: 
-            obj.removeClass('on');
-            break;
-        default:
-            break;
-    }
 }
 
 //# 자동투자 인증문자 회신여부 체크

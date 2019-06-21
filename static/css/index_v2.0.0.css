@@ -27,7 +27,7 @@
 	.main-box .swiper-slide img {display: block; position: relative; width: 320px; margin: 0 auto;}
 	.main-box .swiper-slide.slide-1 img {width: 360px; max-width: none; left: 50%; margin-left: -198px;}
 
-	.main .quick-bar {position: relative; width: 100%; margin-top: -80px;}
+	.main .quick-bar {z-index: 1; position: relative; width: 100%; margin-top: -80px;}
     .main .quick-bar .inner {background: #3690e2;}
     .main .quick-bar .box .fst img {display: block;}
     .main .quick-bar .box {float: left; position: relative; box-sizing: border-box; font-size: 18px; color: #fff;}
@@ -57,6 +57,18 @@
 	.main .quick-bar .box-3 > span {display: inline-block; font-size: 13px;}
 	.main .quick-bar .box-3 .tt {padding: 0px 8px; line-height: 22px; background: #398fe1; text-align: center;}
 	.main .quick-bar .box-3 .t {margin-left: 5px; color: #555;}
+
+	.modal-fstvisit {}
+	.modal-fstvisit .modal-container {width: 94%; margin: 0 auto; padding: 0; background: #3A8FE2;}
+	.modal-fstvisit .modal-container .modal-header {padding: 20px 0 15px; background: #fff; text-align: center;}
+	.modal-fstvisit .modal-container .modal-header h3 {font-size: 19px; font-weight: 700;}
+	.modal-fstvisit .modal-container .modal-header .modal-cmt {font-size: 13px; margin-top: 5px;}
+	.modal-fstvisit .modal-container .modal-header .btn-cls {position: absolute; top: 8px; right: 8px;}
+	.modal-fstvisit .modal-container .modal-body {padding: 20px 0 15px;}
+	.modal-fstvisit .modal-container .modal-body .img-box {text-align: center;}
+	.modal-fstvisit .modal-container .modal-body .img-box > img {max-width: 375px;}
+	.modal-fstvisit .modal-container .modal-footer {padding-bottom: 20px; text-align: center;}
+	.modal-fstvisit .modal-container .modal-footer .btn-marine {border-radius: 0; padding: 0 50px; height: 40px; line-height: 40px; font-size: 16px; color: #fff;}
 
 	.ingProduct {padding: 35px 0; background: #f5f5f5;}
     .ingProduct {}
@@ -348,7 +360,7 @@
 	.main-box .certi-list {z-index: 5; position: absolute; top: 56px; right: -160px; width: 124px;}
 	.main-box .certi-list > li:first-child {margin-bottom: 10px;}
 
-	.main .quick-bar {position: relative; width: 100%; height: 150px; margin-top: -150px;}
+	.main .quick-bar {z-index: 1; position: relative; width: 100%; height: 150px; margin-top: -150px;}
     .main .quick-bar .inner {background: #3690e2; height: 100%; overflow: hidden;}
     .main .quick-bar .box .fst img {display: block;}
     .main .quick-bar .box {float: left; position: relative; box-sizing: border-box; font-size: 18px; color: #fff;}
@@ -381,12 +393,13 @@
     .ingProduct {}
     .ingProduct h1 .more-btn {display: inline-block; position: absolute; top: 25px; right: 0; font-size: 16px; color: #555;}
     .ingProduct h1 .more-btn .ic-rArrow {margin-left: 5px;}
-    .ingProduct h1 .more-btn .ic-rArrow:after {border-color: #555;}
+	.ingProduct h1 .more-btn .ic-rArrow:after {border-color: #555;}
+	.ingProduct .ip-container {overflow: visible;}
 	.ingProduct .ip-wrap {position: relative; width: 1230px; left: -15px; margin-top: 20px;}
-    .ingProduct .ip-wrap .ip-outer {position: relative; padding: 0 15px; margin-top: 30px; width: 33.33%;}
+    .ingProduct .ip-wrap .ip-outer {float: left; position: relative; padding: 0 15px; margin-top: 30px; width: 33.33%;}
     .ingProduct .ip-wrap .ip-outer:nth-child(4n) {clear:both;}
 	.ingProduct .ip-wrap .ip-outer .ip-box {
-		position: relative; margin: 0 auto; background: #fff; border: 1px solid #ddd; border-radius: 10px; overflow: hidden;
+		position: relative; margin: 0 auto; background: #fff; border: 1px solid #ddd; border-radius: 10px; border-top-left-radius: none;
 		transition: box-shadow 0.3s; -webkit-transition: box-shadow 0.3s;
 	}
 	.ingProduct .ip-wrap .ip-outer .ip-box:hover {box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.25);}
@@ -418,13 +431,12 @@
 	.ingProduct .ip-wrap .ip-outer.end .btn-invest,
 	.ingProduct .ip-wrap .ip-outer.start .btn-invest {background: #09345f;}
     .ingProduct .ip-wrap .ip-outer.wait .btn-invest {background: #5a7383;}
-    .ingProduct .ip-wrap .ip-outer .bg-cover {display: none;}
+    .ingProduct .ip-wrap .ip-outer .bg-cover {display: none; border-radius: 10px; border-top-left-radius: 0;}
+    .ingProduct .ip-wrap .ip-outer.end .bg-cover {display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0, .3);}
     .ingProduct .ip-wrap .ip-outer .bg-cover .tbl {display: table; width: 100%; height: 100%;}
     /* .ingProduct .ip-wrap .ip-outer .bg-cover .tbl .row {display: table-row;} */
     .ingProduct .ip-wrap .ip-outer .bg-cover .tbl .cell {display: table-cell; vertical-align: middle; text-align: center;}
     .ingProduct .ip-wrap .ip-outer .bg-cover .tbl .cell .in {display: inline-block; z-index: 1; width: 180px; height: 180px; background: rgb(14, 26, 38, .65); border-radius: 50%; line-height: 180px; font-size: 30px; color: #fff;}
-    .ingProduct .ip-wrap .ip-outer.end .bg-cover {display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0, .3);}
-	.ingProduct .ip-wrap .ip-outer.end .bg-cover {display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
 	.ingProduct .row-btn {margin-top: 50px; text-align: center;}
 	.ingProduct .row-btn .btn-more {display: inline-block; }
 	.ingProduct .row-btn .btn-more .ic-bArrow:after {top: -10px; width: 30px; height: 30px; border-width: 5px; border-color: #90959A;}

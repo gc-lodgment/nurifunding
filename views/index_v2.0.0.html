@@ -51,14 +51,17 @@
 	-->
 	<!--<script type="text/javascript" src="https://nurifunding.co.kr/static/js/ie9_lt.js"></script>-->
 	<!--<link rel="stylesheet" href="https://nurifunding.co.kr/static/css/index2_ie9lt.css">-->
+
+	<!-- <link rel="stylesheet" href="../static/css/common_ie9lt.css">
+	<link rel="stylesheet" href="../static/css/index2_ie9lt.css"> -->
+	<!-- <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/grid_ie9lt.min.css"> -->
+	
 	<!--[if lt IE 9]>
-    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/grid_ie9lt.min.css">
-    <link rel="stylesheet" href="../static/css/common_ie9lt.css">
-    <link rel="stylesheet" href="../static/css/index2_ie9lt.css">
-   
-    <script type="text/javascript" src="../static/js/ie9_lt.js"></script>
-    <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-  <![endif]-->
+		<script type="text/javascript" src="../static/js/ie9_lt.js"></script>
+
+		<script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
 
   <!-- <script type="text/javascript" src="http://localhost:35729/livereload.js"></script> -->
 </head>
@@ -202,7 +205,7 @@
 					<div class="group inner">
 						<div class="box box-1">
 							<a href="javascript:;" class="fst hidden-smxs"></a>
-							<a href="javascript:;" class="fst-guide hidden-mdlg">
+							<a href="#this" class="fst-guide hidden-mdlg" data-modal="modal-fstvisit">
 								<p class="p-1">처음 방문<br>하셨나요?</p>
 								<p class="p-2">성공 투자를 위한<br>첫걸음</p>
 							</a>
@@ -260,7 +263,44 @@
 							<a href="https://www.nurifunding.co.kr/invest/" class="btn-start"><span class="sr-only">투자 시작하기</span></a>
 						</div>
 					</div>
+
+					<div class="modal-layer"></div>
+					<script>
+						$(function() {
+							$('[data-modal]').on('click', function() {
+								console.log( 'hi' );
+								$.ajax({
+									url: 'modal/modal_fstvisit.html',
+									success: function(result) {
+										$('.modal-layer').html(result);
+									}
+								})
+								console.log( 'hi' );
+							});
+							$('.modal-layer').on('click', '[data-dismiss]', function() {
+								var type = $(this).attr('data-dismiss');
+								switch (type) {
+									case ('modal'):
+										console.log(true);
+										$(this).closest('.modal-mask').remove();
+										// $(this).closest('.modal-mask').addClass('leave');
+										// setTimeout(function() {
+										// 	$(this).closest('.modal-mask').remove();
+										// }, 300);
+										// console.log($(this));
+										// setTimeout(function() {
+										// 	$('.modal-layer').remove('.modal-mask');
+										// }, 300);
+										console.log(true);
+										break;
+									default:
+										break;
+								}
+							});
+						});
+					</script>
 				</div>
+				<!-- /.quick-bar -->
 			</section>
 			<!-- /.main -->
 			<section class="sec ingProduct" id="ingProduct">
@@ -697,7 +737,7 @@
 			</div>
 		</div>
 
-		<div class="modal-mask modal-inquiry">
+		<div class="modal-mask modal-inquiry" style="display: none;">
 			<div class="modal-wrapper">
 				<div class="modal-container">
 					<div class="modal-header">

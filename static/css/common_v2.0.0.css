@@ -133,8 +133,18 @@ select.base-1 {
 
 /* 공통속성 css */
 hr {border: none; border-top: 1px solid #ddd;}
-.btn-base.btn-blue {background: #398fe1;}
-.btn-base.btn-gray {background: #989898;}
+input[type='image'] {outline: 0;}
+.aprnone {appearance: none; -webkit-appearance: none;  -moz-appearance: none;  -ms-appearance: none;}
+.aprnone-inp {appearance: none; border: 0; outline: 0; border-radius: 0;}
+.aprnone-inp-bor {appearance: none; border: 1px solid #ddd; outline: 0; border-radius: 0;}
+.aprnone-btn {box-sizing: border-box; padding: 0; border: 0; outline: 0; background: none; text-align: center;}
+.aprnone-btn-bor {box-sizing: border-box; padding: 0; border: 1px solid #ddd; outline: 0; background: none; text-align: center;}
+.aprnone-btn > span {position: relative; box-sizing: border-box;}
+.aprnone-btn:focus > span,
+.aprnone-btn:active > span {position: relative; top: 0; left: 0;}
+.btn-base.btn-blue {background: #398fe1 !important;}
+.btn-base.btn-blue {background: #398fe1 !important;}
+.btn-base.btn-marine {background: #001753 !important;}
 .fixed {position: fixed; width: 100%;}
 label {cursor: pointer;}
 label * {vertical-align: middle;}
@@ -149,10 +159,14 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
 .form-chkbox:checked {background: #fff url('http://img.nurifunding.co.kr/check-icon.png') no-repeat 2px 2px / 12px;}
 .form-select {background: #fff url('https://nurifunding.co.kr/img/common/selectArr.png') no-repeat 94% center;}
 .modal-mask {display: table; z-index: 11; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0, .5); font-family: 'Noto Sans KR', sans-serif;
-    opacity: 0; visibility: hidden;
-    transition: opacity .3s ease;
+    /* opacity: 1;  */
+    /* transform: scale(1); -webkit-transform: scale(1); */
+    transition: opacity .3s ease-in-out;
 }
-.modal-mask.on {opacity: 1; visibility: visible;}
+/* .modal-mask.enter {opacity: 1;} */
+/* .modal-mask.enter .modal-container {transform: scale(1); -webkit-transform: scale(1);} */
+.modal-mask.leave {opacity: 0;}
+.modal-mask.leave .modal-container {transform: scale(1.1); -webkit-transform: scale(1.1);}
 .modal-wrapper {display: table-cell; vertical-align: middle;}
 .modal-container {width: 300px; margin: 0 auto; padding: 20px 30px; background-color: #fff; border-radius: 2px; box-sizing: border-box;
     box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
@@ -329,9 +343,9 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
 	.form-radio:checked {background: #fff url(https://nurifunding.co.kr/img/radio_icon.png) no-repeat -1px; background-size: 17px;}
     .form-base {
     	appearance: none; -webkit-appearance: none;  -moz-appearance: none;  -ms-appearance: none; 
-    	position: relative; display: inline-block; vertical-align: middle; background: #fff; height: 29px; padding: 0 5px; padding-bottom: 2px; width: 50px; box-sizing: border-box; font-size: 13px; border: 1px solid #ddd;
+    	position: relative; vertical-align: middle; background: #fff; height: 29px; padding: 0 5px; padding-bottom: 2px; width: 50px; box-sizing: border-box; font-size: 13px; border: 1px solid #ddd;
     }
-    .btn-base {position: relative; display: inline-block; vertical-align: middle; box-sizing: border-box; color: #fff; background: #398fe1; height: 26px; padding: 0 5px; border-radius: 3px; line-height: 26px; font-size: 13px; text-align: center;}
+    .btn-base {position: relative; vertical-align: middle; box-sizing: border-box; color: #fff; background: #398fe1; height: 26px; padding: 0 5px; border-radius: 3px; line-height: 26px; font-size: 13px; text-align: center;}
     
     /* Mobile 해더 시작 */
     
@@ -514,9 +528,6 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
 
     .modal-inquiry .modal-container {width: 560px; padding: 50px 60px; border: 4px solid #398fe1;}
     .modal-inquiry .modal-container .modal-header {}
-    /* .modal-inquiry .modal-container .modal-header,
-    .modal-inquiry .modal-container .modal-body,
-    .modal-inquiry .modal-container .modal-footer {padding: 20px 60px;} */
     .modal-inquiry .modal-container .modal-header h2 {font-size: 18px; letter-spacing: -0.75px;}
     .modal-inquiry .modal-container .modal-header h2 strong {font-size: 30px; font-weight: 700;}
     .modal-inquiry .modal-container .modal-header h2 .nuri {position: relative; top: 12px;}
