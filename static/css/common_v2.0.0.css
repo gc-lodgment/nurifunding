@@ -145,7 +145,7 @@ input[type='image'] {outline: 0;}
 .btn-base.btn-blue {background: #398fe1 !important;}
 .btn-base.btn-blue {background: #398fe1 !important;}
 .btn-base.btn-marine {background: #001753 !important;}
-.fixed {position: fixed; width: 100%;}
+.fixed {position: fixed !important; width: 100%;}
 label {cursor: pointer;}
 label * {vertical-align: middle;}
 .form-ta, .form-input, .form-chkbox, .form-select {font-size: 16px; color: #666; letter-spacing: -0.4px; line-height: 1.3; appearance: none; -webkit-appearance: none; font-family: 'Noto Sans KR', sans-serif;}
@@ -154,19 +154,20 @@ label * {vertical-align: middle;}
 .form-input:focus, .form-select:focus {box-shadow: 0 0 5px 0 rgba(57, 143, 225, 0.8); border: solid 1px #398fe1;}
 .form-input {box-sizing: border-box;}
 input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
-.form-ta {padding: 20px;}
+.form-ta {padding: 12px 20px; resize: none;}
 .form-chkbox {width: 18px; height: 18px; border: 1px solid #999; background-color: #fff;}
 .form-chkbox:checked {background: #fff url('http://img.nurifunding.co.kr/check-icon.png') no-repeat 2px 2px / 12px;}
-.form-select {background: #fff url('https://nurifunding.co.kr/img/common/selectArr.png') no-repeat 94% center;}
-.modal-mask {display: table; z-index: 11; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0, .5); font-family: 'Noto Sans KR', sans-serif;
+.form-select {background: #fff url('https://nurifunding.co.kr/img/common/selectArr.png') no-repeat right 20px center;}
+.modal {display: table; z-index: 11; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0, .5); font-family: 'Noto Sans KR', sans-serif;
     /* opacity: 1;  */
-    /* transform: scale(1); -webkit-transform: scale(1); */
+    opacity: 0; visibility: hidden;
+    transform: scale(1); -webkit-transform: scale(1);
     transition: opacity .3s ease-in-out;
 }
-/* .modal-mask.enter {opacity: 1;} */
-/* .modal-mask.enter .modal-container {transform: scale(1); -webkit-transform: scale(1);} */
-.modal-mask.leave {opacity: 0;}
-.modal-mask.leave .modal-container {transform: scale(1.1); -webkit-transform: scale(1.1);}
+.modal.enter {opacity: 1; visibility: visible;}
+.modal.enter .modal-container {transform: scale(1); -webkit-transform: scale(1);}
+.modal.leave {opacity: 0; visibility: hidden;}
+.modal.leave .modal-container {transform: scale(1.1); -webkit-transform: scale(1.1);}
 .modal-wrapper {display: table-cell; vertical-align: middle;}
 .modal-container {width: 300px; margin: 0 auto; padding: 20px 30px; background-color: #fff; border-radius: 2px; box-sizing: border-box;
     box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
@@ -223,6 +224,14 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
 
 /* 모바일 테블릿 통합 */
 @media (max-width: 991px) {
+
+    .form-input, .form-select {height: 32px; padding-left: 8px;}
+    .form-ta, .form-input, .form-chkbox, .form-select {font-size: 13px;}
+    .form-ta {height: 60px; padding: 8px;}
+    .form-chkbox {width: 15px; height: 15px;}
+    .form-chkbox:checked {background: #fff url('http://img.nurifunding.co.kr/check-icon.png') no-repeat 2px 2px / 9px;}
+    .form-select {background-position: right 10px center;}
+
     .wrap {}
     .header, .footer {font-family: 'Noto Sans KR', sans-serif;}
     .header {z-index: 11;}
@@ -318,6 +327,32 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
     .footer .area-addr .row-certify .list > li:nth-child(5) {margin-left: 50px;}
     .footer .area-addr .row-certify .list > li .link > img {width: auto; height: 20px;}
     .footer small {display: block; margin-top: 20px; text-align: center; font-size: 13px; color: #bbb;}
+
+    .area-shortcut {z-index: 1; position: absolute; bottom: 50px;}
+    .area-shortcut .list {position: absolute; bottom: 0; right: 10px;}
+    .area-shortcut .list > li {margin-top: 10px;}
+    .area-shortcut .list > li:first-child {margin-top: 0px;}
+    .area-shortcut .list > li > a > img {width: 50px; border-radius: 50%; box-shadow: 0 2px 4px 2px rgba(0,0,0, .15);}
+
+    .modal-inquiry .modal-container {width: 94%; padding: 0 15px; border: 3px solid #398fe1;}
+    .modal-inquiry .modal-container .modal-header {padding: 30px 0 0;}
+    .modal-inquiry .modal-container .modal-header h2 {font-size: 13px; letter-spacing: -0.75px;}
+    .modal-inquiry .modal-container .modal-header h2 strong {font-size: 18px; font-weight: 700;}
+    .modal-inquiry .modal-container .modal-header h2 .nuri {position: relative; top: 5px; right: 0px;}
+    .modal-inquiry .modal-container .modal-header .btn-close {position: absolute; top: 5px; right: -10px;}
+    .modal-inquiry .modal-container .modal-header .btn-close > img {width: 25px;}
+    .modal-inquiry .modal-container .modal-body {margin-top: 15px;}
+    .modal-inquiry .modal-container .modal-body .row {margin-top: 10px;}
+    .modal-inquiry .modal-container .modal-body .row:first-child {margin-top: 0;}
+    .modal-inquiry .modal-container .modal-body label {font-size: 13px;}
+    .modal-inquiry .modal-container .modal-body .inq-ta {height: 60px; padding: 8px;}
+    .modal-inquiry .modal-container .modal-body .a-more {padding: 0 10px; line-height: 24px; background-color: #dddd; font-size: 12px;}
+    .modal-inquiry .modal-container .modal-body .a-more.on:after {content: ''; position: relative; display: inline-block; width: 6px; height: 6px; top: 1px; margin-left: 10px; border: 2px solid #666; border-left: 0; border-bottom: 0; transform: rotate(-45deg);}
+    .modal-inquiry .modal-container .modal-body .policy-box {display: none; position: relative; width: 100%; height: 60px; margin-top: 10px; border: 1px solid #ddd; overflow: auto;}
+    .modal-inquiry .modal-container .modal-body .policy-box .txt-box {padding: 5px; font-size: 12px; line-height: 1.4; word-break: keep-all;}
+    .modal-inquiry .modal-container .modal-footer {padding: 15px 0;}
+    .modal-inquiry .modal-container .modal-footer .btn-submit {display: block; line-height: 41px; background: #398fe1; color: #fff; font-size: 15px; text-align: center;}
+    .modal-inquiry .modal-container .modal-footer .row-cmt {margin-top: 15px; font-size: 12px; text-align: center; line-height: 1.3; letter-spacing: -1.2px;}
 }
 
 /*모바일 영역*/
@@ -521,7 +556,7 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
     .footer .area-addr .row-certify .list > li .link > img {}
     .footer small {float: right; position: absolute; top: 35px; right: 0; font-size: 13px; color: #bbb;}
 
-    .area-shortcut {bottom: 50px;}
+    .area-shortcut {z-index: 1; position: absolute; bottom: 50px;}
     .area-shortcut .list {position: absolute; bottom: 0; right: -120px;}
     .area-shortcut .list > li {margin-top: 10px;}
     .area-shortcut .list > li:first-child {margin-top: 0px;}
@@ -535,10 +570,14 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
     .modal-inquiry .modal-container .modal-body {margin-top: 20px;}
     .modal-inquiry .modal-container .modal-body .row {margin-top: 10px;}
     .modal-inquiry .modal-container .modal-body .row:first-child {margin-top: 0;}
+    .modal-inquiry .modal-container .modal-body .inq-ta {height: 100px;}
     .modal-inquiry .modal-container .modal-body label {font-size: 15px;}
     .modal-inquiry .modal-container .modal-body .a-more {padding: 0 30px; line-height: 26px; background-color: #dddd; font-size: 13px;}
+    .modal-inquiry .modal-container .modal-body .a-more.on:after {content: ''; position: relative; display: inline-block; width: 6px; height: 6px; top: 1px; margin-left: 10px; border: 2px solid #666; border-left: 0; border-bottom: 0; transform: rotate(-45deg);}
+    .modal-inquiry .modal-container .modal-body .policy-box {display: none; position: relative; width: 100%; height: 70px; margin-top: 10px; border: 1px solid #ddd; overflow: auto;}
+    .modal-inquiry .modal-container .modal-body .policy-box .txt-box {padding: 5px; font-size: 12px; line-height: 1.4; word-break: keep-all;}
     .modal-inquiry .modal-container .modal-footer {margin-top: 20px;}
-    .modal-inquiry .modal-container .modal-footer .btn-submit {display: block; line-height: 54px; background: #398fe1; border-radius: 2px; color: #fff; font-size: 22px; text-align: center;}
+    .modal-inquiry .modal-container .modal-footer .btn-submit {display: block; line-height: 54px; background: #398fe1; color: #fff; font-size: 22px; text-align: center;}
     .modal-inquiry .modal-container .modal-footer .row-cmt {margin-top: 20px; font-size: 15px; text-align: center;}
     
     /* 180622_툴팁박스_다솜 */

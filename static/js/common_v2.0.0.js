@@ -2,9 +2,8 @@ $(function() {
     
     /*함수실행*/
     //popupCen();
-    // init();
+    init();
     goAreaFn();
-    modalDisplay();
 
     $(window).resize(function(){
         hdFn();
@@ -31,37 +30,42 @@ $(function() {
 
 });
 
+// 페이지 로딩시 적용 
 function init() {
-    $('[data-modal]').on('click', function() {
-        var modalNm = $(this).attr('data-modal');
-        var obj =$('.modal-mask.' + modalNm);
-        modalDisplay(obj, 'enter');
+    $('[data-toggle]').on('click', function() {
+        var objNm = $(this).attr('data-target');
+        var obj =$('.' + objNm);
+        var type = $(this).attr('data-toggle');
+        switch (type) {
+            case ('modal'):
+                modalFn.enter(obj);
+                break;
+            default:
+                break;        
+        }
     });
     $('[data-dismiss]').on('click', function() {
         var type = $(this).attr('data-dismiss');
+        var obj =$(this).closest('.' + type);
         switch (type) {
             case ('modal'):
-                modalDisplay($(this).closest('.modal-mask'), 'leave');
+                modalFn.leave(obj);
                 break;
             default:
-                break;
+                break;        
         }
     });
 }
 
 // 모달 영역
-function modalDisplay(obj, flag) {
-    switch (flag) {
-        case ('enter'): 
-            obj.addClass('enter');
-            break;
-        case ('leave'): 
-            obj.addClass('leave');
-            obj.removeClass('enter');
-            setTimeout(function() {obj.removeClass('leave');}, 300);
-            break;
-        default:
-            break;
+var modalFn =  {
+    enter: function(obj) {
+        obj.addClass('enter');
+    },
+    leave: function(obj) {
+        obj.addClass('leave');
+        obj.removeClass('enter');
+        setTimeout(function() {obj.removeClass('leave');}, 300);
     }
 }
 
