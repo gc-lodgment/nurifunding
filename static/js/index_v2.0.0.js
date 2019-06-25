@@ -27,6 +27,7 @@ $(function () {
 function sliderFn() {
 	$('#main-slider').bxSlider({
 		// auto: true,
+		// adaptiveHeight: true,
 		speed: 800,
 		duration: 8000,
 	});

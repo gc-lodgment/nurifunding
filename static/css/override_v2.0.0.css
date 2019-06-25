@@ -30,7 +30,7 @@
 
 @media (min-width: 992px) and (max-width: 1199px) {
     .main .swiper-container .bx-wrapper .bx-pager, 
-    .main .swiper-container .bx-wrapper .bx-controls-auto {width: 100%; left: auto; margin-left: auto; text-indent: 45px;}
+    .main .swiper-container .bx-wrapper .bx-controls-auto {width: 100%; top: 350px; margin-left: -457px;}
 }
 
 /* swiper 재정의 */

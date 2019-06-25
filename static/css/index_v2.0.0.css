@@ -366,11 +366,13 @@
     .main .quick-bar .box {float: left; position: relative; box-sizing: border-box; font-size: 18px; color: #fff;}
 	.main .quick-bar .box h2 {font-size: 18px;}
 	.main .quick-bar .box-1 {width: 20%; height: 100%; background: url('https://nurifunding.co.kr/img/renew/main/bnr_start.png') no-repeat center / cover; cursor: pointer;}
-	.main .quick-bar .box-1.on {background: url('https://nurifunding.co.kr/img/renew/main/bnr_start_over.png');}
-	.main .quick-bar .box-1-2 {position: absolute; top: 0; left: 240px;
+	.main .quick-bar .box-1.on {background: url('https://nurifunding.co.kr/img/renew/main/bnr_start_over.png') no-repeat center / cover; cursor: pointer;}
+	.main .quick-bar .box-1-2 {position: absolute; width: 80%; height: 100%; top: 0; left: 20%; background: #3A8FE2;
 		opacity: 0; visibility: hidden;
 		transition: all .3s; -webkit-transition: all .3s;
+		display: table;
 	}
+	.main .quick-bar .box-1-2 .incell {display: table-cell; vertical-align: middle;}
 	.main .quick-bar .box-1-2.on {opacity: 1; visibility: visible;}
 	.main .quick-bar .box-1-2 .btn-start {position: absolute; width: 20%; height: 102px; top: 24px; right: 44px; border-radius: 50%;}
     .main .quick-bar .box-2,
@@ -580,6 +582,9 @@
 	.faq .fq-wrap .fq-outer,
 	.ingProduct .ip-wrap .ip-outer {padding: 0 10px;}
 
+	.main-box .swiper-slide {height: 610px;}
+	.main-box .swiper-slide > img {width: 992px;}
+	
 	.ingProduct .ip-wrap .ip-outer .ip-top .status,
 	.ingProduct .ip-wrap .ip-outer .ip-top .date {font-size: 13px;}
 	.ingProduct .ip-wrap .ip-outer .ip-top .status {margin-left: 5px;}

@@ -32,13 +32,15 @@ $(function() {
 
 // 페이지 로딩시 적용 
 function dataFn() {
-    var dialogOpen = false, lastFocus;
+    var dialogOpen = false,
+        modal = $('.modal'),
+        lastFocus;
     $('[data-toggle]').on('click', function() {
+            lastFocus = $(this);
         var objNm = $(this).attr('data-target'),
-            obj =$('.' + objNm),
+            obj = $('.' + objNm),
             type = $(this).attr('data-toggle');
             
-            lastFocus = $(this);
         switch (type) {
             case ('modal'):
                 dialogOpen = true;
@@ -61,8 +63,15 @@ function dataFn() {
         }
     });
     $(document).on('keydown', function(e) {
-        var obj = $('.modal');
+        var obj = modal;
         if (dialogOpen && e.keyCode == 27) {
+            dialogOpen = false;
+            modalFn.leave(obj);
+        }
+    });
+    modal.on('click', function(e) {
+        var obj = $(this);
+        if ( dialogOpen && !$(e.target).is('.modal-wrapper *') ) {
             dialogOpen = false;
             modalFn.leave(obj);
         }
