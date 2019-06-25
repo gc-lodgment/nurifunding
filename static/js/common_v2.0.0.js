@@ -111,7 +111,7 @@ function hdFn() {
             hd.children('.gnb').removeClass('on');
         }
     });
-    if ( winWidth >= 1200 ) {
+    if ( winWidth >= 992 ) {
         hd.find('.navbar-collapse .menu > li').hover(function() {
             if ( $(this).children('.menu-2').length > 0 ) {
                 $('#menu2-bg').addClass('on');

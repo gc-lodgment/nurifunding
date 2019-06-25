@@ -26,7 +26,7 @@ $(function () {
 // slider 영역
 function sliderFn() {
 	$('#main-slider').bxSlider({
-		// auto: true,
+		auto: true,
 		// adaptiveHeight: true,
 		speed: 800,
 		duration: 8000,
