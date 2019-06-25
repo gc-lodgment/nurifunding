@@ -61,7 +61,7 @@
 	.modal-fstvisit {}
 	.modal-fstvisit .modal-container {width: 94%; margin: 0 auto; padding: 0; background: #3A8FE2;}
 	.modal-fstvisit .modal-container .modal-header {padding: 20px 0 15px; background: #fff; text-align: center;}
-	.modal-fstvisit .modal-container .modal-header h3 {font-size: 19px; font-weight: 700;}
+	.modal-fstvisit .modal-container .modal-header .modal-label {font-size: 19px; font-weight: 700;}
 	.modal-fstvisit .modal-container .modal-header .modal-cmt {font-size: 13px; margin-top: 5px;}
 	.modal-fstvisit .modal-container .modal-header .btn-cls {position: absolute; top: 8px; right: 8px;}
 	.modal-fstvisit .modal-container .modal-body {padding: 20px 0 15px;}

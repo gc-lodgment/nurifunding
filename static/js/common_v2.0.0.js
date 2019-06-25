@@ -2,7 +2,7 @@ $(function() {
     
     /*함수실행*/
     //popupCen();
-    init();
+    dataFn();
     goAreaFn();
 
     $(window).resize(function(){
@@ -31,13 +31,17 @@ $(function() {
 });
 
 // 페이지 로딩시 적용 
-function init() {
+function dataFn() {
+    var dialogOpen = false, lastFocus;
     $('[data-toggle]').on('click', function() {
-        var objNm = $(this).attr('data-target');
-        var obj =$('.' + objNm);
-        var type = $(this).attr('data-toggle');
+        var objNm = $(this).attr('data-target'),
+            obj =$('.' + objNm),
+            type = $(this).attr('data-toggle');
+            
+            lastFocus = $(this);
         switch (type) {
             case ('modal'):
+                dialogOpen = true;
                 modalFn.enter(obj);
                 break;
             default:
@@ -45,29 +49,42 @@ function init() {
         }
     });
     $('[data-dismiss]').on('click', function() {
-        var type = $(this).attr('data-dismiss');
-        var obj =$(this).closest('.' + type);
+        var type = $(this).attr('data-dismiss'),
+            obj =$(this).closest('.' + type);
         switch (type) {
             case ('modal'):
+                dialogOpen = false;
                 modalFn.leave(obj);
                 break;
             default:
                 break;        
         }
     });
-}
+    $(document).on('keydown', function(e) {
+        var obj = $('.modal');
+        if (dialogOpen && e.keyCode == 27) {
+            dialogOpen = false;
+            modalFn.leave(obj);
+        }
+    });
 
-// 모달 영역
-var modalFn =  {
-    enter: function(obj) {
-        obj.addClass('enter');
-    },
-    leave: function(obj) {
-        obj.addClass('leave');
-        obj.removeClass('enter');
-        setTimeout(function() {obj.removeClass('leave');}, 300);
+    // 모달 영역
+    var modalFn =  {
+        enter: function(obj) {
+            obj.addClass('enter');
+            obj.focus();
+            $("#wrap").attr('aria-hidden', true);
+        },
+        leave: function(obj) {
+            obj.addClass('leave');
+            obj.removeClass('enter');
+            setTimeout(function() {obj.removeClass('leave');}, 300);
+            $("#wrap").attr('aria-hidden', false);
+            lastFocus.focus();
+        }
     }
 }
+
 
 // Mobile 해더 기능 
 function hdFn() {

@@ -336,9 +336,9 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
 
     .modal-inquiry .modal-container {width: 94%; padding: 0 15px; border: 3px solid #398fe1;}
     .modal-inquiry .modal-container .modal-header {padding: 30px 0 0;}
-    .modal-inquiry .modal-container .modal-header h2 {font-size: 13px; letter-spacing: -0.75px;}
-    .modal-inquiry .modal-container .modal-header h2 strong {font-size: 18px; font-weight: 700;}
-    .modal-inquiry .modal-container .modal-header h2 .nuri {position: relative; top: 5px; right: 0px;}
+    .modal-inquiry .modal-container .modal-header .modal-label {font-size: 13px; letter-spacing: -0.75px;}
+    .modal-inquiry .modal-container .modal-header .modal-label strong {font-size: 18px; font-weight: 700;}
+    .modal-inquiry .modal-container .modal-header .modal-label .nuri {position: relative; top: 5px; right: 0px;}
     .modal-inquiry .modal-container .modal-header .btn-close {position: absolute; top: 5px; right: -10px;}
     .modal-inquiry .modal-container .modal-header .btn-close > img {width: 25px;}
     .modal-inquiry .modal-container .modal-body {margin-top: 15px;}
@@ -563,9 +563,9 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
 
     .modal-inquiry .modal-container {width: 560px; padding: 50px 60px; border: 4px solid #398fe1;}
     .modal-inquiry .modal-container .modal-header {}
-    .modal-inquiry .modal-container .modal-header h2 {font-size: 18px; letter-spacing: -0.75px;}
-    .modal-inquiry .modal-container .modal-header h2 strong {font-size: 30px; font-weight: 700;}
-    .modal-inquiry .modal-container .modal-header h2 .nuri {position: relative; top: 12px;}
+    .modal-inquiry .modal-container .modal-header .modal-label {font-size: 18px; letter-spacing: -0.75px;}
+    .modal-inquiry .modal-container .modal-header .modal-label strong {font-size: 30px; font-weight: 700;}
+    .modal-inquiry .modal-container .modal-header .modal-label .nuri {position: relative; top: 12px;}
     .modal-inquiry .modal-container .modal-header .btn-close {position: absolute; top: -38px; right: -48px;}
     .modal-inquiry .modal-container .modal-body {margin-top: 20px;}
     .modal-inquiry .modal-container .modal-body .row {margin-top: 10px;}
