@@ -272,7 +272,7 @@
 	.pop-phishing .pop-contents .pop-bottom .clsBtn {text-align: center; font-weight: 700; margin-left: 12px; background: #fff; box-sizing: border-box; border: 1px solid #ccc; padding: 0 12px; line-height: 28px;}
 
 	.popup-review {color: #555;}
-	.popup-review .popup-container {width: 96%; max-width: 500px; font-size: 15px; border: 1px solid #000;}
+	.popup-review .popup-container {width: 96%; max-width: 500px; font-size: 15px; border: 1px solid #000; box-sizing: content-box;}
 	.popup-review .popup-container .popup-body .winner-sec {padding: 15px 0; text-align: center;}
 	.popup-review .popup-container .popup-body .winner-sec .winner-msg {font-size: 18px;}
 	.popup-review .popup-container .popup-body .winner-sec .winner-list-box {position: relative; width: 90%; margin: 30px auto 0; border: 1px solid #b7b7b7; padding: 20px 55px 15px; font-size: 18px;}
