@@ -131,7 +131,6 @@ hr {border: none; border-top: 1px solid #ddd;}
 .popup-container {/*width: 300px;*/ margin: 0 auto; background-color: #fff; box-sizing: border-box;}
 .popup-header, .popup-body, .popup-footer {position: relative;}
 
-
 /*전체*/
 .wrap {position: relative; width: 100%; min-width: 320px;}
 .contents {position: relative;}
@@ -140,6 +139,8 @@ hr {border: none; border-top: 1px solid #ddd;}
 .section:after {clear: both;}
 .sec-container, .row {position: relative;}
 .sec-container:after, .row:after, .list:after {content: ""; display: block; clear: both;}
+
+.ip-per-bar {max-width: 100% !important;}
 
 /*모바일 영역*/
 @media (max-width: 767px){

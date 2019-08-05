@@ -224,6 +224,8 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
 .sec-container, .row {position: relative;}
 .sec-container:after, .row:after, .list:after {content: ""; display: block; clear: both;}
 
+.ip-per-bar {max-width: 100% !important;}
+
 .header, .footer {letter-spacing: -0.75px;}
 
 /* 모바일 테블릿 통합 */
