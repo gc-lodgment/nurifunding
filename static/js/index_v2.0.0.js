@@ -36,9 +36,9 @@ function sliderFn() {
 // 진행중인 상품 영역 - 모바일
 function ingProductFn() {
 	var ipSwiper = new Swiper('.ip-container', {
-		// autoplay: {
-		// 	delay: 5000,
-		// },
+		autoplay: {
+			delay: 8000,
+		},
 		slidesPerView: 'auto',
 		spaceBetween: 15,
 		centeredSlides: true,
