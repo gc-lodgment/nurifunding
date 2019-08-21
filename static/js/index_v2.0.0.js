@@ -26,10 +26,12 @@ $(function () {
 // slider 영역
 function sliderFn() {
 	$('#main-slider').bxSlider({
-		auto: true,
 		// adaptiveHeight: true,
-		speed: 800,
-		duration: 8000,
+		mode: 'fade',
+		auto: true,
+		speed: 100,
+		pause: 8000,
+		// autoDelay: 1000,
 	});
 }
 

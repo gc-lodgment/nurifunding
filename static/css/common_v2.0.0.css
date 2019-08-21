@@ -436,7 +436,6 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
 
 /*테블릿 & PC영역*/
 @media (min-width: 992px){
-    
     .side-banner {z-index: 99999; position:fixed; display:inline-block; width: auto; top:200px; left: 50%; margin-left: 645px;}
     .side-banner.subpage {top: 145px; margin-left: 540px;}
     .side-banner a {position:relative; display:inline-block;}
@@ -484,50 +483,56 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
     }
     .gnb.on {box-shadow: 0 1px 2px 1px rgba(0,0,0, .1);}
     .gnb > .inner {height: 100%; position: relative;}
-    .gnb .navbar-header {position: absolute; left: 0; top: 28px;}
+    .gnb .navbar-header {position: absolute; left: 0; top: 25px;}
     .gnb .navbar-header .navbar-brand {position: relative; display: inline-block; width: 200px;}
     .gnb .navbar-header .navbar-brand img {}
 
-    .gnb .navbar-collapse {position: relative; top: 25px; float: right;}
+    /* .gnb .navbar-collapse {position: relative; top: 25px; float: right;} */
+    .gnb .navbar-collapse {position: relative; float: right; height: 100%;}
     .gnb .navbar-collapse .menu {}
-    .gnb .navbar-collapse .menu > li {display: inline-block; position: relative; margin-left: 32px; vertical-align: middle;font-size: 15px; text-align: center;}
-    .gnb .navbar-collapse .menu .hidden-margin {margin-left: 0; width: 130px; height: 10px;}
+    .gnb .navbar-collapse .menu > li {display: inline-block; position: relative; vertical-align: middle;font-size: 15px; text-align: center;}
+    .gnb .navbar-collapse .menu .hidden-margin {margin-left: 0; width: 150px; height: 10px;}
     .gnb .navbar-collapse .menu > li:first-child,
     .gnb .navbar-collapse .menu .hidden-margin + li {margin-left: 0;}
     .gnb .navbar-collapse .menu > li.btn + li.btn {margin-left: 8px;}
     .gnb .navbar-collapse .menu > li.big,
     .gnb .navbar-collapse .menu > li.btn {padding: 0;}
     .gnb .navbar-collapse .menu > li.big {margin-left: 45px; font-size: 22px; font-weight: 700;}
-    .gnb .navbar-collapse .menu > li.myinfo {margin-left: 125px;}
-    .gnb .navbar-collapse .menu > li > a {display: inline-block; position: relative; padding: 10px 0; box-sizing: border-box; letter-spacing: 0;}
-    .gnb .navbar-collapse .menu > li.big > a {}
+    /* .gnb .navbar-collapse .menu > li.myinfo {margin-left: 125px;} */
+    .gnb .navbar-collapse .menu > li > a {display: inline-block; position: relative; height: 100%; padding: 0px 25px; box-sizing: border-box; letter-spacing: 0;}
+    .gnb .navbar-collapse .menu > li > a:before {content: ''; display: inline-block; vertical-align: middle; height: 90px;}
+    .gnb .navbar-collapse .menu > li.big > a {padding-left: 0; padding-right: 0;}
+    /* .gnb .navbar-collapse .menu > li.myinfo > a {padding-left: 10px; padding-right: 10px;} */
     .gnb .navbar-collapse .menu > li.on > a {color: #398fe1;}
     .gnb .navbar-collapse .menu > li > a .icon {width: 22px; vertical-align: text-bottom; margin-right: 5px;}
-    .gnb .navbar-collapse .menu > li > a.btn-cmm {display: block; height: 39px; padding: 0 20px; box-sizing: border-box; border-radius: 3px; line-height: 39px; text-align: center;}
+    .gnb .navbar-collapse .menu > li > a.btn-cmm {display: block; width: 84px; height: 39px; padding: 0px; box-sizing: border-box; border-radius: 3px; line-height: 39px; text-align: center;}
+    .gnb .navbar-collapse .menu > li > a.btn-cmm:before {display: none;}
     .gnb .navbar-collapse .menu > li > a.btn-cmm.btn-white {border: 1px solid #398fe1; background: #fff; color: #398fe1;}
     .gnb .navbar-collapse .menu > li > a.btn-cmm.btn-blue {border: 1px solid #398fe1; background: #398fe1; color: #fff;}
-    .gnb .navbar-collapse .menu > li > a.btn-cmm.join {padding: 0; width: 84px;}
-    .gnb .navbar-collapse .menu > li:hover > a:after {content: ''; position: absolute; left: 0; bottom: -4px; width: 100%; border-bottom: 4px solid #398fe1;}
+    .gnb .navbar-collapse .menu > li > a.btn-cmm.login {margin-left: 25px;}
+    .gnb .navbar-collapse .menu > li:hover > a:after {content: ''; position: absolute; left: 0; bottom: 0px; width: 100%; border-bottom: 4px solid #398fe1;}
+    /* .gnb .navbar-collapse .menu > li.myinfo:hover > a:after,
+    .gnb .navbar-collapse .menu > li.big:hover > a:after {top: 61px;} */
     .gnb .navbar-collapse .menu > li.btn > a:after {display: none;}
 
     .gnb .menu > li .menu-2 {
+        /*
         -webkit-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s;
         opacity: 0; filter: alpha(opacity=0); visibility: hidden;
-    }
+        */
+    } 
     .gnb .menu > li:hover .menu-2 {opacity: 1; filter: alpha(opacity=100); visibility: visible;}
-    .gnb .menu-2 {margin-left: -250px; left: 50%; bottom: -44px; width: 500px;}
-    .gnb .menu-2 {position: absolute; z-index: 1; height: 40px; padding-top: 24px; line-height: 1.4; text-align: center;}
+    .gnb .menu-2 {position: absolute; z-index: 1; padding-top: 24px; line-height: 1.4; text-align: center;}
     .gnb .menu > li.myinfo .menu-2 {margin-left: auto; left: auto; right: 0; text-align: right;}
-    .gnb .menu-2 > li {display: inline-block;}
+    .gnb .menu-2 > li {text-align: center;}
     .gnb .menu-2 > li:first-child {margin-left: 0;}
-    .gnb .menu-2 > li {margin-left: 20px;}
-    .gnb .menu-2 > li:before {content: ''; display: inline-block; position: relative; top: -1px; left: -9.5px; width: 1px; height: 14px; background: #ccc; vertical-align: middle; }
     .gnb .menu-2 > li:first-child:before {display: none;}
     .gnb .menu-2 > li > a {display: inline-block; text-align: center; font-size: 15px; color: #555; font-weight: 300; cursor: pointer;}
     .gnb .menu-2 > li > a:hover, .gnb .sub-navbar .menu-2 > li > a:active {color: #398fe1;}
     .gnb .menu2-bg {
+        border-top: 1px solid #ddd;
         -webkit-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s;
-        opacity: 0; filter: alpha(opacity=0); visibility: hidden; position: absolute; left: 0; bottom: -40px; width: 100%; height:40px; background: #fff; border-bottom: 1px solid #222; box-shadow: 0 1px 1px rgba(0,0,0, .1); line-height: 1.4; 
+        opacity: 0; filter: alpha(opacity=0); visibility: hidden; position: absolute; left: 0; width: 100%; min-height:40px; background: #f9f9f9; border-bottom: 1px solid #222; box-shadow: 0 1px 1px rgba(0,0,0, .1); line-height: 1.4; 
     }
     .gnb .menu2-bg.on {opacity: 1; filter: alpha(opacity=100); visibility: visible;}
 

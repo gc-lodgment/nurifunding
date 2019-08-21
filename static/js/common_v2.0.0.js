@@ -112,15 +112,29 @@ function hdFn() {
         }
     });
     if ( winWidth >= 992 ) {
-        hd.find('.navbar-collapse .menu > li').hover(function() {
-            if ( $(this).children('.menu-2').length > 0 ) {
-                $('#menu2-bg').addClass('on');
-            }
-        }, function() {
-            if ( $(this).children('.menu-2').length > 0 ) {
-                $('#menu2-bg').removeClass('on');
-            }
+        var menu2 = $('.menu-2');
+        var menu2HtArray = [];
+        var menu2HtMax = 0;
+        menu2.each(function(index, item) {
+            menu2HtArray.push($(item).outerHeight());
         });
+        menu2HtMax = menu2HtArray.reduce(function(prev, current) {
+            return prev > current ? prev:current;
+        });
+        console.log(menu2HtMax);
+        $('#menu2-bg').css({
+            minHeight: menu2HtMax,
+            padding: '25px 0'
+        });
+        // hd.find('.navbar-collapse .menu > li').hover(function() {
+        //     if ( $(this).children('.menu-2').length > 0 ) {
+        //         $('#menu2-bg').addClass('on');
+        //     }
+        // }, function() {
+        //     if ( $(this).children('.menu-2').length > 0 ) {
+        //         $('#menu2-bg').removeClass('on');
+        //     }
+        // });
     
     } else {
         // 상단 배너 높이 - 배너 있을 시 없을 시 높이 자동 설정
@@ -134,13 +148,16 @@ function hdFn() {
             $('#navbar-collapse').addClass('on');
             $('#navbar-collapse').prev().addClass('on');
             $('#navbar-collapse .menu').height( winHeight - ncHeaderHt);
+            wheelFn(false);
         });
         /*모바일 네비게이션 닫기 버튼*/
         $('#navbar-collapse .cls-btn').on('click', function() {
             navbarCollapse.close();
+            wheelFn(true);
         });
         $('#navbar-collapse').prev('.bg-drop').on('click', function() {
             navbarCollapse.close();
+            wheelFn(true);
         });
     }
 
@@ -150,6 +167,20 @@ function hdFn() {
             $('#navbar-collapse').prev().removeClass('on');
         }
     }
+}
+
+function wheelFn(flag) {
+    if (flag == false) {
+        $('html').css({
+            overflow: 'hidden'
+        });
+    }
+    if (flag == true) {
+        $('html').css({
+            overflow: 'auto'
+        });
+    }
+
 }
 
 function bgDrop(flag) {

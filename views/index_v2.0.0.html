@@ -105,50 +105,39 @@
 							<li class="big"><a href="invest/invest_01.html">투자하기</a></li>
 							<li class="big"><a href="miripay/index.html" class="c-blue">미리페이</a></li>
 							<li class="hidden-smxs hidden-margin"></li>
-							<li><a href="javascript:;">이용안내</a>
-								<ul class="menu-2">
-									<li><a href="">처음 오셨나요?</a></li>
-									<li><a href="">대출신청</a></li>
-									<li><a href="">투자하기</a></li>
-									<li><a href="">미리페이</a></li>
-								</ul>
-							</li>
-							<li class="javascript:;"><a href="">회사소개/IR</a>
+							<li><a href="javascript:;">회사소개/IR</a>
 								<ul class="menu-2">
 									<li><a href="service/index.html">회사소개</a></li>
 									<li><a href="service/index_rep.html">대표이사 소개</a></li>
 									<li><a href="service/index_ir.html">기업 IR</a></li>
-									<li><a href="">언론보도</a></li>
-									<li><a href="">CEO 컬럼</a></li>
 								</ul>
 							</li>
-							<li><a href="javascript:;">고객지원</a>
+							<li><a href="javascript:;">이용안내</a>
 								<ul class="menu-2">
-									<li><a href="#none">FAQ</a></li>
-									<li><a href="#none">1:1문의하기</a></li>
-									<li><a href="#none">공지사항</a></li>
-									<li><a href="#none">자료실</a></li>
+									<li><a href="">FAQ</a></li>
+									<li><a href="">공지사항</a></li>
+									<li><a href="">자료실</a></li>
 								</ul>
 							</li>
 							<!-- 비 로그인 경우 -->
-<!-- 							<li class="btn hidden-smxs"><a href="" class="btn-cmm btn-white">로그인</a></li>
+ 							<li class="btn hidden-smxs"><a href="" class="btn-cmm btn-white login">로그인</a></li>
 							<li class="btn hidden-smxs"><a href="" class="btn-cmm btn-blue join">회원가입</a></li>
- -->							<!-- 로그인 경우 -->
-							<li class="myinfo hidden-smxs">
+							<!-- 로그인 경우 -->
+							<!-- <li class="myinfo hidden-smxs">
 								<a class="c-blue" href="mypage/mypage_01.html"><img src="https://nurifunding.co.kr/img/renew/common/icon/icon_member_on.png" alt="내정보아이콘" class="icon">내정보</a>
 								<ul class="menu-2">
 									<li><a href="myinvest/index.html">나의투자정보</a></li>
 									<li><a href="autoinv/">자동투자 설정</a></li>
-									<li><a href="">출금하기</a></li>
 									<li><a href="">계좌정보</a></li>
 									<li><a href="mypage/mypage_01.html">회원정보수정</a></li>
+									<li><a href="">로그아웃</a></li>
 								</ul>
-							</li>
+							</li> -->
 							<!-- <li><a href="autoinv/index.html">자동투자 <span class="ic-new">NEW</span></a></li> -->
 						</ul>
 					</nav>
 				</div>
-				<div class="menu2-bg hidden-smxs" id="menu2-bg">
+				<div class="menu2-bg hidden-smxs on" id="menu2-bg">
 					<div class="group inner">
 						<a href=""><span class="c-blue">처음오셨나요?</span> 누리펀딩 이용가이드 보기</a>
 					</div>
@@ -704,20 +693,26 @@
 									<label for="name" class="sr-only">이름</label><input id="name" type="text" class="form-input" value="" placeholder="이름을 입력하세요">
 								</div>
 								<div class="row">
-									<label for="phoneNo" class="sr-only">전화번호</label><input id="phoneNo" type="number" class="form-input" value="" placeholder="전화번호를 입력하세요요(숫자만 입력)">
+									<label for="phoneNo" class="sr-only">전화번호</label><input id="phoneNo" type="number" class="form-input" value="" placeholder="전화번호를 입력하세요(숫자만 입력)">
 								</div>
-								<div class="row">
+								<!-- <div class="row">
 									<label for="jobs" class="sr-only">직업</label>
 									<select name="" id="jobs" class="form-select">
 										<option value="">직업을 선택하세요</option>
 										<option value=""></option>
 									</select>
+								</div> -->
+								<div class="row">
+									<label for="email" class="sr-only">이메일</label><input id="email" type="number" class="form-input" value="" placeholder="이메일을 입력하세요">
 								</div>
 								<div class="row">
 									<label for="counselItem" class="sr-only">상담항목</label>
 									<select name="" id="counselItem" class="form-select">
 										<option value="">상담 항목선택</option>
-										<option value=""></option>
+										<option value="">대출신청</option>
+										<option value="">투자하기</option>
+										<option value="">미리페이(선정산)</option>
+										<option value="">기타</option>
 									</select>
 								</div>
 								<div class="row">
