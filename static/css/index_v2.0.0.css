@@ -3,7 +3,7 @@
 @media (min-width: 992px) {
   .container {
     /*width: 945px;*/
-    width: 1200px; 
+    width: 1100px; 
   }
 }
 
@@ -386,11 +386,11 @@
 
 	.main {position: relative; width: 100%; background: #126cc4;}
 	/* .main-box.swiper-container {position: relative;  padding: 0 0px; margin: 0 auto; text-align: center;} */
-	.main-box.swiper-container {position: relative;  padding: 0 0px; margin: 0 auto; text-align: center; background: url('https://nurifunding.co.kr/img/renew/main/m_bnr_bg.jpg') no-repeat center;}
-	.main-box .swiper-slide {position: relative; height: 700px;}
+	.main-box.swiper-container {position: relative; min-width: 1100px; padding: 0 0px; margin: 0 auto; text-align: center; background: url('https://nurifunding.co.kr/img/renew/main/m_bnr_bg.jpg') no-repeat center;}
+	.main-box .swiper-slide {position: relative; height: 520px; padding-bottom: 150px; box-sizing: content-box;}
 	/* .main-box .swiper-slide.bg-1 {background: url('https://nurifunding.co.kr/img/renew/main/m_bnr_bg.jpg') no-repeat center;} */
 	.main-box .swiper-slide img {display: block; margin: 0 auto;}
-	.main-box .certi-list {z-index: 5; position: absolute; top: 56px; right: -160px; width: 124px;}
+	.main-box .certi-list {z-index: 5; position: absolute; top: 56px; right: -190px; width: 124px;}
 	.main-box .certi-list > li:first-child {margin-bottom: 10px;}
 
 	.main .quick-bar {z-index: 1; position: relative; width: 100%; height: 150px; margin-top: -150px;}
@@ -410,28 +410,29 @@
 	.main .quick-bar .box-1-2 .btn-start {position: absolute; width: 20%; height: 102px; top: 24px; right: 44px; border-radius: 50%;}
     .main .quick-bar .box-2,
     .main .quick-bar .box-3 {width: 40%; height: 100%; padding: 20px; border-left: 1px solid #fff;}
-    .main .quick-bar .box-2 {}
+	.main .quick-bar .box-2 {}
+	.main .quick-bar .box-2 h2 {padding: 0 5px;}
     .main .quick-bar .box-2 .list {font-size: 0; white-space: nowrap;}
-    .main .quick-bar .box-2 .list > li {display: inline-block; margin: 12px 20px 0; text-align: center; font-size: 15px;}
-    .main .quick-bar .box-2 .list > li:first-child {margin-left: 15px;}
+    .main .quick-bar .box-2 .list > li {display: inline-block; margin: 12px 15px 0; text-align: center; font-size: 15px;}
+    .main .quick-bar .box-2 .list > li:first-child {margin-left: 5px;}
 	.main .quick-bar .box-2 .list > li figcaption {margin-top: 5px; letter-spacing: normal;}
     .main .quick-bar .box-3 h2 .more-btn {float: right;}
     .main .quick-bar .box-3 .list {margin-top: 12px; font-size: 15px;}
     .main .quick-bar .box-3 .list > li {width: 100%; margin-top: 8px; font-weight: 300;}
     .main .quick-bar .box-3 .list > li > * {line-height: 1.5;}
     .main .quick-bar .box-3 .list > li:first-child > * {font-weight: 400;}
-    .main .quick-bar .box-3 .list > li .tit {float: left; width: 83%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+    .main .quick-bar .box-3 .list > li .tit {float: left; width: 80%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
     .main .quick-bar .box-3 .list > li .tit:before {content: '·'; display: inline-block; margin-right: 5px;}
     .main .quick-bar .box-3 .list > li .create-at {float: right;}
     
     .ingProduct {padding: 100px 0 90px; background: #f5f5f5;}
     .ingProduct {}
-    .ingProduct h1 .more-btn {display: inline-block; position: absolute; top: 25px; right: 0; font-size: 16px; color: #555;}
+    .ingProduct h1 .more-btn {display: inline-block; position: absolute; top: 25px; right: 15px; font-size: 16px; color: #555;}
     .ingProduct h1 .more-btn .ic-rArrow {margin-left: 5px;}
 	.ingProduct h1 .more-btn .ic-rArrow:after {border-color: #555;}
 	.ingProduct .ip-container {overflow: visible;}
-	.ingProduct .ip-wrap {position: relative; width: 1230px; left: -15px; margin-top: 20px;}
-    .ingProduct .ip-wrap .ip-outer {float: left; position: relative; padding: 0 15px; margin-top: 30px; width: 33.33%;}
+	.ingProduct .ip-wrap {position: relative; margin-top: 20px;}
+    .ingProduct .ip-wrap .ip-outer {float: left; position: relative; padding: 0 10px; margin-top: 30px; width: 33.33%;}
     .ingProduct .ip-wrap .ip-outer:nth-child(4n) {clear:both;}
 	.ingProduct .ip-wrap .ip-outer .ip-box {
 		position: relative; margin: 0 auto; background: #fff; border: 1px solid #ddd; border-radius: 10px; border-top-left-radius: none;
@@ -440,29 +441,30 @@
 	.ingProduct .ip-wrap .ip-outer .ip-box:hover {box-shadow: 0px 5px 20px 0 rgba(0, 0, 0, 0.25);}
 	.ingProduct .ip-wrap .ip-outer .thumb-box .end {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0, .58); text-align: center;}
     .ingProduct .ip-wrap .ip-outer .thumb-box .end span {position: relative; color: #fff; display: inline-block; padding: 10px 40px; top:145px; border: 1px solid #fff; letter-spacing: 0; font-size: 20px;} */
-    .ingProduct .ip-wrap .ip-outer .ip-top {padding-right: 25px; font-size: 16px; letter-spacing: -0.4px;}
-    .ingProduct .ip-wrap .ip-outer .ip-top .pdt-no {display: inline-block; width: 90px; height: 40px; border-bottom-right-radius: 4px; line-height: 40px; text-align: center; font-size: 22px; color: #fff;}
+    .ingProduct .ip-wrap .ip-outer .ip-top {padding-right: 25px; font-size: 15px;}
+    .ingProduct .ip-wrap .ip-outer .ip-top .pdt-no {display: inline-block; width: 80px; height: 40px; border-bottom-right-radius: 4px; line-height: 40px; text-align: center; font-size: 20px; color: #fff;}
     .ingProduct .ip-wrap .ip-outer .ip-top .status,
-    .ingProduct .ip-wrap .ip-outer .ip-top .date {vertical-align: text-bottom;}
+    .ingProduct .ip-wrap .ip-outer .ip-top .date {vertical-align: text-bottom; letter-spacing: -0.7px;}
     .ingProduct .ip-wrap .ip-outer .ip-top .status {margin-left: 10px;}
+	.ingProduct .ip-wrap .ip-outer .ip-top .date {font-size: 14.5px;}
     .ingProduct .ip-wrap .ip-outer.start .ip-top .pdt-no {background: #152475;}
     .ingProduct .ip-wrap .ip-outer.wait .ip-top .pdt-no {background: #2736a8;}
     .ingProduct .ip-wrap .ip-outer.end .ip-top .pdt-no {background: #7840d6;}
     .ingProduct .ip-wrap .ip-outer.wait .ip-top .status,
-    .ingProduct .ip-wrap .ip-outer.start .ip-top .status {color: #1593dc;}
-	.ingProduct .ip-wrap .ip-outer .iph3 {padding: 20px 25px; line-height: 1.4; font-size: 22px; color: #09345f;}
-	.ingProduct .ip-wrap .ip-outer .ip-inner {margin: 0 25px; padding: 18px 20px; background: #f6f6f7;}
-	.ingProduct .ip-wrap .ip-outer .ip-inner > li {line-height: 1.7; font-size: 18px;}
-    .ingProduct .ip-wrap .ip-outer .ip-inner > li .pull-left {color: #666;}
+	.ingProduct .ip-wrap .ip-outer.start .ip-top .status {color: #1593dc;}
+	.ingProduct .ip-wrap .ip-outer .iph3 {padding: 20px 20px; line-height: 1.4; font-size: 20px; color: #09345f;}
+	.ingProduct .ip-wrap .ip-outer .ip-inner {margin: 0 20px; padding: 15px; background: #f6f6f7;}
+	.ingProduct .ip-wrap .ip-outer .ip-inner > li {line-height: 1.7; font-size: 17px;}
+    .ingProduct .ip-wrap .ip-outer .ip-inner > li .pull-left {position: relative; top: 2px; color: #666; font-size: 15px;}
     .ingProduct .ip-wrap .ip-outer .ip-inner > li .pull-left:before {content: '·'; margin-right: 3px;}
 	.ingProduct .ip-wrap .ip-outer .ip-inner > li .pull-right {color: #333;}
-    .ingProduct .ip-wrap .ip-outer .per-bar {position: relative; margin: 20px 25px 0; height: 25px; background: #ddd;}
+    .ingProduct .ip-wrap .ip-outer .per-bar {position: relative; margin: 15px 20px 0; height: 25px; background: #ddd;}
     .ingProduct .ip-wrap .ip-outer .per-bar .bar {background: #3690e2; height: 100%;}
     .ingProduct .ip-wrap .ip-outer.end .per-bar .bar {background: #d60101;}
     .ingProduct .ip-wrap .ip-outer .per-bar .per {display: block; position: absolute; top: 0; width: 100%; line-height: 25px; text-align: center; font-size: 16px; color: #fff; letter-spacing: normal;}
     .ingProduct .ip-wrap .ip-outer .row-status {margin-top: 20px; text-align: center; font-size: 20px;}
 	.ingProduct .ip-wrap .ip-outer .btn-box {text-align: center; margin: 20px 0;}
-	.ingProduct .ip-wrap .ip-outer .btn {display: inline-block; width: 88.5%; height: 60px; line-height: 60px; font-size: 22px; color: #fff; font-weight: 300; letter-spacing: normal;}
+	.ingProduct .ip-wrap .ip-outer .btn {display: inline-block; width: 88.5%; height: 50px; line-height: 50px; font-size: 20px; color: #fff; font-weight: 300; letter-spacing: normal;}
 	.ingProduct .ip-wrap .ip-outer.end .btn-invest,
 	.ingProduct .ip-wrap .ip-outer.start .btn-invest {background: #09345f;}
     .ingProduct .ip-wrap .ip-outer.wait .btn-invest {background: #5a7383;}
@@ -480,7 +482,7 @@
 	.rate .inner {text-align: center; padding: 60px 0 75px;}
 	.rate .row {display: table; width: 100%;}
 	.rate .row-cmt {position: absolute; bottom: 30px; right: 20px; font-size: 14px; color: #555; letter-spacing: normal;}
-	.rate .rr {display: table-cell; width: auto; padding: 0 30px; box-sizing: border-box;}
+	.rate .rr {display: table-cell; width: auto; padding: 0 20px; box-sizing: border-box;}
 	.rate .rr.nth-1 {width: 24%}
 	.rate .rr.nth-2 {width: 24%}
 	.rate .rr.nth-3 {width: 24%}
@@ -499,11 +501,11 @@
 	.miripayBn {position: relative; background: #7c88ff; padding: 11px 0; text-align: center;}
 
 	.easy {padding: 130px 0; background: #09345f; color: #fff;}
-	.easy h1 {font-weight: 500; margin-bottom: 20px; letter-spacing: normal;}
+	.easy h1 {margin-bottom: 40px; letter-spacing: -0.5px;}
 	.easy .inner {}
 	.easy .split {float: left; position: relative; width: 50%; box-sizing: border-box; text-align: center;}
 	.easy .split.split-1 {width: 53%;}
-	.easy .split.split-1 .p-1 {font-size: 20px; line-height: 1.5; font-weight: 300; letter-spacing: normal;}
+	.easy .split.split-1 .p-1 {font-size: 20px; line-height: 1.5; font-weight: 300; letter-spacing: normal; letter-spacing: -0.5px;}
 	.easy .split.split-1 .row-btn {margin-top: 60px;}
 	.easy .split.split-1 .row-btn .btn-detail {display: inline-block; width: 250px; font-size: 20px; line-height: 58px; background: #398fe1; box-sizing: border-box;}
 	.easy .split.split-2 {width: 47%;}
@@ -515,9 +517,10 @@
 	.easy .split.split-2 .box.nth-2:after {content: ''; z-index: 1; position: absolute; bottom: -38px; left: 50%; margin-left: -24px; width: 48px; height: 48px; background: url('https://nurifunding.co.kr/img/renew/main/m_plus.png') no-repeat;}
 	
 	.benefit {padding: 130px 0 90px; background: #e1f3ff;}
-	.benefit h1 {margin-bottom: 20px; letter-spacing: normal;}
+	.benefit h1 {margin-bottom: 40px; letter-spacing: normal;}
 	.benefit .inner {}
 	.benefit .split {float: left; position: relative; width: 50%; box-sizing: border-box; text-align: center;}
+	/* .benefit .split.split-1 {margin-top: -10px;} */
 	.benefit .split.split-1 .p-1 {font-size: 20px; line-height: 1.5; font-weight: 300; letter-spacing: normal;}
 	.benefit .split.split-1 .row-btn {margin-top: 60px;}
 	.benefit .split.split-1 .row-btn .btn-detail {display: inline-block; width: 250px; font-size: 20px; line-height: 58px; border: 1px solid #05315d; box-sizing: border-box; color: #05315d;}
@@ -539,7 +542,7 @@
 	.benefit .split.split-2 .per-chart .box.box-nuri.on .p-per {bottom: -35px;}
 	.benefit .split.split-2 .per-chart .box.box-nuri .p-tit {font-size: 22px; color: #398fe1; font-weight: 700;}
 	.benefit .split.split-2 .per-chart .box.box-nuri .p-chart {background: #398fe1; height: 0;}
-	.benefit .split.split-2 .per-chart .box.box-nuri .p-chart:before {content: ''; display: block; position: absolute; top: -160px; left: -25px; width: 1px; border: 80px solid transparent; border-bottom-color: #398fe1;}
+	.benefit .split.split-2 .per-chart .box.box-nuri .p-chart:before {content: ''; display: block; position: absolute; top: -140px; left: -20px; width: 1px; border: 70px solid transparent; border-bottom-color: #398fe1;}
 	.benefit .split.split-2 .per-chart .box.nth-1 .p-chart {height: 32px; height: 0;}
 	.benefit .split.split-2 .per-chart .box.nth-2 .p-chart {height: 42px; height: 0;}
 	.benefit .split.split-2 .per-chart .box.nth-3 .p-chart {height: 115px; height: 0;}
@@ -560,7 +563,7 @@
 	}
 	.benefit .split.split-2 .per-chart .box .p-per {transition: all 0.3s linear 1s;}
 	.benefit .split.split-2 .per-chart .tooltip {
-		display: block; z-index: 1; position: absolute; top: -15px; right: 90px; min-width: 304px; padding: 0 20px; background: #ff9933; line-height: 50px; font-size: 20px; color: #fff; letter-spacing: -0.5px;
+		display: block; z-index: 1; position: absolute; top: 0px; right: 95px; min-width: 304px; padding: 0 20px; background: #ff9933; line-height: 50px; font-size: 20px; color: #fff; letter-spacing: -0.5px;
 	}
 	.benefit .split.split-2 .per-chart .tooltip:after {content: ''; display: block; position: absolute; bottom: -13px; right: 0; width: 1px; border: 20px solid transparent; border-right-color: #ff9933;}
 	.benefit .split.split-2 .per-chart .tooltip.on:after,
@@ -602,7 +605,7 @@
 }
 
 /*작은 pc 영역*/
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1099px) {
 	.com-ft {padding: 0 10px; font-size: 30px;}
 
 	.main .quick-bar .box-2 .list > li {margin: 12px 10px 0;}
@@ -615,8 +618,10 @@
 	.faq .fq-wrap .fq-outer,
 	.ingProduct .ip-wrap .ip-outer {padding: 0 10px;}
 
-	.main-box .swiper-slide {height: 610px;}
-	.main-box .swiper-slide > img {width: 992px;}
+	.main-box.swiper-container {min-width: auto;}
+	.main-box .swiper-slide {height: auto; padding-bottom: 150px;}
+	/* .main-box .swiper-slide {height: 619px;}
+	.main-box .swiper-slide > img {width: 992px;} */
 	
 	.ingProduct .ip-wrap .ip-outer .ip-top .status,
 	.ingProduct .ip-wrap .ip-outer .ip-top .date {font-size: 13px;}
@@ -631,7 +636,7 @@
 
 	
 
-	.benefit .split.split-2 .per-chart .box.box-nuri .p-chart:before {top: -130px; left: -22.5px; border-width: 65px;}
+	.benefit .split.split-2 .per-chart .box.box-nuri .p-chart:before {top: -130px; left: -17.5px; border-width: 65px;}
 }
 /* 아이패드 */
 @media (min-width: 768px) and (max-width: 991px) {

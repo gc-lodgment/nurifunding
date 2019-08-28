@@ -20,13 +20,14 @@
 	<link rel="stylesheet" href="https://nurifunding.co.kr/static/css/jquery.bxslider.css">
 
 	<link rel="stylesheet" href="https://nurifunding.co.kr/static/css/reset.css">
-	<!-- <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/override_v2.0.0.css">
+	
+	<link rel="stylesheet" href="https://nurifunding.co.kr/static/css/override_v2.0.0.css">
     <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/common_v2.0.0.css">
-    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/index_v2.0.0.css"> -->
+    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/index_v2.0.0.css">
 
-	<link rel="stylesheet" href="../static/css/override_v2.0.0.css">
+	<!-- <link rel="stylesheet" href="../static/css/override_v2.0.0.css">
 	<link rel="stylesheet" href="../static/css/common_v2.0.0.css">
-	<link rel="stylesheet" href="../static/css/index_v2.0.0.css">
+	<link rel="stylesheet" href="../static/css/index_v2.0.0.css"> -->
 
 	<!--js 플러그인 관련(css, js) 추가-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
@@ -40,10 +41,10 @@
 	<!-- <script type="text/javascript" src="https://nurifunding.co.kr/static/js/jquery.animateNumber.min.js"></script> -->
 	<!--<script type="text/javascript" src="https://nurifunding.co.kr/static/js/components_custom.js"></script>-->
 
-	<!-- <script type="text/javascript" src="https://nurifunding.co.kr/static/js/common_v2.0.0.js"></script>
-	<script type="text/javascript" src="https://nurifunding.co.kr/static/js/index_v2.0.0.js"></script> -->
-	<script type="text/javascript" src="../static/js/common_v2.0.0.js"></script>
-	<script type="text/javascript" src="../static/js/index_v2.0.0.js"></script>
+	<script type="text/javascript" src="https://nurifunding.co.kr/static/js/common_v2.0.0.js"></script>
+	<script type="text/javascript" src="https://nurifunding.co.kr/static/js/index_v2.0.0.js"></script>
+	<!-- <script type="text/javascript" src="../static/js/common_v2.0.0.js"></script>
+	<script type="text/javascript" src="../static/js/index_v2.0.0.js"></script> -->
 
 	<!-- <link rel="stylesheet" href="../static/css/common_v2.0.0_ie9lt.css"> -->
 	<!--[if lt IE 9]>
@@ -100,20 +101,54 @@
 								</p>
 							</div> -->
 						</div>
+						<!-- login시 status-login 클래스 추가 -->
 						<ul class="menu clearfix">
-							<li class="big"><a href="loan/loan_00.html">대출신청</a></li>
-							<li class="big"><a href="invest/invest_01.html">투자하기</a></li>
-							<li class="big"><a href="miripay/index.html" class="c-blue">미리페이</a></li>
+							<li class="big"><a href="loan/loan_00.html">대출신청</a>
+								<div class="menu2 big hidden-smxs cf">
+									<div class="menu2big-item item-1">· 대출신청</div>
+									<div class="menu2big-item item-2">
+										<span class="c-1">간편하게 신청하고, 빠르게 받는 누리펀딩 대출!</span><br>
+										개인 간에 필요 자금을 지원하고 대출하는 서비스로<br>
+										대출자와 투자자 모두가 만족할 수 있는 금융 서비스 입니다.
+									</div>
+									<div class="menu2big-item item-3"><span>바로<br>가기</span></div>
+								</div>
+							</li>
+							<li class="big"><a href="invest/invest_01.html">투자하기</a>
+								<div class="menu2 big hidden-smxs cf">
+									<div class="menu2big-item item-1">· 투자하기</div>
+									<div class="menu2big-item item-2">
+										<span class="c-1">누리펀딩의 연 10%의 고금리 혜택을 누리세요!</span><br>
+										믿을 수 있는 신용평가 시스템, 전문가의 철두철미한 분석과<br>
+										쉬운 설명으로 투자상품의 리스크를 직접 관리할 수 있습니다.
+									</div>
+									<div class="menu2big-item item-3"><span>바로<br>가기</span></div>
+								</div>
+							</li>
+							<li class="big"><a href="miripay/index.html" class="c-blue">미리페이</a>
+								<div class="menu2 big hidden-smxs cf">
+									<div class="menu2big-item item-1">· 미리페이</div>
+									<div class="menu2big-item item-2">
+										<span class="c-1">보유하신 매출 채권으로 필요자금을 긴급지원 받으세요!</span><br>
+										티몬, 지마켓 등의 상품매출, 동산, 재고자산 등의 매출채권<br>
+										담보를 활용하여 최저수수료로 선결제를 이용하실 수 있습니다.
+									</div>
+									<div class="menu2big-item item-3"><span>바로<br>가기</span></div>
+								</div>
+							</li>
 							<li class="hidden-smxs hidden-margin"></li>
 							<li><a href="javascript:;">회사소개/IR</a>
-								<ul class="menu-2">
+								<ul class="menu2">
+									<li class="vline-1 hidden-smxs"></li>
+									<li class="vline-2 hidden-smxs"></li>
 									<li><a href="service/index.html">회사소개</a></li>
 									<li><a href="service/index_rep.html">대표이사 소개</a></li>
 									<li><a href="service/index_ir.html">기업 IR</a></li>
 								</ul>
 							</li>
 							<li><a href="javascript:;">이용안내</a>
-								<ul class="menu-2">
+								<ul class="menu2">
+									<li class="vline-1 hidden-smxs"></li>
 									<li><a href="">FAQ</a></li>
 									<li><a href="">공지사항</a></li>
 									<li><a href="">자료실</a></li>
@@ -125,7 +160,8 @@
 							<!-- 로그인 경우 -->
 							<!-- <li class="myinfo hidden-smxs">
 								<a class="c-blue" href="mypage/mypage_01.html"><img src="https://nurifunding.co.kr/img/renew/common/icon/icon_member_on.png" alt="내정보아이콘" class="icon">내정보</a>
-								<ul class="menu-2">
+								<ul class="menu2">
+									<li class="vline-1 hidden-smxs"></li>
 									<li><a href="myinvest/index.html">나의투자정보</a></li>
 									<li><a href="autoinv/">자동투자 설정</a></li>
 									<li><a href="">계좌정보</a></li>
@@ -135,12 +171,23 @@
 							</li> -->
 							<!-- <li><a href="autoinv/index.html">자동투자 <span class="ic-new">NEW</span></a></li> -->
 						</ul>
+						<div class="menu2-bg hidden-smxs" id="menu2Bg">
+							<div class="group inner">
+								<div class="autoinv-box cf" id="autoinvBox">
+									<div class="autoinv-item item-1">
+										<p class="autoinv-tit"><em>자동투자 설정</em>으로 투자시간을 절약하세요! <span class="ic-new">NEW</span></p>
+										<p class="autoinv-txt">
+											신규 선정산 상품이 나올 때마다 설정한 금액이 <em>자동 투자되는</em><br>
+											<em>맞춤형 간편투자</em> 서비스 '자동투자'로 투자 스트레스에서 벗어나세요!
+										</p>
+									</div>
+									<div class="autoinv-item item-2">
+										<span>자세히 보기</span>
+									</div>
+								</div>
+							</div>
+						</div>
 					</nav>
-				</div>
-				<div class="menu2-bg hidden-smxs on" id="menu2-bg">
-					<div class="group inner">
-						<a href=""><span class="c-blue">처음오셨나요?</span> 누리펀딩 이용가이드 보기</a>
-					</div>
 				</div>
 				<script>
 					
@@ -229,9 +276,9 @@
 						<div class="box box-3 hidden-smxs">
 							<h2>새소식 <a href="https://www.nurifunding.co.kr/notice/" class="more-btn"><img src="https://nurifunding.co.kr/img/renew/main/m_btn_more.png" alt="더보기"></a></h2>
 							<ul class="list">
-								<li class="cf"><a href="https://www.nurifunding.co.kr/notice/view.php?var=EUw=&page=1" class="tit">[이벤트] 참가자 100% 선물증정! 누리펀딩 이용후기 이벤트</a><span class="create-at">2019.05.20</span></li>
-								<li class="cf"><a href="https://www.nurifunding.co.kr/notice/view.php?var=EUw=&page=1" class="tit">[이벤트] 참가자 100% 선물증정! 누리펀딩 이용후기 이벤트</a><span class="create-at">2019.05.20</span></li>
-								<li class="cf"><a href="https://www.nurifunding.co.kr/notice/view.php?var=EUw=&page=1" class="tit">[이벤트] 참가자 100% 선물증정! 누리펀딩 이용후기 이벤트</a><span class="create-at">2019.05.20</span></li>
+								<li class="cf"><a href="https://www.nurifunding.co.kr/miripay/" class="tit">[공지] 누리펀딩, 선정산 서비스 '미리페이'출시</a><span class="create-at">2019.05.20</span></li>
+								<li class="cf"><a href="https://www.nurifunding.co.kr/miripay/" class="tit">[공지] 누리펀딩, 선정산 서비스 '미리페이'출시</a><span class="create-at">2019.05.20</span></li>
+								<li class="cf"><a href="https://www.nurifunding.co.kr/miripay/" class="tit">[공지] 누리펀딩, 선정산 서비스 '미리페이'출시</a><span class="create-at">2019.05.20</span></li>
 							</ul>
 						</div>
 						<div class="box box-3 hidden-mdlg">
@@ -580,11 +627,14 @@
 			<div class="cf contact-area">
 				<div class="group inner">
 					<a href="javascript:;" class="logo hidden-smxs"><img src="https://nurifunding.co.kr/img/renew/common/logo_f.png" alt="푸터로고"></a>
-					<span class="s-1">고객센터</span>
-					<span class="s-2">1666-4570</span>
+					<span class="s-box">
+						<span class="s-1">고객센터</span>
+						<span class="s-2">1666-4570</span>
+						<span class="s-3">(운영시간: 평일: 09시~18시 / 점심: 13시~14시)</span>
+					</span>
 					<a href="https://www.nurifunding.co.kr/faq/" class="btn-faq">FAQ</a>
 					<br class="hidden-mdlg">
-					<span class="s-3">(운영시간: 평일: 09시~18시 / 점심: 13시~14시)</span>
+					
 					<br class="hidden-mdlg">
 					<a href="https://blog.naver.com/jkkim317" target="_blank" class="link blog"><img src="https://nurifunding.co.kr/img/renew/common/footer_blog.png" alt="누리펀딩블로그바로가기"></a>
 					<a href="" target="_blank" class="link cafe"><img src="https://nurifunding.co.kr/img/renew/common/footer_cafe.png" alt="누리펀딩카페로바로가기"></a>

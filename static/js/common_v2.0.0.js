@@ -112,29 +112,42 @@ function hdFn() {
         }
     });
     if ( winWidth >= 992 ) {
-        var menu2 = $('.menu-2');
+        var menu2 = $('.menu2');
+        var menu2Bg = $('#menu2Bg');
+        var menu2BgHt = 170;
         var menu2HtArray = [];
         var menu2HtMax = 0;
         menu2.each(function(index, item) {
             menu2HtArray.push($(item).outerHeight());
         });
+        menu2HtArray.push(menu2BgHt); 
         menu2HtMax = menu2HtArray.reduce(function(prev, current) {
-            return prev > current ? prev:current;
+            return prev > current ? prev : current;
         });
-        console.log(menu2HtMax);
-        $('#menu2-bg').css({
-            minHeight: menu2HtMax,
-            padding: '25px 0'
+        var pdTop = parseInt(menu2Bg.css('padding-top'));
+        menu2Bg.css({
+            minHeight: menu2HtMax
         });
-        // hd.find('.navbar-collapse .menu > li').hover(function() {
-        //     if ( $(this).children('.menu-2').length > 0 ) {
-        //         $('#menu2-bg').addClass('on');
-        //     }
-        // }, function() {
-        //     if ( $(this).children('.menu-2').length > 0 ) {
-        //         $('#menu2-bg').removeClass('on');
-        //     }
-        // });
+        setTimeout( function() {
+            menu2.css({
+                minHeight: menu2HtMax,
+                padding: pdTop + 'px ' + 0
+            });
+            $('[class*=vline-]').height(menu2HtMax - (pdTop*2) );
+        }, 100);
+        // $('.menu2:not(.big), #menu2Bg').addClass('on');
+        hd.find('.navbar-collapse .menu > li').on('mouseenter', function() {
+            $('.menu2:not(.big), #menu2Bg').addClass('on');
+        });
+        $('.navbar-collapse').on('mouseleave', function() {
+            $('.menu2, #menu2Bg').removeClass('on');
+        });
+        hd.find('.navbar-collapse .menu > li.big').hover(function() {
+            $('#autoinvBox').removeClass('on');
+        }, function() {
+            // $('#autoinvBox').show();
+            $('#autoinvBox').addClass('on');
+        });
     
     } else {
         // 상단 배너 높이 - 배너 있을 시 없을 시 높이 자동 설정

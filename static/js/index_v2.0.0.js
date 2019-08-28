@@ -18,7 +18,7 @@ $(function () {
 			benefitChart("#per-chart", "11");
 		} 
 		if ( winWidth >= 992 ) {
-			benefitChart("#per-chart", "20");
+			benefitChart("#per-chart", "19");
 		}
 	}).resize();
 });
@@ -26,7 +26,7 @@ $(function () {
 // slider 영역
 function sliderFn() {
 	$('#main-slider').bxSlider({
-		// adaptiveHeight: true,
+		adaptiveHeight: true,
 		mode: 'fade',
 		auto: true,
 		speed: 100,
