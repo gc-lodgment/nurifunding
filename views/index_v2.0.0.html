@@ -21,13 +21,13 @@
 
 	<link rel="stylesheet" href="https://nurifunding.co.kr/static/css/reset.css">
 	
-	<link rel="stylesheet" href="https://nurifunding.co.kr/static/css/override_v2.0.0.css">
+	<!-- <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/override_v2.0.0.css">
     <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/common_v2.0.0.css">
-    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/index_v2.0.0.css">
+    <link rel="stylesheet" href="https://nurifunding.co.kr/static/css/index_v2.0.0.css"> -->
 
-	<!-- <link rel="stylesheet" href="../static/css/override_v2.0.0.css">
+	<link rel="stylesheet" href="../static/css/override_v2.0.0.css">
 	<link rel="stylesheet" href="../static/css/common_v2.0.0.css">
-	<link rel="stylesheet" href="../static/css/index_v2.0.0.css"> -->
+	<link rel="stylesheet" href="../static/css/index_v2.0.0.css">
 
 	<!--js 플러그인 관련(css, js) 추가-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
@@ -41,10 +41,10 @@
 	<!-- <script type="text/javascript" src="https://nurifunding.co.kr/static/js/jquery.animateNumber.min.js"></script> -->
 	<!--<script type="text/javascript" src="https://nurifunding.co.kr/static/js/components_custom.js"></script>-->
 
-	<script type="text/javascript" src="https://nurifunding.co.kr/static/js/common_v2.0.0.js"></script>
-	<script type="text/javascript" src="https://nurifunding.co.kr/static/js/index_v2.0.0.js"></script>
-	<!-- <script type="text/javascript" src="../static/js/common_v2.0.0.js"></script>
-	<script type="text/javascript" src="../static/js/index_v2.0.0.js"></script> -->
+	<!-- <script type="text/javascript" src="https://nurifunding.co.kr/static/js/common_v2.0.0.js"></script>
+	<script type="text/javascript" src="https://nurifunding.co.kr/static/js/index_v2.0.0.js"></script> -->
+	<script type="text/javascript" src="../static/js/common_v2.0.0.js"></script>
+	<script type="text/javascript" src="../static/js/index_v2.0.0.js"></script>
 
 	<!-- <link rel="stylesheet" href="../static/css/common_v2.0.0_ie9lt.css"> -->
 	<!--[if lt IE 9]>
@@ -102,16 +102,16 @@
 							</div> -->
 						</div>
 						<!-- login시 status-login 클래스 추가 -->
-						<ul class="menu clearfix">
+						<ul class="menu clearfix status-login">
 							<li class="big"><a href="loan/loan_00.html">대출신청</a>
 								<div class="menu2 big hidden-smxs cf">
 									<div class="menu2big-item item-1">· 대출받기</div>
 									<div class="menu2big-item item-2">
 										<span class="c-1">간편하게 신청하고, 빠르게 받는 누리펀딩 대출!</span><br>
-										개인과 기업에게 필요 자금을 지원해 드리는 서비스로<br>
+										개인과 기업에게 필요 자금을 지원해 드리는<br> 서비스로
 										투자자와 대출자 모두가 만족할 수 있는 금융 서비스 입니다.
 									</div>
-									<div class="menu2big-item item-3"><span>바로<br>가기</span></div>
+									<a href="loan/loan_00.html" class="menu2big-item item-3"><span>바로<br>가기</span></a>
 								</div>
 							</li>
 							<li class="big"><a href="invest/invest_01.html">투자하기</a>
@@ -119,10 +119,10 @@
 									<div class="menu2big-item item-1">· 투자하기</div>
 									<div class="menu2big-item item-2">
 										<span class="c-1">연 10%대의 고금리 혜택을 누리세요!</span><br>
-										NiceCredit을 기반으로 한 자체 신용평가와 전문가가 분석한 상품설명서로<br>
+										NiceCredit을 기반으로 한 자체 신용평가와 전문가가 분석한<br> 상품설명서로
 										투자상품을 쉽게 이해할 수 있습니다.
 									</div>
-									<div class="menu2big-item item-3"><span>바로<br>가기</span></div>
+									<a href="invest/invest_01.html" class="menu2big-item item-3"><span>바로<br>가기</span></a>
 								</div>
 							</li>
 							<li class="big"><a href="miripay/index.html" class="c-blue">미리페이</a>
@@ -130,10 +130,21 @@
 									<div class="menu2big-item item-1">· 미리페이</div>
 									<div class="menu2big-item item-2">
 										<span class="c-1">보유하신 매출 채권으로 필요자금을 긴급지원 받으세요!</span><br>
-										쿠팡, 티몬, 위메프 등 온라인쇼핑몰과 결제사(PG)의 매출채권(지급예정금액)을<br>
+										쿠팡, 티몬, 위메프 등 온라인쇼핑몰과 결제사(PG)의<br> 매출채권(지급예정금액)을
 										담보로 선정산을 미리 받을 수 있습니다.
 									</div>
-									<div class="menu2big-item item-3"><span>바로<br>가기</span></div>
+									<a href="miripay/index.html" class="menu2big-item item-3"><span>바로<br>가기</span></a>
+								</div>
+							</li>
+							<li class="big"><a href="#none" class="c-blue" onclick="alert('서비스 준비중입니다.')">누리워드</a>
+								<div class="menu2 big hidden-smxs cf">
+									<div class="menu2big-item item-1">· 누리워드</div>
+									<div class="menu2big-item item-2">
+										<span class="c-1">세상을 바꾸는 아이디어에 주목합니다.</span><br>
+										당신의 오랜 꿈과 당신의 열정적인 노력을 응원하는 우리가 있습니다.<br>
+										기부와 리워드를 통해 새로운 프로젝트를 가장 먼저 소개할 수 있습니다.
+									</div>
+									<a href="#none" class="menu2big-item item-3"><span>바로<br>가기</span></a>
 								</div>
 							</li>
 							<li class="hidden-smxs hidden-margin"></li>
@@ -155,10 +166,10 @@
 								</ul>
 							</li>
 							<!-- 비 로그인 경우 -->
- 							<li class="btn hidden-smxs"><a href="" class="btn-cmm btn-white login">로그인</a></li>
-							<li class="btn hidden-smxs"><a href="" class="btn-cmm btn-blue join">회원가입</a></li>
+ 							<!-- <li class="btn hidden-smxs"><a href="" class="btn-cmm btn-white login">로그인</a></li>
+							<li class="btn hidden-smxs"><a href="" class="btn-cmm btn-blue join">회원가입</a></li> -->
 							<!-- 로그인 경우 -->
-							<!-- <li class="myinfo hidden-smxs">
+							<li class="myinfo hidden-smxs">
 								<a class="c-blue" href="mypage/mypage_01.html"><img src="https://nurifunding.co.kr/img/renew/common/icon/icon_member_on.png" alt="내정보아이콘" class="icon">내정보</a>
 								<ul class="menu2">
 									<li class="vline-1 hidden-smxs"></li>
@@ -168,7 +179,7 @@
 									<li><a href="mypage/mypage_01.html">회원정보수정</a></li>
 									<li><a href="">로그아웃</a></li>
 								</ul>
-							</li> -->
+							</li>
 							<!-- <li><a href="autoinv/index.html">자동투자 <span class="ic-new">NEW</span></a></li> -->
 						</ul>
 						<div class="menu2-bg hidden-smxs" id="menu2Bg">

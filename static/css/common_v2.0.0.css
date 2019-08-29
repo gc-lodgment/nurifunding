@@ -492,8 +492,9 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
     .gnb .navbar-collapse {position: relative; float: right; height: 100%;}
     .gnb .navbar-collapse .menu {position: relative; font-size: 0;}
     .gnb .navbar-collapse .menu > li {display: inline-block; position: relative; vertical-align: middle;font-size: 15px; text-align: center;}
-    .gnb .navbar-collapse .menu .hidden-margin {margin-left: 0; width: 129px; height: 10px;}
-    .gnb .navbar-collapse .menu.status-login .hidden-margin {width: 200px;}
+    /* .gnb .navbar-collapse .menu .hidden-margin {margin-left: 0; width: 129px; height: 10px;} */
+    .gnb .navbar-collapse .menu .hidden-margin {margin-left: 0; width: 40px; height: 10px;}
+    .gnb .navbar-collapse .menu.status-login .hidden-margin {width: 111px;}
     .gnb .navbar-collapse .menu > li:first-child,
     .gnb .navbar-collapse .menu .hidden-margin + li {margin-left: 0;}
     .gnb .navbar-collapse .menu > li.btn + li.btn {margin-left: 8px;}
@@ -530,7 +531,9 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
     .gnb .menu > li .menu2.big .menu2big-item {position: relative; float: left; font-weight: 400;}
     .gnb .menu > li .menu2.big .menu2big-item .c-1 {color: #4c00cb;}
     .gnb .menu > li .menu2.big .menu2big-item.item-1 {font-size: 22px; color: #555; font-weight: 700;}
-    .gnb .menu > li .menu2.big .menu2big-item.item-2 {width: 385px; margin-left: 30px; font-size: 15px; word-break: keep-all; letter-spacing: normal; line-height: 1.47;}
+    /* .gnb .menu > li .menu2.big .menu2big-item.item-2 {width: 385px; margin-left: 30px; font-size: 15px; word-break: keep-all; letter-spacing: normal; line-height: 1.47;} */
+    /* .gnb .menu > li .menu2.big .menu2big-item.item-2 {width: 435px; margin-left: 30px; font-size: 15px; word-break: keep-all; letter-spacing: normal; line-height: 1.47;} */
+    .gnb .menu > li .menu2.big .menu2big-item.item-2 {margin-left: 30px; font-size: 15px; word-break: keep-all; letter-spacing: normal; line-height: 1.47;}
     .gnb .menu > li .menu2.big .menu2big-item.item-3 {width: 60px; margin-left: 35px; height: 60px; background-color: #398fe1; color: #fff; border-radius: 50%; font-size: 14px; text-align: center;}
     .gnb .menu > li .menu2.big .menu2big-item.item-3 > span,
     .gnb .menu > li .menu2.big .menu2big-item.item-3:after {display: inline-block; vertical-align: middle;}
