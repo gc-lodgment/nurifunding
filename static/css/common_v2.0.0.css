@@ -186,34 +186,52 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
 .bg-drop.on {opacity: 1; visibility: visible;}
 
 /* 리뉴얼에서는 .container 사용 X 대체 .group  사용 */
+.group-f,
 .group {
     position: relative;
     margin-right: auto;
     margin-left: auto;
+    overflow: hidden;
 }
-.group:after {content: ''; display: block; clear: both;}
-@media (min-width: 768px) {
-  .group {
-    /*width: 750px;*/
-  }
-}
-@media (min-width: 992px) {
-  .group {
-    /*width: 970px;*/
+.group-f {
     width: 100%;
-  }
 }
-@media (min-width: 1100px) {
-  .group {
-    width: 1100px;
-  }
-  .group.abs {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      margin-left: -600px;
-  }
+.header .group,
+.footer .group {
+    overflow: visible;
 }
+.group-f:after,
+.group:after {content: ''; display: block; clear: both;}
+
+@media (min-width: 768px) {
+    .group {
+        /*width: 750px;*/
+    }
+}
+
+@media (min-width: 992px) {
+    .group {
+        /* width: 970px; */
+        /* width: 100%; */
+        /* width: 992px; */
+    }
+}
+
+@media (min-width: 1120px) {
+
+    .group-f,
+    .group {
+        width: 1100px;
+    }
+
+    .group.abs {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -550px;
+    }
+}
+
 
 /*전체*/
 .wrap {position: relative; width: 100%; min-width: 320px;}
@@ -250,7 +268,8 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
     .header .topbn.fixed {position: fixed; width: 100%; left: 0;}
     .header .gnb {top: 0; height: 48px; padding-right: 15px; padding-left: 15px;  background: #ffffff; z-index: 1;}
     .header .gnb > div {position: relative; clear: both; width: 100%;}
-    .header .gnb .navbar-header {position: relative; top: 9px;}
+    .header .gnb .inner {top: 9px;}
+    .header .gnb .navbar-header {position: relative;}
     .header .gnb .navbar-header h2 {text-align: center;}
     .header .gnb .navbar-header .navbar-brand {position: relative; display: inline-block; width: 145px; top: 2px;}
     .header .gnb .navbar-header .navbar-brand img {width: 100%;}
@@ -293,7 +312,7 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
     .menu > li > a > img {position: absolute; width: 9px;  right: 20px; top: 16px;}
     .menu > li:hover .menu2 {display: block;}
 
-    .menu2 {display: none; position: relative; width: 100%; border-top: 1px solid #ddd;}
+    .menu2 {display: none; position: relative; width: 100%; border-top: 1px solid #ddd; padding: 0 !important; min-height: auto !important;}
     .menu2 a {display: block;margin: 0 auto;font-size: 15px; padding: 10px 0 10px 30px; background: #e7e7e7; border-top: 1px solid #fff;}
     .menu2 li:first-child a {border-top: none;}
     .menu2 a:hover, .gnb .menu2 a:active {color: #398fe1;}
@@ -323,14 +342,15 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
     .footer .addr-area .row-addr .split address span {margin-right: 5px; font-size: 14px; font-weight: 500;}
     .footer .addr-area .row-addr .split.split-1 .link {position: absolute; bottom: 2px; right: 0px; width: 75px;}
     .footer .addr-area .row-addr .split.split-2 {margin-top: 10px;}
+    .footer .addr-area .row-addr-2 {margin-top: 10px; font-size: 11px; color: #bbb; line-height: 1.3;}
     .footer .addr-area .row-notice {padding: 8px; background: #41434E; font-size: 11.5px; line-height: 1.4; color: #9f9f9f; letter-spacing: 0; word-break: keep-all;}
-    .footer .addr-area .row-certify {padding: 5px 0 15px;}
-    /* .footer .addr-area .row-certify .list {text-align: center;} */
-    .footer .addr-area .row-certify .list > li {margin: 10px 0 0 15px; display: inline-block; vertical-align: middle;}
-    .footer .addr-area .row-certify .list > li:first-child {margin-left: 0;}
-    .footer .addr-area .row-certify .list > li:nth-child(4) {margin-left: 35px;}
-    .footer .addr-area .row-certify .list > li:nth-child(5) {margin-left: 50px;}
-    .footer .addr-area .row-certify .list > li .link > img {width: auto; height: 20px;}
+    /* .footer .addr-area .certify-box {padding: 5px 0 15px;} */
+    /* .footer .addr-area .certify-box .list {text-align: center;} */
+    .footer .addr-area .certify-box .list > li {margin: 10px 0 0 15px; display: inline-block; vertical-align: middle;}
+    .footer .addr-area .certify-box .list > li:first-child {margin-left: 0;}
+    .footer .addr-area .certify-box .list > li:nth-child(4) {margin-left: 35px;}
+    .footer .addr-area .certify-box .list > li:nth-child(5) {margin-left: 50px;}
+    .footer .addr-area .certify-box .list > li .link > img {width: auto; height: 20px;}
     .footer small {display: block; margin-top: 20px; text-align: center; font-size: 12px; color: #bbb;}
 
     .shortcut-area {z-index: 1; position: absolute; bottom: 50px;}
@@ -431,8 +451,8 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
 }
 
 @media (max-width: 320px) {
-    .footer .addr-area .row-addr .split.split-1 .link {width: 55px;}
-    .footer .addr-area .row-certify .list > li .link > img {height: 18px;}
+    /* .footer .addr-area .row-addr .split.split-1 .link {width: 55px;} */
+    .footer .addr-area .certify-box .list > li .link > img {height: 18px;}
 }
 
 /*테블릿 & PC영역*/
@@ -492,9 +512,10 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
     .gnb .navbar-collapse {position: relative; float: right; height: 100%;}
     .gnb .navbar-collapse .menu {position: relative; font-size: 0;}
     .gnb .navbar-collapse .menu > li {display: inline-block; position: relative; vertical-align: middle;font-size: 15px; text-align: center;}
-    /* .gnb .navbar-collapse .menu .hidden-margin {margin-left: 0; width: 129px; height: 10px;} */
-    .gnb .navbar-collapse .menu .hidden-margin {margin-left: 0; width: 40px; height: 10px;}
-    .gnb .navbar-collapse .menu.status-login .hidden-margin {width: 111px;}
+    .gnb .navbar-collapse .menu .hidden-margin {margin-left: 0; width: 129px; height: 10px;}
+    .gnb .navbar-collapse .menu.status-login .hidden-margin {margin-left: 0; width: 200px; height: 10px;}
+    /* .gnb .navbar-collapse .menu .hidden-margin {margin-left: 0; width: 40px; height: 10px;}
+    .gnb .navbar-collapse .menu.status-login .hidden-margin {width: 111px;} */
     .gnb .navbar-collapse .menu > li:first-child,
     .gnb .navbar-collapse .menu .hidden-margin + li {margin-left: 0;}
     .gnb .navbar-collapse .menu > li.btn + li.btn {margin-left: 8px;}
@@ -574,7 +595,7 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
     .gnb .menu2-bg .autoinv-box .autoinv-item.item-2:after {content: ''; height: 60px;}
     .gnb .menu2-bg .autoinv-box .autoinv-item.item-2 > span:after {content: '▶'; position: relative; top: -3px; left: 5px; font-family: 'Nanum Gothic', sans-serif; font-size: 10px; transform: scale(0.85);}
 
-    .footer {position:relative; padding-bottom: 20px; background: #3D3F49; color: #ccc;}
+    .footer {position:relative; padding-bottom: 75px; background: #3D3F49; color: #ccc;}
     .footer [class*='-area'] {border-top: 1px solid #4f515b;}
     .footer [class*='-area']:first-child {border-top: 0;}
     .footer .term-area {padding: 20px 0; background: #33353e;}
@@ -594,19 +615,21 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
     .footer .contact-area .s-3 {margin-left: 10px; margin-right: 40px; font-size: 15px; color: #ccc; font-weight: 300;}
     .footer .contact-area .link {margin-left: 10px;}
     .footer .addr-area [class*='row-'] {position: relative;}
-    .footer .addr-area .row-addr {padding: 35px 0;}
+    .footer .addr-area .row-addr {padding: 25px 0;} 
     .footer .addr-area .row-addr .split {float: left; position: relative; width: 50%;}
-    .footer .addr-area .row-addr .split.split-1 {width: 48%;}
-    .footer .addr-area .row-addr .split.split-2 {width: 52%;}
-    .footer .addr-area .row-addr .split address {font-size: 16px; line-height: 1.5; font-weight: 300;}
-    .footer .addr-area .row-addr .split address span {margin-right: 5px; font-size: 18px; font-weight: 500;}
+    .footer .addr-area .row-addr .split.split-1 {width: 55%;}
+    .footer .addr-area .row-addr .split.split-2 {width: 45%;}
+    .footer .addr-area .row-addr .split address {font-size: 17px; line-height: 1.5; font-weight: 300; color: #bbb;}
+    .footer .addr-area .row-addr .split address em {margin-right: 5px; font-size: 22px; font-weight: 500;}
     .footer .addr-area .row-addr .split.split-1 .link {position: absolute; bottom: 0px; right: 45px;}
+    .footer .addr-area .row-addr-2 {margin-top: 20px; font-size: 12px; color: #9f9f9f; line-height: 1.3;}
     .footer .addr-area .row-notice {padding: 15px; background: #41434E; font-size: 13px; line-height: 1.4; color: #9f9f9f; letter-spacing: 0; word-break: keep-all;}
-    .footer .addr-area .row-certify {padding: 20px 0;}
-    .footer .addr-area .row-certify .list > li {margin-left: 20px; display: inline-block; vertical-align: middle;}
-    .footer .addr-area .row-certify .list > li:first-child {margin-left: 0;}
-    .footer .addr-area .row-certify .list > li .link > img {}
-    .footer small {float: right; position: absolute; top: 35px; right: 0; font-size: 13px; color: #bbb;}
+    .footer .addr-area .certify-box {}
+    .footer .addr-area .certify-box .list {text-align-last: justify;}
+    .footer .addr-area .certify-box .list > li {margin-top: 10px; margin-left: 20px; display: inline-block; vertical-align: middle;}
+    .footer .addr-area .certify-box .list > li:first-child {margin-left: 0;}
+    .footer .addr-area .certify-box .list > li .link > img {}
+    .footer small {position: absolute; top: 0px; right: 0; font-size: 13px; color: #bbb;}
 
     .shortcut-area {z-index: 1; position: absolute; bottom: 50px;}
     .shortcut-area .list {position: absolute; bottom: 0; right: -120px;}
@@ -680,8 +703,9 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
     .hidden-margin {display: none;}
 }
 
-@media (min-width: 992px) and (max-width: 1099px){
+@media (min-width: 992px) and (max-width: 1119px){
     .gnb {padding: 0 10px;}
+    .gnb .navbar-collapse .menu.status-login .hidden-margin,
     .gnb .navbar-collapse .menu .hidden-margin {width: auto;}
     .gnb .menu > li .menu2.big,
     .gnb .menu2-bg .autoinv-box {display: none !important;}
@@ -693,12 +717,15 @@ input[type='password'] {font-family: 'Nanum Gothic', sans-serif;}
     .footer .contact-area .s-3 {font-size: 13px; margin-right: 0;}
     .footer .addr-area .row-addr .split address {font-size: 14px;}
     .footer .addr-area .row-addr .split address span {font-size: 16px;}
-    .footer .addr-area .row-addr .split.split-1 .link {right: 15px;}
-    .footer small {float: none; top: auto; right: auto; display: block; margin-top: 15px;}
+    .footer .addr-area .certify-box .list > li {margin-left: 10px;}
+    .footer small {position: relative; top: auto; right: auto; display: block; margin-top: 15px;}
 
     .shortcut-area .list {right: 10px;}
 }
 
+@media (max-width: 1180px){
+    .shortcut-area .list {position: absolute; bottom: 0; right: 10px;}
+}
 @media (max-width: 1560px){
   .side-banner {left: auto; margin-left: auto; right: 10px;}
 }

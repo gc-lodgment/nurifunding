@@ -22,11 +22,9 @@
 	.arr-icon {display: inline-block; position: relative; background: url(https://nurifunding.co.kr/img/nrm_icon_m.png) no-repeat;} .br4 {border-radius: 4px;}
 
 	.main {position: relative; width: 100%; background: #126cc4;}
-	.main-box.swiper-container {position: relative;  padding: 0 0px; margin: 0 auto; text-align: center; background: url('https://nurifunding.co.kr/img/renew/main/m_bnr_bg.jpg') no-repeat center;}
-	.main-box .swiper-slide {position: relative; height: 430px; overflow: hidden;}
-	/* .main-box .swiper-slide.bg-1 {background: url('https://nurifunding.co.kr/img/renew/main/m_bnr_bg.jpg') no-repeat center / cover;} */
-	.main-box .swiper-slide img {display: block; position: relative; width: 320px; margin: 0 auto;}
-	.main-box .swiper-slide.slide-1 img {width: 360px; max-width: none; left: 50%; margin-left: -198px;}
+	.main-box.swiper-container {position: relative;  padding: 0 0px; margin: 0 auto; text-align: center; background: url('https://nurifunding.co.kr/img/renew/main/m_bnr_bg.jpg') no-repeat center / cover;}
+	.main-box .swiper-slide {position: relative; height: auto; padding-bottom: 80px; overflow: hidden; box-sizing: content-box;}
+	.main-box .swiper-slide img {display: block; position: relative; width: 100%; margin: 0 auto;}
 
 	.main .quick-bar {z-index: 1; position: relative; width: 100%; margin-top: -80px;}
     .main .quick-bar .inner {background: #3690e2;}
@@ -222,7 +220,7 @@
 	.benefit .row-cmt {margin-top: 35px; font-size: 12px; color: #666; word-break: keep-all; line-height: 1.2;}
 
 	.bn-account {background: #4DA7F5;}
-	.bn-account .img-account {width: 360px; height: 90px; margin: 0 auto; background: url('https://nurifunding.co.kr/img/renew/main/m_bnr_s_01.jpg') no-repeat center 7px / 400px;}
+	.bn-account .img-account {width: 360px; height: 90px; margin: 0 auto; background: url('https://nurifunding.co.kr/img/renew/main/m_bnr_s_01.jpg') no-repeat center bottom / 360px;}
 
 	.faq {padding: 30px 0px 45px; background: #E1F3FF;}
 	.faq .fq-wrap {position: relative; margin-top: 20px;}
@@ -386,7 +384,7 @@
 
 	.main {position: relative; width: 100%; background: #126cc4;}
 	/* .main-box.swiper-container {position: relative;  padding: 0 0px; margin: 0 auto; text-align: center;} */
-	.main-box.swiper-container {position: relative; min-width: 1100px; padding: 0 0px; margin: 0 auto; text-align: center; background: url('https://nurifunding.co.kr/img/renew/main/m_bnr_bg.jpg') no-repeat center;}
+	.main-box.swiper-container {position: relative; min-width: 1100px; padding: 0 0px; margin: 0 auto; text-align: center; background: url('https://nurifunding.co.kr/img/renew/main/m_bnr_bg.jpg') no-repeat center / cover;}
 	.main-box .swiper-slide {position: relative; height: 520px; padding-bottom: 150px; box-sizing: content-box;}
 	/* .main-box .swiper-slide.bg-1 {background: url('https://nurifunding.co.kr/img/renew/main/m_bnr_bg.jpg') no-repeat center;} */
 	.main-box .swiper-slide img {display: block; margin: 0 auto;}
@@ -575,7 +573,7 @@
 
 	/* .faq {padding: 100px 0 90px; background: #dae7f3;} */
 	.faq {padding: 100px 0 90px; background: #E1F3FF;}
-	.faq .fq-wrap {position: relative; width: 1230px; left: -15px; margin-top: 20px;}
+	.faq .fq-wrap {position: relative; width: 1130px; margin: 0 -15px; margin-top: 20px;}
     .faq .fq-wrap .fq-outer {float: left; position: relative; padding: 0 15px; margin-top: 30px; width: 33.33%;}
 	.faq .fq-wrap .fq-outer .fq-box {padding: 20px 15px; background: #fff;}
 	.faq .fq-wrap .fq-outer .fq-box .fq-q, 
@@ -605,7 +603,8 @@
 }
 
 /*작은 pc 영역*/
-@media (min-width: 992px) and (max-width: 1099px) {
+/* @media (min-width: 992px) and (max-width: 1099px) { */
+@media (min-width: 992px) and (max-width: 1119px) {
 	.com-ft {padding: 0 10px; font-size: 30px;}
 
 	.main .quick-bar .box-2 .list > li {margin: 12px 10px 0;}
@@ -614,7 +613,7 @@
 	
 	.ingProduct h1 .more-btn {right: 10px;}
 	.faq .fq-wrap,
-	.ingProduct .ip-wrap {width: auto; left: auto;}
+	.ingProduct .ip-wrap {width: auto; margin: 0 -10px;}
 	.faq .fq-wrap .fq-outer,
 	.ingProduct .ip-wrap .ip-outer {padding: 0 10px;}
 
