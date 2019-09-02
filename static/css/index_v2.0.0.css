@@ -190,7 +190,7 @@
 	.benefit .split.split-2 .per-chart .box.box-nuri.on .p-per {bottom: -25px;}
 	.benefit .split.split-2 .per-chart .box.box-nuri .p-tit {font-size: 14px; color: #398fe1; font-weight: 700;}
 	.benefit .split.split-2 .per-chart .box.box-nuri .p-chart {background: #398fe1; height: 0;}
-	.benefit .split.split-2 .per-chart .box.box-nuri .p-chart:before {content: ''; display: block; position: absolute; top: -90px; left: -14.5px; width: 1px; border: 45px solid transparent; border-bottom-color: #398fe1;}
+	.benefit .split.split-2 .per-chart .box.box-nuri .p-chart:before {content: ''; display: block; position: absolute; top: -90px; left: 50%; margin-left: -45.1px; width: 1px; border: 45px solid transparent; border-bottom-color: #398fe1;}
 	.benefit .split.split-2 .per-chart .box.nth-1 .p-chart {height: 32px; height: 0;}
 	.benefit .split.split-2 .per-chart .box.nth-2 .p-chart {height: 42px; height: 0;}
 	.benefit .split.split-2 .per-chart .box.nth-3 .p-chart {height: 115px; height: 0;}
@@ -424,7 +424,7 @@
     .main .quick-bar .box-3 .list > li .create-at {float: right;}
     
     .ingProduct {padding: 100px 0 90px; background: #f5f5f5;}
-    .ingProduct {}
+    .ingProduct .inner {overflow: hidden;}
     .ingProduct h1 .more-btn {display: inline-block; position: absolute; top: 25px; right: 15px; font-size: 16px; color: #555;}
     .ingProduct h1 .more-btn .ic-rArrow {margin-left: 5px;}
 	.ingProduct h1 .more-btn .ic-rArrow:after {border-color: #555;}
@@ -540,7 +540,7 @@
 	.benefit .split.split-2 .per-chart .box.box-nuri.on .p-per {bottom: -35px;}
 	.benefit .split.split-2 .per-chart .box.box-nuri .p-tit {font-size: 22px; color: #398fe1; font-weight: 700;}
 	.benefit .split.split-2 .per-chart .box.box-nuri .p-chart {background: #398fe1; height: 0;}
-	.benefit .split.split-2 .per-chart .box.box-nuri .p-chart:before {content: ''; display: block; position: absolute; top: -140px; left: -20px; width: 1px; border: 70px solid transparent; border-bottom-color: #398fe1;}
+	.benefit .split.split-2 .per-chart .box.box-nuri .p-chart:before {content: ''; display: block; position: absolute; top: -140px; left: 50%; margin-left: -70.5px; width: 1px; border: 70px solid transparent; border-bottom-color: #398fe1;}
 	.benefit .split.split-2 .per-chart .box.nth-1 .p-chart {height: 32px; height: 0;}
 	.benefit .split.split-2 .per-chart .box.nth-2 .p-chart {height: 42px; height: 0;}
 	.benefit .split.split-2 .per-chart .box.nth-3 .p-chart {height: 115px; height: 0;}
@@ -573,7 +573,8 @@
 
 	/* .faq {padding: 100px 0 90px; background: #dae7f3;} */
 	.faq {padding: 100px 0 90px; background: #E1F3FF;}
-	.faq .fq-wrap {position: relative; width: 1130px; margin: 0 -15px; margin-top: 20px;}
+	.faq .inner {overflow: hidden;}
+	.faq .fq-wrap {position: relative; margin: 0 -15px; margin-top: 20px;}
     .faq .fq-wrap .fq-outer {float: left; position: relative; padding: 0 15px; margin-top: 30px; width: 33.33%;}
 	.faq .fq-wrap .fq-outer .fq-box {padding: 20px 15px; background: #fff;}
 	.faq .fq-wrap .fq-outer .fq-box .fq-q, 
@@ -635,7 +636,8 @@
 
 	
 
-	.benefit .split.split-2 .per-chart .box.box-nuri .p-chart:before {top: -130px; left: -17.5px; border-width: 65px;}
+	/* .benefit .split.split-2 .per-chart .box.box-nuri .p-chart:before {top: -130px; left: -17.5px; border-width: 65px;} */
+	.benefit .split.split-2 .per-chart .box.box-nuri .p-chart:before {top: -120px; left: 50%; margin-left: -60.5px; border-width: 60px;}
 }
 /* 아이패드 */
 @media (min-width: 768px) and (max-width: 991px) {

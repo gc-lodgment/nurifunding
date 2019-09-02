@@ -78,9 +78,17 @@ function wayP() {
 			offset: '70%'
 		});
 	});
-
 	// 쉬운 대출
 	$("#easy .split-2").each(function (idx, item) {
+		$(item).addClass("blind");
+		$(item).waypoint(function () {
+			$(item).addClass('animated fadeInUp');
+		}, {
+			offset: '75%'
+		});
+	});
+	// 자주하는 질문
+	$("#faq .fq-outer").each(function (idx, item) {
 		$(item).addClass("blind");
 		$(item).waypoint(function () {
 			$(item).addClass('animated fadeInUp');
